@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description" content="Guía de estudio de Herramientas de la Psicología Clínica: Bender, DFH, WISC-V, Familia, Persona bajo la lluvia, HTP, TAT, CAT y Rorschach, con casos integrados resueltos paso a paso.">
-<title>Herramientas clínicas · guía de parciales</title>
+<title>Herramientas de la Psicología Clínica · guía interactiva</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=JetBrains+Mono:wght@400;600&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=Schibsted+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
@@ -49,9 +49,20 @@ small,.small{font-size:14px;color:var(--muted)}
 
 /* Hero */
 .hero{padding-block:56px 28px;display:grid;gap:28px}
-.hero h1{font-size:clamp(40px,7vw,84px);font-weight:800;letter-spacing:-.03em}
+.hero h1{font-size:clamp(34px,5vw,64px);font-weight:800;letter-spacing:-.03em}
 .hero h1 span{color:var(--red)}
 .hero .lede{font-size:19px;max-width:62ch}
+.hero .hgrid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,.7fr);gap:48px;align-items:center}
+.hero .hgrid>div{display:grid;gap:20px;align-content:start}
+.hero .hfig{margin:0}
+.hero .hfig img{width:100%;display:block;border-radius:14px;border:1px solid var(--rule);background:#fff}
+.hero .hfig figcaption{font-size:12px;color:var(--muted);margin-top:10px;line-height:1.4}
+.hero .hfig figcaption b{display:block;color:var(--ink);font-size:14px}
+.hero .inst{font-size:13.5px;color:var(--muted);padding-top:14px;border-top:1px solid var(--rule);max-width:64ch;line-height:1.5}
+.hero .inst strong,.hero .aviso strong{color:var(--ink)}
+.hero .aviso{font-size:13.5px;color:var(--muted);padding-left:12px;border-left:3px solid var(--rule);max-width:64ch;line-height:1.5}
+.hero .aviso a{color:var(--ink);text-decoration:underline;text-underline-offset:2px}
+@media (max-width:900px){.hero .hgrid{grid-template-columns:1fr}.hero .hfig{max-width:280px}}
 .cards{display:grid;grid-template-columns:repeat(9,minmax(0,1fr));gap:8px}
 .cards figure{margin:0;background:var(--sheet);border:1px solid var(--rule);border-radius:4px;padding:8px 6px 4px;display:flex;flex-direction:column;align-items:center;gap:2px;aspect-ratio:1.45/1}
 .cards svg{width:100%;height:100%;min-height:0;flex:1}
@@ -211,9 +222,10 @@ blockquote.model p:last-child{margin:0}
 
 /* Template */
 ol.flow{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:10px}
-ol.flow li{counter-increment:s;display:grid;grid-template-columns:44px 1fr;gap:14px;background:var(--sheet);border:1px solid var(--rule);border-radius:8px;padding:14px 16px}
-ol.flow li::before{content:counter(s);font-family:var(--f-display);font-weight:800;font-size:26px;line-height:1;color:var(--red)}
-ol.flow li b{font-family:var(--f-display)}
+ol.flow>li{counter-increment:s;display:grid;grid-template-columns:44px 1fr;gap:14px;background:var(--sheet);border:1px solid var(--rule);border-radius:8px;padding:14px 16px}
+ol.flow>li::before{content:counter(s);font-family:var(--f-display);font-weight:800;font-size:26px;line-height:1;color:var(--red)}
+ol.flow>li b{font-family:var(--f-display)}
+ol.flow>li ul{margin:.5em 0 0;padding-left:1.2em;list-style:disc}
 
 /* WISC */
 .idx-map{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
@@ -501,13 +513,19 @@ svg [hidden]{display:none}
 
 <div class="wrap" id="top" data-title="Inicio" data-parcial="0">
   <header class="hero">
-    <div class="eyebrow">Herramientas de la Psicología Clínica · guía de los dos parciales</div>
-    <h1>Del protocolo<br>al <span>informe</span></h1>
+    <div class="hgrid"><div>
+    <div class="eyebrow">Material de estudio · Parciales 1 y 2</div>
+    <h1>Herramientas de la Psicología Clínica: <span>guía interactiva</span> del curso</h1>
     <p class="lede">Casos resueltos de punta a punta, con cada punto calculado a la vista. El <b>Parcial 1</b> cubre Bender, Dibujo de la Figura Humana y la teoría del WISC-V. A medida que bajás, la lámina se corrige sola: en <b class="r">rojo</b> lo que suma al puntaje evolutivo, en <b class="b">azul</b> los indicadores emocionales. El <b>Parcial 2</b> cubre el cálculo del WISC-V, las técnicas proyectivas (Familia, Persona bajo la lluvia, HTP, TAT, CAT y Rorschach), el informe y casos que integran entrevista y dos tests.</p>
-    <div class="cards" id="heroCards" aria-label="Las nueve láminas del Bender"></div>
     <nav class="pills" aria-label="Índice">
       <a href="#mapa">Mapa del curso</a><a href="#parcial1">Parcial 1</a><a href="#parcial2">Parcial 2</a><a href="#casos-p2">Casos integrados</a>
     </nav>
+    <p class="inst">Material didáctico del curso <strong>Herramientas de la Psicología Clínica</strong> · Facultad de Psicología · Universidad de la República (UDELAR) · Montevideo, Uruguay · 2026.</p>
+    <p class="aviso"><strong>Aviso.</strong> Este <strong>no es material oficial del curso</strong>: no fue revisado por les docentes del curso, por lo que puede <strong>contener errores</strong>. No reemplaza las lecturas; es un material de apoyo para acompañarlas. Se aceptan sugerencias de corrección, estructura y contenido en <a href="https://docs.google.com/forms/d/1Y6ym346aie6e-n4zlG9D1hS-xoZmPefejqZOexL4ql8/viewform" target="_blank" rel="noopener">este formulario anónimo</a>.</p>
+    </div>
+    <figure class="hfig"><img src="img/rorschach/lam-01.jpg" alt="Lámina I del Rorschach: mancha negra y gris, simétrica">
+      <figcaption><b>Lámina I del Rorschach</b>Hermann Rorschach, <i>Psychodiagnostik</i> (1921). Dominio público, vía Wikimedia Commons.</figcaption></figure>
+    </div>
   </header>
 </div>
 
@@ -2323,6 +2341,8 @@ svg [hidden]{display:none}
   </div>
   <div class="call clave"><span class="lab">Clave</span><p>Además del héroe, mirá el <b>tono emocional</b> y el <b>argumento</b>. Las historias realistas señalan una personalidad madura. La ficción burda (magia, hechizos, extravagancia) señala un funcionamiento pueril. Si en todas las historias domina un mismo afecto, tomalo como representativo del consultante. Según la guía de estudio, Murray estimaba que alrededor del 30 % de las historias son impersonales: están determinadas solo por la lámina y no hay que leerlas como proyección<span class="mk sus">≈</span>.</p></div>
 
+  <div class="call nota"><span class="lab">Clisé perceptivo y clisé temático</span><p>Cada lámina tiene un <b>clisé</b>: lo que la mayoría ve y cuenta ante ella. El <b>clisé perceptivo</b> es la percepción más frecuente del estímulo (en la lámina 1, un niño frente a un violín). El <b>clisé temático</b> es el argumento más habitual (en la 1, el deber de practicar frente al deseo, la aspiración y la frustración). El clisé funciona como referencia: lo interpretable es <b>cómo se aparta el relato de él</b>. Una distorsión u omisión del clisé perceptivo es un dato formal fuerte; un desvío del clisé temático (otro tema, otro desenlace, personajes agregados) señala por dónde pasa lo propio del consultante. Al revés, un relato que repite el clisé al pie de la letra dice poco del sujeto: es de las historias «determinadas por la lámina». Los clisés dependen de la población y la época: los del manual son norteamericanos de los años treinta, y en la región se han estudiado normas locales (por ejemplo, en la UNLP)<span class="mk sus">≈</span>. Las notas del curso no traen una lista de clisés por lámina.</p></div>
+
   <h4>Cómo se analiza un relato, paso a paso: lámina 1</h4>
   <p class="prose">Este es el ejercicio del curso: el relato de un niño ante la lámina 1, con las tres preguntas del parcial. Recorrelo paso a paso. La ficha de la derecha se completa a medida que avanzás.</p>
 
@@ -2339,7 +2359,7 @@ svg [hidden]{display:none}
     <div class="dstep"><div class="sc"><h5>Paso 4 · Presión</h5><h4>¿Qué se le opone?</h4>
       <p>No hay un personaje hostil. El obstáculo es el propio fracaso: «nunca le salió», «no pudo». La exigencia viene de afuera: el violín le llega a través de otro.</p></div></div>
     <div class="dstep"><div class="sc"><h5>Paso 5 · Distorsión y agregados</h5><h4>¿Respeta la lámina?</h4>
-      <p>El niño percibe bien el violín y no lo omite, así que no hay distorsión de los elementos de la lámina. Pero introduce a «alguien» que le mostró el violín, un personaje que <b>no está en la lámina</b>. Ese agregado es motivo de indagación: ¿quién pone las metas en la vida de este niño?</p></div></div>
+      <p>El niño percibe bien el violín y no lo omite, así que no hay distorsión de los elementos de la lámina. Pero introduce a «alguien» que le mostró el violín, un personaje que <b>no está en la lámina</b>. Ese agregado es motivo de indagación: ¿quién pone las metas en la vida de este niño?</p><p>Contra el clisé: respeta el <b>clisé perceptivo</b> (niño y violín) y se mantiene cerca del <b>clisé temático</b> (aspiración y dificultad), pero lo desplaza. No cuenta el deber de practicar frente a las ganas de hacer otra cosa, sino la incapacidad («nunca le salió») y una meta que viene de otro.</p></div></div>
     <div class="dstep"><div class="sc"><h5>Paso 6 · Desenlace</h5><h4>¿Cómo termina?</h4>
       <p>Termina con un final condicional y abierto: «si se esfuerza puede llegar a tocarlo». Es un pronóstico favorable que depende del esfuerzo del héroe. El relato tiene pasado, presente y futuro, así que cumple la consigna.</p></div></div>
     <div class="dstep"><div class="sc"><h5>Paso 7 · Tono y pregunta de examen</h5><h4>¿Responde a lo que indaga la lámina?</h4>
@@ -2416,6 +2436,7 @@ svg [hidden]{display:none}
       <tr class="hi"><td class="k">9 · Superyó</td><td>El «castigo» (que lo abandonen) es desproporcionado para una falta menor. Es una hipótesis de superyó severo.</td></tr>
       <tr><td class="k">10 · Integración del yo</td><td>El relato es coherente y tiene las tres fases, aunque el futuro apareció recién después de la intervención del examinador. El desenlace es favorable en lo concreto, pero el tono sigue siendo depresivo.</td></tr>
     </tbody></table></div>
+  <p class="prose"><b>Contra el clisé.</b> El relato respeta el clisé perceptivo (un niño solo en el umbral de una casa) y sigue el clisé temático esperable para la 13V (soledad y espera). Lo propio del consultante está en lo que agrega: la culpa como explicación de la ausencia («se portó mal»), que no viene de la lámina.</p>
   <blockquote class="model"><p>Me interesaría averiguar cómo vive este niño las separaciones de sus figuras de cuidado. En la lámina 13V construye un héroe que espera pasivamente y que explica la ausencia de la madre por su propia falta, lo que permite pensar en <b>ansiedades de abandono</b> y en un <b>superyó posiblemente severo</b>. El relato es coherente y aparece una figura sustituta que protege, lo que habla de recursos. De todas maneras, sería prudente buscar recurrencias en otras láminas, por ejemplo en la 6VH, la 10 y la 20, y contrastarlas con la entrevista y la historia familiar antes de sostener la hipótesis.</p></blockquote>
 
   <h3>TAT y Rorschach: estructura frente a contenido</h3>
@@ -4282,7 +4303,7 @@ svg [hidden]{display:none}
     <tr><td class="k">Conflicto</td><td>Deseo frente a deber y culpa; autonomía frente a sometimiento.</td></tr>
     <tr><td class="k">Desenlace</td><td>Sumisión resignada («toca, no muy bien»), con un futuro en que abandona el objeto.</td></tr>
     <tr><td class="k">Defensas</td><td>Formación reactiva (hace lo que no quiere para proteger a la madre), racionalización.</td></tr>
-    <tr><td class="k">Distorsiones / omisiones</td><td>No omite el violín. <b>Introduce</b> a un padre ausente y a una madre que se entristece, que no están en la lámina: desplazamiento de su situación.</td></tr>
+    <tr><td class="k">Clisé y desvíos</td><td>Respeta el clisé perceptivo y el temático (deber de practicar frente a las ganas de estar afuera). El desvío: no omite el violín, pero <b>introduce</b> a un padre ausente y a una madre que se entristece, que no están en la lámina: desplazamiento de su situación.</td></tr>
     <tr><td class="k">Tono</td><td>Apagado, resignado.</td></tr>
    </tbody></table></div>
 
@@ -4301,7 +4322,7 @@ svg [hidden]{display:none}
     <tr><td class="k">Conflicto</td><td>Separación e individuación frente a lealtad a una madre sobrecargada. Es el núcleo que la lámina evoca.</td></tr>
     <tr><td class="k">Desenlace</td><td>Por compromiso: se va, pero vuelve a ayudar. Logro con culpa persistente.</td></tr>
     <tr><td class="k">Defensas</td><td>Racionalización, reparación.</td></tr>
-    <tr><td class="k">Distorsiones / omisiones</td><td>La madre «embarazada» es una percepción frecuente en esta lámina: no se cuenta como agregado. El padre que «ni la mira» sí converge con «ahora tiene otra familia». El padre indiferente converge con «ahora tiene otra familia».</td></tr>
+    <tr><td class="k">Clisé y desvíos</td><td>La madre «embarazada» es parte del clisé perceptivo de esta lámina: no se cuenta como agregado. El desvío está en el padre que «ni la mira», que converge con «ahora tiene otra familia».</td></tr>
     <tr><td class="k">Tono</td><td>Tenso, con salida. La historia está bien estructurada: integración del yo adecuada.</td></tr>
    </tbody></table></div>
 
@@ -4320,7 +4341,7 @@ svg [hidden]{display:none}
     <tr><td class="k">Conflicto</td><td>Agresividad hacia la madre frente a culpa y temor a perderla. Se resuelve por inhibición y aislamiento.</td></tr>
     <tr><td class="k">Desenlace</td><td><b>No resuelto</b>: «como si nada». El conflicto se cierra con silencio, sin reparación efectiva.</td></tr>
     <tr><td class="k">Defensas</td><td>Aislamiento del afecto, negación («como si nada»), retracción del yo (encerrarse).</td></tr>
-    <tr><td class="k">Distorsiones / omisiones</td><td>Duda inicial sobre con quién fue la pelea: ambivalencia novio/madre. No identifica el objeto del suelo, ni lo necesita.</td></tr>
+    <tr><td class="k">Clisé y desvíos</td><td>Duda inicial sobre con quién fue la pelea: ambivalencia novio/madre. No identifica el objeto del suelo, ni lo necesita.</td></tr>
     <tr><td class="k">Tono</td><td>Triste, culposo. Responde a lo que la lámina explora con un modo evitativo que coincide con la entrevista («no pregunta nada», «se enoja»).</td></tr>
    </tbody></table></div>
 
@@ -4339,7 +4360,7 @@ svg [hidden]{display:none}
     <tr><td class="k">Conflicto</td><td>Deseo de contacto frente a rechazo del control. La madre aparece más protectora-vigilante que castradora.</td></tr>
     <tr><td class="k">Desenlace</td><td>No resuelto: se repite el «hablar de otra cosa».</td></tr>
     <tr><td class="k">Defensas</td><td>Evitación, desplazamiento (hablar del liceo).</td></tr>
-    <tr><td class="k">Distorsiones / omisiones</td><td>Ninguna sobre el estímulo. Agrega a la hija y el celular: material autobiográfico.</td></tr>
+    <tr><td class="k">Clisé y desvíos</td><td>Respeta el clisé perceptivo (mujer que se asoma a una puerta). Agrega a la hija y el celular: material autobiográfico.</td></tr>
     <tr><td class="k">Tono</td><td>Irritación que encubre una necesidad.</td></tr>
    </tbody></table></div>
 
@@ -4358,7 +4379,7 @@ svg [hidden]{display:none}
     <tr><td class="k">Conflicto</td><td>No se dramatiza: se vive como un estado.</td></tr>
     <tr><td class="k">Desenlace</td><td>En el presente, retracción al cuarto con objetos sustitutos (música, dibujo, dormir). En el futuro, <b>reparación por fantasía</b>: «una casa con mucha gente».</td></tr>
     <tr><td class="k">Defensas</td><td>Negación del afecto («nada»), anestesia afectiva, retracción del yo, idealización del futuro.</td></tr>
-    <tr><td class="k">Distorsiones / omisiones</td><td>Ninguna sobre el estímulo.</td></tr>
+    <tr><td class="k">Clisé y desvíos</td><td>Respeta el clisé perceptivo; ninguna distorsión del estímulo.</td></tr>
     <tr><td class="k">Tono</td><td>Desaliento tranquilo, con un deseo proyectado al futuro.</td></tr>
    </tbody></table></div>
 
@@ -5844,7 +5865,6 @@ function renderRefs(){
 }
 
 // ---------- Inicio ----------
-document.getElementById('heroCards').innerHTML=ORDER.map(k=>`<figure>${modelSVG(k)}<figcaption>${k==='A'?'Fig. A':'Fig. '+k}</figcaption></figure>`).join('');
 CASES.forEach(renderCase);
 renderRefs();
 
