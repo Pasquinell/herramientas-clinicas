@@ -96,22 +96,23 @@ Totals: 14 P2 sections, 14 static scrollies, 36 questions with answers (23 exam-
 
 ## 5. Content decisions
 
-- **Scope and depth** come from the OPUS guide. The Rorschach is at the LIBRE level, as the author asked.
+- **No citing unofficial material.** Summaries and study guides in `fuentes/` (OPUS guide, Resumen 2025, «resumenlindo») may belong to classmates who did not give permission. Never name or cite them in the site or the READMEs; cite only the original authors and the official course material (bibliography, plate PDF, exam). All such references were removed on 2026-11-05.
+
+- **Scope and depth** come from the course material. The Rorschach is at the LIBRE level, as the author asked.
 - **Blocks added** to the request: HTP, CAT, and informe/devolución.
 - **WISC-V:**
-  - Labels: P1's WISC-V bands are used. A note gives the OPUS labels (Muy bajo … Muy alto).
+  - Labels: P1's WISC-V bands are used. A note gives the alternative labels (Muy bajo … Muy alto).
   - Conversions: the tables are labelled «ficticia, solo para mostrar el mecanismo».
   - VCs: approximate (≈), «consultar tablas B del manual».
-  - An OPUS error is noted: it calls 108 «Medio alto», but 108 is in the Promedio band.
 - **Rorschach:**
-  - RLC% 20–40 and A% 25–50 are taken from the OPUS text, not from its tables. A note covers this.
+  - RLC% 20–40 and A% 25–50 are taken from the explanatory text, not from the tables. A note covers this.
   - FK is used for the «monstruo visto desde abajo» in plate IV.
   - Popular responses from Beck, Piotrowski and Dana are marked ≈.
 - **TAT:**
   - Spanish codes are used (VH, NM, V, N, H, M, VN, HM), with an equivalence table to the originals.
   - There is a warning about «M», which means *male* in English and *mujer* in Spanish.
   - Three labels in the course PDF were corrected.
-  - Clisé perceptivo / clisé temático added (callout before the lámina 1 walkthrough, step 5, 13V example, and the «Clisé y desvíos» row in caso 4). The course notes have no TAT clisé list (they use «clisé» only for Rorschach and HTP houses); the concept comes from the Rioplatense TAT literature (UNLP normative studies) and is marked ≈. Per-plate clisés beyond 1, 2, 5, 13V are not given.
+  - Clisé perceptivo / clisé temático added (callout before the lámina 1 walkthrough, step 5, 13V example, and the «Clisé y desvíos» row in caso 4). The concept comes from the Rioplatense TAT literature (UNLP normative studies) and is marked ≈. Per-plate clisés beyond 1, 2, 5, 13V are not given.
 - **Sergio's exam:**
   - The exam prints «DFH 5 → 80-110», but in the Koppitz table 80-110 corresponds to 4. A note explains this.
   - The Bender errors are not itemised in the exam, so they are given as «posibles».

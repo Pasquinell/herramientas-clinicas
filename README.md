@@ -42,7 +42,7 @@ The site is a single page. It contains worked cases solved from start to finish,
 
 ## Sources
 
-Each block has a fold-out list of its sources. The common base is the course material in `fuentes/` (guía OPUS, Resumen 2025, earlier summary and the December 2019 exam), checked against the literature and web searches.
+Each block has a fold-out list of its sources. The common base is the course bibliography and the December 2019 exam, checked against the literature and web searches.
 
 Quote markers:
 - ⚑: the wording was checked.
