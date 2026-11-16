@@ -357,6 +357,23 @@ table.mapa a{color:var(--ink);font-weight:600;text-decoration:none;border-bottom
 .call.etica{background:var(--amber-bg);border:2px solid var(--amber)} .call.etica .lab{color:var(--amber)}
 .call.clave{background:var(--blue-bg);border:1px dashed var(--blue)} .call.clave .lab{color:var(--blue)}
 .call.ficticio .lab::after{content:" · ficticio";color:var(--red)}
+/* caso clínico armado: 4 niveles de Caride + integración (P2) */
+.ccl{background:var(--sheet);border:1px solid var(--ink);border-radius:12px;padding:18px 22px;margin:24px 0;box-shadow:var(--shadow)}
+.ccl>.lab{font-family:var(--f-mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;font-weight:600;color:var(--green);display:block;margin-bottom:2px}
+.ccl>h4{margin:0 0 10px}
+.ccl-g{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:10px 0 16px}
+.ccl-g>div{background:var(--soft);border-radius:8px;padding:10px 14px;border-left:4px solid var(--slate)}
+.ccl-g>div:nth-child(1){border-left-color:var(--violet)} .ccl-g>div:nth-child(2){border-left-color:var(--amber)}
+.ccl-g>div:nth-child(3){border-left-color:var(--green)} .ccl-g>div:nth-child(4){border-left-color:var(--blue)}
+.ccl h5{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:2px 0 4px}
+.ccl-g p{font-size:15px;margin:.2em 0 .4em}
+.ccl .ccl-int{border-top:1px dashed var(--muted);padding-top:12px}
+.ccl .ccl-int h5{color:var(--green)}
+.ccl .ccl-int p{margin:.3em 0 .7em}
+@media (max-width:640px){.ccl{padding:14px 14px}.ccl-g{grid-template-columns:1fr}}
+.figw{background:var(--sheet);border:1px solid var(--rule);border-radius:12px;padding:14px;box-shadow:var(--shadow);margin:18px 0}
+.figw svg{width:100%;height:auto;display:block;max-width:760px;margin:0 auto}
+.figw .fcap{font-family:var(--f-mono);font-size:11.5px;color:var(--muted);margin:8px 4px 0;line-height:1.4}
 
 /* diálogo / entrevista / relato */
 .dialogo{background:var(--sheet);border:1px solid var(--rule);border-radius:10px;padding:16px 20px;margin:18px 0;font-size:16px}
@@ -1683,6 +1700,20 @@ svg [hidden]{display:none}
    </div></div>
   </div>
 
+  <div class="ccl"><span class="lab">Caso clínico armado</span><h4>Joaquín: los cuatro niveles y la integración</h4>
+   <div class="ccl-g">
+    <div><h5>Gestáltico</h5><p>Es una familia humana, ajustada a la consigna y reconocible como tal, con predominio del principio de realidad: Joaquín reproduce su familia con alteraciones reveladoras, no inventa otra. El interjuego no es parejo: madre, Joaquín y padre forman un grupo, y Lucía queda como un personaje aislado. Un miembro real falta.</p></div>
+    <div><h5>Gráfico</h5><p>Trazo firme, continuo y de presión media en las figuras del grupo, sin borrados y en un tiempo breve (unos 8 minutos), lo que no sugiere una inhibición global. Lucía tiene un trazo más débil y menos elaborado que el resto: la menor investidura gráfica coincide con su desvalorización en los otros planos.</p></div>
+    <div><h5>Estructuras formales</h5><p>Secuencia de izquierda a derecha, progresiva y organizada: mamá, Joaquín, papá, Lucía. Tamaños, tomando a la madre como referencia: papá 89 %, Joaquín 71 %, Lucía 39 %. El grupo ocupa el sector izquierdo y central; Lucía, el borde derecho. Queda un vacío entre el padre y Lucía, una zona en blanco que Corman propone leer como sector de prohibición y que coincide con el lugar que podría haber ocupado Bruno.</p></div>
+    <div><h5>Contenido</h5><p>Omisión de Bruno (negación) y aparición tardía con racionalización («está durmiendo»). Desvalorización de Lucía por orden, tamaño, emplazamiento y detalles. Valorización de la madre por orden, tamaño, ubicación y adornos. Identificación de realidad («yo, Joaquín»). La agresividad fraterna se dice de modo directo en la entrevista («me rompe las cosas»).</p></div>
+   </div>
+   <div class="ccl-int"><h5>Integración: el caso clínico</h5>
+    <p>Joaquín, de 9 años, consulta traído por sus padres porque «está insoportable con los hermanos» y porque la maestra registra un descenso del rendimiento en los últimos meses. Vive con sus padres y dos hermanos, Lucía (6) y Bruno (1 año).</p>
+    <p>En el Test de la Familia produce una familia humana y realista, con un trazo firme y una secuencia organizada, lo que habla de un yo con recursos para organizar la tarea y de un buen contacto con la realidad. Sobre esa base, las alteraciones se concentran en los hermanos: omite a Bruno, al que solo nombra cuando se le pregunta, y representa a Lucía última, al margen, más pequeña de lo esperable y con un trazo más débil, lo que confirma en el reactivo verbal. La madre, en cambio, concentra los signos de valorización y Joaquín se ubica a su lado. <b>Estos datos permitirían plantear, a modo de hipótesis, una conflictiva de rivalidad fraterna</b>, resuelta mediante la negación frente al hermano menor y la desvalorización frente a Lucía, en un niño que podría estar viviendo como amenazado su lugar junto a la madre desde el nacimiento de Bruno.</p>
+    <p>Articulado con el motivo de consulta, el malestar con los hermanos y la baja en el rendimiento podrían pensarse como expresiones de esa conflictiva en un momento de reorganización familiar, y no como un problema escolar aislado. Cierto grado de rivalidad entre hermanos es esperable; lo que habría que evaluar es su intensidad.</p>
+    <p><b>Recomendaciones:</b> indagar en la entrevista con los padres la cronología (cuándo empezó el malestar en relación con el nacimiento de Bruno) y cómo se reorganizó el cuidado; completar con el CAT y el DFH; orientar a los padres para sostener espacios exclusivos con Joaquín y no reforzar la comparación entre hermanos. Si el malestar persiste, ofrecer un espacio terapéutico.</p>
+   </div>
+  </div>
   <h3>Los 4 planos aplicados a la Familia</h3>
   <div class="tablewrap"><table class="tb wide fam-mini">
    <caption>Caride y Corman: qué mirar en cada plano</caption>
@@ -1864,7 +1895,101 @@ svg [hidden]{display:none}
    </div></div>
   </div>
 
+  <div class="ccl"><span class="lab">Caso clínico armado</span><h4>Renata: los cuatro niveles y la integración</h4>
+   <div class="ccl-g">
+    <div><h5>Gestáltico</h5><p>Familia humana, completa y ajustada a la realidad: no omite ni agrega personas. La impresión global es la de una familia partida en dos subgrupos: la pareja papá-Renata, unida por el único contacto del dibujo, y la madre con el gato, del otro lado de un árbol. La escena tiene vida y movimiento; no es una familia desértica ni bizarra.</p></div>
+    <div><h5>Gráfico</h5><p>Comienza con entusiasmo y un trazo firme, amplio y detallado en el padre y en su propia figura (sombrero, botones, corona, pelo largo). La madre tiene un trazo más débil, menos presión y menos detalle (sin pelo, sin boca). La diferencia de investidura gráfica entre las figuras acompaña la valorización y la desvalorización.</p></div>
+    <div><h5>Estructuras formales</h5><p>Hoja apaisada, esperable a los 6 años. Secuencia de izquierda a derecha: papá, Renata, árbol, mamá, gato. Tamaños, con el padre como referencia: Renata ≈ 65 %, madre ≈ 57 %, es decir, la niña es más grande que la madre. El padre ocupa el sector izquierdo, por donde empieza el dibujo, y la madre el derecho, en la orilla. Un árbol funciona como barrera entre ambos subgrupos.</p></div>
+    <div><h5>Contenido</h5><p>Valorización del padre y acercamiento a él. Identificación con la madre (vestido igual) y, a la vez, ocupación de su lugar (corona, junto al padre). Desvalorización de la madre sin eliminarla. Identificación de deseo verbal («la mamá, cuando sea grande»). Hostilidad hacia la madre que se expresa, se corrige y se desplaza al gato, lo que sugiere culpa.</p></div>
+   </div>
+   <div class="ccl-int"><h5>Integración: el caso clínico</h5>
+    <p>Renata, de 6 años, consulta traída por sus padres porque desde hace unos meses se pasa todas las noches a la cama de ellos y tiene berrinches intensos frente a los límites de la madre, mientras que con el padre «es un angelito». No hay dificultades escolares ni cambios familiares recientes.</p>
+    <p>En el Test de la Familia produce una familia completa y realista, con un trazo vital y un buen nivel de organización, lo que habla de recursos yoicos acordes a la edad. Los cuatro niveles convergen en una misma configuración: el padre es la figura más investida (primero, más grande, con más detalle y un trazo más firme), Renata se representa unida a él y engalanada, y la madre queda desplazada a la orilla, más pequeña que la propia niña, con un trazo más débil y separada por una barrera. En el reactivo verbal desea ocupar el lugar materno y expresa una hostilidad hacia la madre que enseguida corrige. <b>Estos datos permitirían plantear, a modo de hipótesis, una conflictiva edípica positiva en curso</b>, con rivalidad hacia la madre, identificación con ella y sentimientos de culpa asociados.</p>
+    <p>Esta conflictiva es <b>esperable a los 6 años</b>. Lo que la vuelve motivo de consulta sería su forma de expresión: el colecho podría leerse como un intento de no quedar excluida de la pareja parental, y los berrinches, como la hostilidad hacia la rival en el momento del límite. La diferencia de trato que describen los padres («un angelito» con él, «una fiera» con ella) podría estar sosteniendo la escena del dibujo, si el padre no acompaña los límites de la madre.</p>
+    <p><b>Recomendaciones:</b> orientación a padres centrada en sostener límites compartidos, en particular que el padre respalde los de la madre, y en recuperar progresivamente el dormir en su cuarto; contrastar con el CAT y una hora de juego; seguimiento a tres meses. No hay, por ahora, indicación de un tratamiento prolongado.</p>
+   </div>
+  </div>
   <div class="call clave"><span class="lab">Joaquín y Renata, comparados</span><p>Los dos dibujos se leen con las mismas herramientas (orden, tamaño, emplazamiento, detalles, distancia y reactivo verbal), pero los signos caen sobre personajes distintos. En Joaquín, lo desvalorizado y lo omitido son <b>los hermanos</b>, y el eje es la rivalidad fraterna. En Renata, la desvalorizada es <b>la figura del mismo sexo</b>, el valorizado es la del otro sexo y hay una barrera entre ellas, y el eje es edípico. En los dos casos la hipótesis se sostiene porque varios signos coinciden y porque el reactivo verbal los confirma.</p></div>
+
+  <h3>Tercer ejemplo: Bautista, 8 años · padres separados y familia ensamblada</h3>
+  <div class="prose"><p>La primera regla de Corman es comparar con la familia real. ¿Pero cuál es la familia real cuando el niño vive en dos casas? Este ejemplo inventado muestra cómo se trabaja con padres separados y nuevas parejas, una situación muy frecuente en la consulta.</p></div>
+  <div class="cols2">
+   <div class="panel"><h4>¿Contra qué familia se compara?</h4><p class="small">Corman no trata este caso de forma específica. Como criterio práctico de esta guía:</p><ul class="small"><li>Registrá en la entrevista <b>los dos hogares</b>: quién vive en cada uno, desde cuándo, cuánto tiempo pasa el niño en cada casa, nuevas parejas, hermanos o medio hermanos.</li><li>La consigna «dibujá una familia» le deja elegir. <b>Qué familia elige dibujar ya es un dato</b>: la de una casa, la de la otra, la de antes de la separación o una mezcla.</li><li>Omitir a la pareja de un progenitor no equivale automáticamente a negar a un rival. Puede expresar lealtad hacia el otro progenitor, el poco tiempo de convivencia o un lugar que todavía no tiene nombre. Hay que preguntarlo.</li></ul></div>
+   <div class="panel"><h4>Lo que no hay que hacer</h4><ul class="small"><li>Leer como patológico que el niño dibuje a sus padres juntos. Puede expresar un deseo de reunificación, y ese deseo es frecuente después de una separación.</li><li>Juzgar la nueva configuración familiar o a los adultos en el análisis o en el informe.</li><li>Interpretar sin saber cuánto hace de la separación y de la convivencia con la nueva pareja.</li></ul></div>
+  </div>
+  <div class="call caso ficticio"><span class="lab">Datos del caso</span><p><b>Bautista</b> tiene 8 años y cursa 3.er año. Sus padres se separaron hace dos años. Vive con su madre (Natalia, 36) y con Pablo (40), pareja de la madre, que se mudó a la casa hace ocho meses. Pasa fines de semana alternos con su padre (Sebastián, 38), que vive con su pareja (Carla) y con el perro de la familia, Toto. Consulta la madre: la maestra dice que los lunes Bautista llega triste y le cuesta concentrarse, y en la casa tiene peleas con Pablo, a quien le dijo «vos no sos mi papá». La separación tuvo un comienzo conflictivo y hoy la relación entre los padres es cordial.</p></div>
+
+  <div class="dialogo"><div class="dh">Familia · hoja horizontal · TR 5″ · TT 9′</div>
+    <p class="n">Empieza dibujando una <b>casa</b> (techo y paredes) y después pone a los personajes adentro: 1 papá, 2 mamá, 3 Bautista en el medio, tomado de la mano de los dos, y 4 el perro. Borra una vez el brazo de la madre para alargarlo hasta su mano. Trazo firme y parejo en todas las figuras.</p>
+    <p class="t"><b class="w">E</b>«¿Dónde están? ¿Qué están haciendo?»</p>
+    <p class="p"><b class="w">N</b>«En casa, todos juntos. Están mirando una película.» <span class="int">(E: ¿Qué casa?)</span> «…La de antes.»</p>
+    <p class="n">Más bueno: «papá, porque me deja quedarme despierto» · Menos bueno: «nadie… bueno, Pablo, pero él no está» · Más feliz: «yo» · Menos feliz: «mamá, cuando me voy a lo de papá» · ¿Quién serías vos?: «yo» · Paseo en auto: «entran todos» <span class="int">(E: ¿Y si no entran?)</span> «Que se quede Toto… no, mejor que no se quede nadie».</p>
+    <p class="t"><b class="w">E</b>«¿Falta alguien en esta familia?»</p>
+    <p class="p"><b class="w">N</b>«Pablo no es de mi familia. Carla tampoco.»</p>
+  </div>
+
+  <div class="figw">
+   <svg viewBox="0 0 600 330" role="img" aria-label="Esquema del dibujo de la familia de Bautista: una casa con techo y, adentro, el padre a la izquierda, la madre a la derecha y Bautista en el medio tomado de la mano de los dos, con un perro; afuera, un signo de pregunta por la pareja de la madre, que convive y no fue dibujada">
+    <rect x="20" y="20" width="400" height="296" class="boxs"/>
+    <path class="pen" d="M30,270 q60,-3 120,1 t120,-1 t140,2"/>
+    <path class="pen" d="M60,112 L230,46 L400,112 M70,110 L70,270 M390,110 L390,270 M70,110 L390,110"/>
+    <!-- papá -->
+    <path class="pen" d="M130,120 c8,0 14,6 14,14 c0,8 -6,14 -14,14 c-8,0 -14,-6 -14,-14 c0,-8 6,-14 14,-14z"/>
+    <circle cx="125" cy="132" r="1.4" class="penf"/><circle cx="135" cy="132" r="1.4" class="penf"/>
+    <path class="pen" d="M125,140 q5,4 10,0 M128,148 l0,4 M132,148 l0,4 M116,152 q14,-4 28,0 l3,62 q-17,4 -34,0z M117,158 q-10,20 -12,40 M143,158 q20,14 50,30 M123,215 l-1,55 M137,215 l1,55 M122,270 q-6,1 -9,-1 M138,270 q6,1 9,-1"/>
+    <!-- mamá -->
+    <path class="pen" d="M290,129 c7,0 13,6 13,13 c0,7 -6,13 -13,13 c-7,0 -13,-6 -13,-13 c0,-7 6,-13 13,-13z M277,138 q-4,14 0,24 M303,138 q4,14 0,24"/>
+    <circle cx="285" cy="141" r="1.4" class="penf"/><circle cx="295" cy="141" r="1.4" class="penf"/>
+    <path class="pen" d="M285,148 q5,4 10,0 M282,160 l16,0 l12,54 q-20,4 -40,0z M283,166 q-22,12 -56,22 M297,166 q10,20 12,40 M284,215 l-1,55 M296,215 l1,55 M283,270 q-6,1 -9,-1 M297,270 q6,1 9,-1"/>
+    <!-- Bautista -->
+    <path class="pen" d="M210,168 c6,0 10,4 10,10 c0,6 -4,10 -10,10 c-6,0 -10,-4 -10,-10 c0,-6 4,-10 10,-10z"/>
+    <circle cx="206" cy="177" r="1.2" class="penf"/><circle cx="214" cy="177" r="1.2" class="penf"/>
+    <path class="pen" d="M206,182 q4,3 8,0 M202,192 q8,-2 16,0 l2,38 q-10,2 -20,0z M203,196 q-5,-4 -10,-8 M217,196 q5,-4 10,-8 M205,231 l-1,39 M215,231 l1,39 M204,270 q-5,1 -7,-1 M216,270 q5,1 7,-1"/>
+    <!-- perro -->
+    <ellipse cx="352" cy="258" rx="14" ry="7" class="pen"/><circle cx="369" cy="250" r="6" class="pen"/>
+    <path class="pen" d="M366,245 l-3,7 M338,256 q-8,-8 -4,-14 M344,264 l0,6 M358,264 l0,6"/>
+    <!-- orden -->
+    <circle cx="104" cy="126" r="9" class="bk"/><text x="104" y="130" text-anchor="middle" class="xs tK" font-weight="700">1</text>
+    <circle cx="318" cy="128" r="9" class="bk"/><text x="318" y="132" text-anchor="middle" class="xs tK" font-weight="700">2</text>
+    <circle cx="232" cy="164" r="9" class="bk"/><text x="232" y="168" text-anchor="middle" class="xs tK" font-weight="700">3</text>
+    <circle cx="374" cy="232" r="9" class="bl"/><text x="374" y="236" text-anchor="middle" class="xs" font-weight="700">4</text>
+    <!-- marcas -->
+    <path class="lk" d="M66,108 L230,40 L394,108 L394,274 L66,274z" stroke-dasharray="5 4"/>
+    <circle cx="210" cy="188" r="24" class="lk" stroke-dasharray="3 3"/>
+    <circle cx="405" cy="294" r="11" class="lv" stroke-dasharray="3 3"/><text x="405" y="300" text-anchor="middle" class="hw tV">?</text>
+    <text x="40" y="298" class="sm tA">tamaños: papá 100 % · mamá 95 % · Bautista 68 %</text>
+    <!-- columna -->
+    <rect x="436" y="20" width="156" height="134" rx="8" class="bs"/>
+    <text x="446" y="40" class="tS" font-weight="700">Familia real</text>
+    <text x="446" y="58" class="xs" font-weight="700">Casa de mamá</text>
+    <text x="446" y="72" class="sm">Natalia, 36 · Pablo, 40</text><text x="446" y="86" class="sm">Bautista, 8 (autor)</text>
+    <text x="446" y="106" class="xs" font-weight="700">Casa de papá (fines de semana)</text>
+    <text x="446" y="120" class="sm">Sebastián, 38 · Carla</text><text x="446" y="134" class="sm">Toto (perro)</text>
+    <text x="436" y="180" class="hw tK">Un mismo techo</text>
+    <text x="436" y="198" class="sm">dibuja la casa primero y pone</text>
+    <text x="436" y="212" class="sm">a todos adentro: «la de antes».</text>
+    <text x="436" y="232" class="sm">Él, en el medio, une a los dos.</text>
+    <text x="436" y="268" class="hw tV">¿Pablo?</text>
+    <text x="436" y="286" class="sm">convive y no aparece;</text>
+    <text x="436" y="300" class="sm">«no es de mi familia».</text>
+   </svg>
+   <div class="fcap">Esquema del dibujo (caso ficticio). Azul: la casa que contiene a todos y el niño que une a los padres. Rojo: el conviviente omitido.</div>
+  </div>
+
+  <div class="ccl"><span class="lab">Caso clínico armado</span><h4>Bautista: los cuatro niveles y la integración</h4>
+   <div class="ccl-g">
+    <div><h5>Gestáltico</h5><p>Familia humana, cálida y con mucho interjuego: los tres personajes humanos están unidos por las manos y todos comparten una actividad («mirando una película»). La impresión global es la de una familia unida y contenida dentro de una casa. Pero no es la familia actual: es la «de antes». Prevalece el deseo sobre la realidad en la elección de qué familia dibujar.</p></div>
+    <div><h5>Gráfico</h5><p>Trazo firme y parejo en todas las figuras, sin diferencias de investidura entre el padre y la madre. TR breve y TT de 9 minutos: se involucra en la tarea sin dificultad. El único borrado es el del brazo de la madre, que alarga para que llegue a su mano: el esfuerzo gráfico se pone en lograr la unión.</p></div>
+    <div><h5>Estructuras formales</h5><p>Comienza por la casa, que funciona como marco que contiene a todos. Secuencia: papá, mamá, Bautista, perro. Los tamaños son proporcionados a las edades reales. Bautista se ubica en el centro exacto, entre los dos padres, que ocupan los extremos izquierdo y derecho. El orden es organizado y simétrico, con un yo que estructura bien la tarea.</p></div>
+    <div><h5>Contenido</h5><p>Reúne a los padres separados en una misma casa y se ubica como el lazo entre ellos. Omite a Pablo, que convive con él, y a Carla, y lo explicita («no es de mi familia»). Incluye a Toto, que vive en la casa del padre. Pablo aparece solo como «el menos bueno… pero no está». El más bueno es el padre; la menos feliz, la madre «cuando me voy». En la pregunta del auto no puede dejar afuera a nadie.</p></div>
+   </div>
+   <div class="ccl-int"><h5>Integración: el caso clínico</h5>
+    <p>Bautista, de 8 años, consulta traído por su madre porque los lunes, después de los fines de semana con el padre, llega triste a la escuela y le cuesta concentrarse, y porque tiene conflictos con Pablo, pareja de la madre, que convive con ellos desde hace ocho meses. Los padres se separaron hace dos años.</p>
+    <p>En el Test de la Familia produce un dibujo bien organizado, con trazo firme, proporciones adecuadas y mucho contacto entre los personajes, lo que habla de buenos recursos yoicos y de vínculos investidos con ambos padres. Lo significativo es la <b>familia que elige</b>: dibuja la familia previa a la separación, reunida bajo un mismo techo («la de antes»), se ubica en el centro como lazo entre los padres y omite al adulto que hoy convive con él. Estos datos permitirían plantear, a modo de hipótesis, una <b>fantasía de reunificación parental</b> y un <b>duelo por la separación que todavía está en curso</b>. La llegada de Pablo a la casa podría haber reactivado ese duelo, porque vuelve más difícil sostener la fantasía de que los padres puedan volver a estar juntos.</p>
+    <p>La omisión de Pablo no se lee como negación de un rival fraterno, sino como la dificultad para darle un lugar en su representación de familia, posiblemente atravesada por la <b>lealtad hacia el padre</b>: el padre es «el más bueno» y Pablo, «el menos bueno». La tristeza de los lunes podría relacionarse con las transiciones entre las dos casas, en las que se actualiza la separación, y con la preocupación por la madre («la menos feliz, cuando me voy»), que podría hacerlo sentir responsable de su bienestar. La dificultad para dejar a alguien afuera en la pregunta del auto sugiere que las exclusiones, y las elecciones entre unos y otros, le resultan difíciles de tolerar.</p>
+    <p><b>Recomendaciones:</b> entrevistas de orientación con ambos padres, por separado o juntos según la relación lo permita, centradas en cuidar las transiciones de los fines de semana, explicarle la separación como definitiva sin desvalorizar a ninguno, y no forzar a Pablo a ocupar un rol paterno. Ofrecer a Bautista un espacio propio para elaborar la separación. Contrastar con el CAT y con el DFH. Coordinar con la maestra para acompañar los lunes.</p>
+   </div>
+  </div>
   <div class="errores"><h4>Errores frecuentes</h4><ul>
    <li>Interpretar sin conocer la familia real, por ejemplo leer como «negación» la falta de un abuelo que murió o de un padre que no convive.</li>
    <li>Leer un solo signo como valorización («es el más grande, entonces lo admira») sin buscar los otros signos que coincidan ni lo que dice la entrevista.</li>
@@ -1994,6 +2119,20 @@ svg [hidden]{display:none}
    </div></div>
   </div>
 
+  <div class="ccl"><span class="lab">Caso clínico armado</span><h4>Paula: los cuatro niveles y la integración</h4>
+   <div class="ccl-g">
+    <div><h5>Gestáltico</h5><p>La escena está completa (persona, paraguas, lluvia, nubes y suelo) y es coherente: se entiende de un vistazo qué pasa. Da una impresión de movimiento: alguien que va a algún lado bajo la lluvia. No hay elementos bizarros ni fusiones. La figura se integra al ambiente sin quedar ni aplastada ni ajena a él.</p></div>
+    <div><h5>Gráfico</h5><p>Trazo firme y continuo, con presión normal y sin borrados, tanto en la figura como en el paraguas. La lluvia está hecha con líneas cortas y parejas, sin insistencia sobre la persona. La línea de suelo es firme. No aparecen indicadores gráficos de ansiedad intensa (repasos, sombreados, trazo tembloroso).</p></div>
+    <div><h5>Estructuras formales</h5><p>Emplazamiento central, sin tocar los márgenes. Tamaño mediano (≈ 42 % de la hoja). Figura de perfil, orientada a la derecha. Paraguas inclinado hacia la izquierda y algo chico para el cuerpo. Proporción presión-defensa: lluvia moderada frente a un paraguas que cubre la cabeza pero no el cuerpo.</p></div>
+    <div><h5>Contenido</h5><p>Un paraguas prestado por la madre que «le queda chico». Lluvia vivida como imprevisto, no como amenaza. Dos nubes. Un charco que no se interpreta por falta de datos en la historia vital. Una historia con desenlace activo y humor («llega empapada y se ríe») y un título que pone el acento en el olvido del recurso propio.</p></div>
+   </div>
+   <div class="ccl-int"><h5>Integración: el caso clínico</h5>
+    <p>Paula, de 15 años, consulta por ansiedad ante los escritos del liceo. En el DFH, sin estresor, produce una figura de frente, mediana y bien plantada.</p>
+    <p>En la PBLL, la escena es completa y coherente, con un trazo firme, un emplazamiento central y una línea de suelo segura, lo que habla de un buen contacto con la realidad y de recursos disponibles. Frente al estresor, sin embargo, la figura pasa de estar de frente a estar de perfil y el paraguas, el símbolo de las defensas, queda chico para el cuerpo. La historia aclara ese dato: <b>el paraguas es de la madre</b>. Estos datos permitirían plantear, a modo de hipótesis, que los recursos defensivos de Paula frente a la presión están todavía <b>en construcción y apoyados en las figuras parentales</b>, lo que es esperable en el proceso de autonomía de la adolescencia. La presión se registra como moderada y la respuesta es activa y con humor, por lo que no aparecen indicios de desborde.</p>
+    <p>Articulado con el motivo de consulta, la ansiedad ante los escritos podría pensarse como la expresión de una situación en la que Paula tiene que enfrentar sola una exigencia, sin el «paraguas prestado». Las dos nubes podrían relacionarse con dos fuentes de exigencia, por ejemplo las expectativas de ambos padres, pero es una lectura débil que solo se sostendría si la entrevista la confirma.</p>
+    <p><b>Recomendaciones:</b> un espacio psicoterapéutico breve, focalizado en la ansiedad ante la evaluación y en el desarrollo de recursos propios; explorar en la entrevista las expectativas familiares sobre el rendimiento. No hay indicadores que sugieran una intervención más intensa.</p>
+   </div>
+  </div>
   <h3>Tablas de interpretación</h3>
   <div class="prose"><p>Las lecturas provienen de Querol y Chávez. Leelas siempre como <b>«puede asociarse con»</b>. Un elemento aislado no funda una hipótesis.</p></div>
   <div class="pb-tabs">
@@ -2185,7 +2324,88 @@ svg [hidden]{display:none}
    </div></div>
   </div>
 
+  <div class="ccl"><span class="lab">Caso clínico armado</span><h4>Gonzalo: los cuatro niveles y la integración</h4>
+   <div class="ccl-g">
+    <div><h5>Gestáltico</h5><p>La escena es coherente y está completa, pero la impresión global es la de una figura que domina el espacio y un ambiente que casi no la afecta: la lluvia queda en los bordes y alrededor de la persona hay una «zona seca». Es una escena ordenada pero algo aséptica, sin interacción real entre la persona y el clima.</p></div>
+    <div><h5>Gráfico</h5><p>Trazo fuerte y continuo en todo el dibujo, sin borrados. Hay repaso en tres elementos: el mango del paraguas, la nube y la línea de suelo, que es la más oscura del dibujo. En el DFH, en cambio, el trazo era liviano. La presión aumenta justamente bajo el estresor.</p></div>
+    <div><h5>Estructuras formales</h5><p>Figura grande (≈ 57 % de la hoja; con el paraguas, ≈ 75 %), centrada y de frente. Paraguas muy grande en relación con el cuerpo y con la lluvia. Lluvia escasa, distribuida solo en los márgenes. Una sola nube en el ángulo superior derecho. En comparación con el DFH, la figura crece.</p></div>
+    <div><h5>Contenido</h5><p>Paraguas muy grande con mango remarcado. Nube inflada. Persona de traje y corbata, con la boca en línea recta. Historia sin conflicto ni afectos («no pasa nada», «nada en especial») en la que el personaje vuelve a la oficina, y un título que condensa la defensa: «Impermeable».</p></div>
+   </div>
+   <div class="ccl-int"><h5>Integración: el caso clínico</h5>
+    <p>Gonzalo, de 34 años, gerente bancario, consulta derivado por su médico clínico por insomnio, cefaleas y contracturas cervicales de ocho meses de evolución, sin causa orgánica. Llega «porque el médico insistió» y refiere que «está todo bien». Los síntomas comienzan tras un ascenso que lo llevó a trabajar once horas diarias. Su padre murió de un infarto a los 52 años.</p>
+    <p>En la PBLL, la escena es organizada y Gonzalo dispone de recursos: hay paraguas, la figura está apoyada y de frente. Lo significativo es la <b>desproporción</b>. Frente a una presión que representa como mínima y alejada, despliega una defensa máxima: un paraguas enorme, aferrado con un mango remarcado, un trazo cuya presión aumenta respecto del DFH y una figura que crece bajo el estresor. La historia niega el impacto de la lluvia y no registra afectos. Estos datos permitirían plantear, a modo de hipótesis, un <b>estilo defensivo de sobrecontrol, rígido y poco flexible, con negación de la vulnerabilidad</b>, que podría funcionar como compensación frente a una inseguridad que no se reconoce.</p>
+    <p>Articulado con el motivo de consulta, el malestar que no se registra en el plano psíquico podría estar expresándose en el cuerpo. La nube inflada, que la literatura relaciona con dolencias psicosomáticas, encuentra apoyo en las cefaleas, las contracturas y el insomnio, y el repaso de la línea de suelo sugiere una realidad vivida como tensa. La muerte del padre por un infarto a una edad no tan lejana de la suya abre una pregunta que merece explorarse: si la exigencia actual y la imposibilidad de «mojarse» se relacionan con un duelo o con una identificación con el padre.</p>
+    <p><b>Recomendaciones:</b> psicoterapia orientada a habilitar el registro y la expresión de los afectos y a revisar la relación con la exigencia laboral; mantener la coordinación con el médico clínico y los controles médicos; explorar el duelo paterno. Conviene trabajar la propia motivación para consultar, dado que llega derivado y niega el malestar.</p>
+   </div>
+  </div>
   <div class="call clave"><span class="lab">Paula y Gonzalo, comparados</span><p>En los dos dibujos hay paraguas, lluvia, nubes y suelo. Lo que cambia es la <b>proporción</b> entre la presión y la defensa. En Paula, el paraguas queda chico para una lluvia moderada: los recursos existen pero podrían no alcanzar. En Gonzalo, el paraguas es enorme para una lluvia casi ausente: el recurso sobra, y lo que se pregunta es qué le cuesta sostenerlo. En los dos casos la comparación con el DFH y la historia deciden la lectura.</p></div>
+
+  <h3>Tercer ejemplo: Julieta, 10 años · un protocolo sin hallazgos llamativos</h3>
+  <div class="prose"><p>En el parcial puede tocar un dibujo en el que no hay nada que «salte». El error más común es forzar lecturas de la tabla para tener algo que decir. Este ejemplo inventado muestra cómo describir y fundamentar un protocolo dentro de lo esperable y cómo armar con él un caso clínico.</p></div>
+  <div class="call caso ficticio"><span class="lab">Datos del caso</span><p><b>Julieta</b> tiene 10 años y cursa 5.º año. Hace tres meses la familia se mudó a otro barrio y ella cambió de escuela. Consulta la madre: desde la mudanza a Julieta le cuesta dormirse y pide que la madre se quede con ella hasta que se duerma. En la escuela nueva se adaptó bien y ya tiene dos amigas. Vive con sus padres y un hermano de 14 años. En el DFH dibujó una figura femenina mediana, completa y proporcionada.</p></div>
+
+  <div class="dialogo"><div class="dh">PBLL · hoja vertical · TR 6″ · TT 8′</div>
+    <p class="n">Dibuja primero la persona, después el paraguas, las botas, la lluvia, una nube y un sol pequeño, y por último un charco. Borra una vez la mano para acomodarla en el mango. Comenta mientras dibuja: «le hago el paraguas de lunares, como el mío».</p>
+    <p class="p"><b class="w">N</b>(historia) «Es una nena que vuelve de la escuela nueva. Llueve, pero tiene el paraguas de lunares y las botas. Ve un charco y lo salta. Llega a la casa, se saca las botas y toma chocolate con la mamá.» Título: «Día de lluvia».</p>
+    <p class="t"><b class="w">E</b>«¿Qué siente la nena?»</p>
+    <p class="p"><b class="w">N</b>«Contenta. Un poco de frío en las manos.»</p>
+  </div>
+
+  <div class="figw">
+   <svg viewBox="0 0 600 410" role="img" aria-label="Esquema de la Persona bajo la lluvia de Julieta: una nena de frente, centrada, con un paraguas de lunares que la cubre bien, botas, lluvia moderada, una nube, un sol pequeño, un charco a la derecha y línea de suelo">
+    <rect x="20" y="20" width="260" height="370" class="boxs"/>
+    <path class="pen" d="M48,78 c-14,0 -16,-20 0,-22 c0,-16 24,-20 30,-6 c8,-12 34,-10 36,4 c14,0 16,22 0,24 c-8,8 -54,8 -66,0z"/>
+    <circle cx="240" cy="58" r="13" class="pen"/>
+    <path class="pen" d="M240,38 l0,-8 M258,58 l8,0 M253,44 l6,-6 M253,72 l6,6 M222,44 l-6,-6"/>
+    <path class="pen" style="stroke-width:1.1" d="M249,295 l-2.5,12 M78,143 l-2.5,10 M235,227 l-2.5,12 M77,120 l-2.5,10 M66,119 l-2.5,10 M257,273 l-2.5,11 M242,231 l-2.5,10 M46,111 l-2.5,10 M39,144 l-2.5,10 M255,157 l-2.5,10 M229,214 l-2.5,12 M80,228 l-2.5,9 M89,259 l-2.5,12 M31,265 l-2.5,9 M51,213 l-2.5,9 M268,311 l-2.5,9 M51,277 l-2.5,9 M95,176 l-2.5,11 M37,113 l-2.5,10 M57,198 l-2.5,12 M57,312 l-2.5,11 M47,100 l-2.5,12 M246,271 l-2.5,12 M30,150 l-2.5,11 M83,109 l-2.5,10 M80,295 l-2.5,9 M33,200 l-2.5,10 M64,159 l-2.5,10 M32,111 l-2.5,12 M78,210 l-2.5,9 M63,203 l-2.5,11 M30,165 l-2.5,10 M251,301 l-2.5,9 M256,101 l-2.5,9 M83,143 l-2.5,11 M55,106 l-2.5,12 M67,150 l-2.5,12 M32,293 l-2.5,10 M242,171 l-2.5,9 M83,245 l-2.5,10 M33,249 l-2.5,11 M62,246 l-2.5,11"/>
+    <!-- paraguas -->
+    <path class="pen" d="M102,160 Q112,112 162,114 Q212,112 222,160 q-15,-8 -30,0 q-15,-8 -30,0 q-15,-8 -30,0 q-15,-8 -30,0z M162,114 L130,156 M162,114 L162,156 M162,114 L194,156 M162,114 l0,-7"/>
+    <circle cx="128" cy="140" r="2" class="penf"/><circle cx="150" cy="128" r="2" class="penf"/><circle cx="176" cy="130" r="2" class="penf"/><circle cx="198" cy="142" r="2" class="penf"/><circle cx="162" cy="146" r="2" class="penf"/>
+    <path class="pen" d="M162,116 L164,232 q2,8 -6,8"/>
+    <!-- nena -->
+    <path class="pen" d="M160,176 c8,0 14,6 14,14 c0,8 -6,14 -14,14 c-8,0 -14,-6 -14,-14 c0,-8 6,-14 14,-14z M146,186 q-3,12 -1,20 M174,186 q3,12 1,20"/>
+    <circle cx="155" cy="189" r="1.4" class="penf"/><circle cx="165" cy="189" r="1.4" class="penf"/>
+    <path class="pen" d="M155,197 q5,4 10,0 M158,204 l0,4 M162,204 l0,4 M146,208 l28,0 l8,60 q-22,4 -44,0z M148,214 q-10,24 -10,44 M172,214 q8,10 -5,22 M152,269 l0,50 M168,269 l0,50 M146,318 l12,0 l0,12 l-14,0z M164,318 l12,0 l2,12 l-14,0z"/>
+    <circle cx="137" cy="261" r="3.5" class="pen"/>
+    <!-- charco y suelo -->
+    <path class="pen" d="M200,340 q-6,-5 8,-7 q22,-3 40,1 q10,4 -2,7 q-24,4 -46,-1z"/>
+    <path class="pen" d="M30,332 q50,-3 100,1 t100,-1 t40,1"/>
+    <!-- marcas -->
+    <ellipse cx="162" cy="150" rx="70" ry="44" class="lk" stroke-dasharray="5 4"/>
+    <path class="ls" d="M272,176 L272,330 M266,176 L278,176 M266,330 L278,330"/>
+    <!-- columna -->
+    <text x="300" y="56" class="hw tK">Paraguas que cubre</text>
+    <text x="300" y="74" class="sm">tamaño adecuado, sobre la cabeza y el</text>
+    <text x="300" y="88" class="sm">cuerpo; propio («como el mío»).</text>
+    <text x="300" y="130" class="hw tV">Lluvia moderada</text>
+    <text x="300" y="148" class="sm">repartida, sin lágrimas; una nube;</text>
+    <text x="300" y="162" class="sm">un sol pequeño en el ángulo.</text>
+    <text x="300" y="204" class="hw tK">Figura</text>
+    <text x="300" y="222" class="sm">de frente, centrada, mediana (≈ 40 %),</text>
+    <text x="300" y="236" class="sm">completa, con botas; trazo firme.</text>
+    <text x="300" y="278" class="hw tS">Suelo y charco</text>
+    <text x="300" y="296" class="sm">línea firme; el charco «se salta»:</text>
+    <text x="300" y="310" class="sm">la historia le da un sentido lúdico.</text>
+   </svg>
+   <div class="fcap">Esquema del dibujo (caso ficticio). Azul: recursos. Rojo: presión. Verde: medida y apoyo.</div>
+  </div>
+
+  <div class="call clave"><span class="lab">Cómo se escribe «sin hallazgos»</span><p>«Dentro de lo esperable» también es una conclusión, y se fundamenta con datos igual que una hipótesis. Describí cada elemento, decí por qué está dentro de lo esperable y nombrá los recursos. Frases útiles: «no se observan indicadores significativos en…», «el paraguas cubre adecuadamente, lo que se ha asociado con…», «la historia no aporta elementos de conflicto». Lo que no se hace es tomar un elemento aislado (acá, el charco o el sol) y buscarle en la tabla una lectura que no se apoya en nada más.</p></div>
+
+  <div class="ccl"><span class="lab">Caso clínico armado</span><h4>Julieta: los cuatro niveles y la integración</h4>
+   <div class="ccl-g">
+    <div><h5>Gestáltico</h5><p>La escena es completa, coherente y armónica: persona, paraguas, lluvia, nube, sol, charco y suelo forman un conjunto bien integrado. La impresión global es la de una situación de lluvia cotidiana, transitada con recursos y sin dramatismo. No hay elementos bizarros ni vacíos llamativos.</p></div>
+    <div><h5>Gráfico</h5><p>Trazo firme, continuo y de presión normal. Un único borrado, funcional (acomoda la mano en el mango). La lluvia está hecha con líneas parejas, sin insistencia sobre la figura. El ritmo de trabajo es ágil (TR 6″, TT 8′) y comenta con soltura mientras dibuja.</p></div>
+    <div><h5>Estructuras formales</h5><p>Emplazamiento central, apenas hacia la derecha, sin tocar márgenes. Tamaño mediano (≈ 40 % de la hoja). Figura de frente, completa, apoyada en una línea de suelo. Proporción presión-defensa equilibrada: lluvia moderada y paraguas de tamaño adecuado que cubre cabeza y cuerpo. La figura se sostiene igual que en el DFH: no cambia bajo el estresor.</p></div>
+    <div><h5>Contenido</h5><p>Paraguas propio («como el mío»), adornado con lunares, y botas: recursos de protección adecuados. Una nube y un sol pequeño. Un charco que en la historia se salta jugando: no hay datos de la historia vital que justifiquen la lectura de manual. La historia menciona «la escuela nueva», tiene un desenlace de reencuentro con la madre y registra un afecto positivo junto con una incomodidad menor («frío en las manos»).</p></div>
+   </div>
+   <div class="ccl-int"><h5>Integración: el caso clínico</h5>
+    <p>Julieta, de 10 años, consulta traída por su madre por dificultades para conciliar el sueño desde que la familia se mudó, hace tres meses, con el consecuente cambio de escuela. Pide que la madre se quede con ella hasta dormirse. En la escuela nueva se adaptó bien.</p>
+    <p>En la PBLL, los cuatro niveles muestran un funcionamiento <b>dentro de lo esperable para la edad</b>. La escena es armónica, el trazo es firme, el emplazamiento y el tamaño son adecuados, y el paraguas cubre bien a la figura frente a una lluvia moderada. Comparada con el DFH, la figura se sostiene igual bajo el estresor, lo que permite plantear que Julieta cuenta con <b>recursos defensivos adecuados y propios</b> para afrontar las presiones del medio. La historia los confirma: la nena enfrenta la lluvia con sus propios recursos, transforma el obstáculo en juego y termina en un reencuentro con la madre.</p>
+    <p>Articulado con el motivo de consulta, la mención de «la escuela nueva» y el desenlace junto a la madre sugieren que la mudanza está presente y que el vínculo con la madre funciona como sostén. La dificultad para dormirse podría pensarse como una <b>reacción esperable frente a un cambio importante</b>, acotada al momento de la separación nocturna, en una niña que en otros ámbitos muestra buena adaptación. No se observan, en esta técnica, indicadores que hagan pensar en un conflicto de mayor entidad.</p>
+    <p><b>Recomendaciones:</b> devolución tranquilizadora a la madre, orientada a sostener rutinas de sueño y a acompañar la autonomía nocturna de forma gradual; seguimiento en tres meses. Si la dificultad persiste o se extiende a otros ámbitos, ampliar la evaluación.</p>
+   </div>
+  </div>
   <div class="errores"><h4>Errores frecuentes</h4><ul>
    <li>Asumir que la lluvia es hostil y leer todo como «presión», sin preguntar en la historia qué significa para el sujeto (Sívori).</li>
    <li>Leer «sin paraguas = sin defensas» sin mirar si la figura se defiende con el cuerpo (hombros anchos) o con un reemplazo (alero, capa, árbol).</li>
@@ -2685,6 +2905,48 @@ svg [hidden]{display:none}
   </div>
 
   <blockquote class="model"><p>En el TAT, Florencia construye relatos coherentes y realistas, con buen ajuste perceptivo. A lo largo del protocolo se repiten dos temas. Por un lado, la <b>separación de la familia vivida como una falta</b>, que genera culpa y se resuelve con soluciones de compromiso (se va, pero vuelve a ayudar). Por otro, <b>metas que vienen de otros</b> (padres, profesor) frente a las cuales la heroína teme decepcionar. La figura materna aparece vigilante y retentiva, y las figuras masculinas, distantes o evaluadoras. Estos datos permitirían plantear, a modo de hipótesis, un <b>conflicto entre autonomía y dependencia</b> con un superyó exigente, que podría relacionarse con el bloqueo ante los exámenes que motiva la consulta. En la lámina 6NM, la situación de evaluación se acompaña del mismo bloqueo que la consultante describe. Como recurso, en la lámina 16 aparece una heroína capaz de nombrar su ambivalencia y proyectar un futuro propio. Sería pertinente contrastarlo con la entrevista (cómo se tomó la decisión de estudiar en Montevideo, qué espera la familia, qué pasa cuando no vuelve un fin de semana) y con técnicas gráficas como la PBLL.</p></blockquote>
+
+  <h3>Cuarto ejemplo: un protocolo con problemas formales</h3>
+  <div class="prose"><p>Los ejemplos anteriores tienen relatos ricos. En la práctica, y en el parcial, también aparecen protocolos pobres: relatos que solo describen la lámina, rechazos, silencios, historias que repiten el clisé o que omiten el objeto central. Murray dice que el análisis formal es tan importante como el de contenido. Este ejemplo inventado muestra cómo se interviene y cómo se lee un protocolo así.</p></div>
+  <div class="call caso ficticio"><span class="lab">Datos del caso</span><p><b>Matías</b> tiene 15 años y cursa 3.er año de liceo. Lo deriva el liceo porque «no habla en clase, no entrega los trabajos y se aísla en los recreos». Viene con la madre. En la entrevista contesta con monosílabos y mira el celular. La madre cuenta que el padre tuvo una cirugía cardíaca hace seis meses y que «desde ahí Matías está más callado». Láminas aplicadas: 1, 3VH, 7VH y 8VH.</p></div>
+
+  <div class="c4-lam">
+   <figure><img src="img/tat/lam-1.jpg" alt="Lámina 1: un niño mira un violín apoyado sobre una mesa." loading="lazy"><figcaption><b>Lámina 1</b>Mera descripción</figcaption></figure>
+   <div class="relato"><div class="rh"><b>Lámina 1</b><span>TR 35″</span><span>TT 40″</span></div>
+    <p>Un chico con un violín. <span class="int">(E: Describió, ahora quiero que invente una historia. ¿Qué pasó antes? ¿Qué pasó después?)</span> Lo tiene que tocar… Y no sé. Lo toca.</p></div>
+  </div>
+  <div class="c4-lam">
+   <figure><img src="img/tat/lam-3VH.jpg" alt="Lámina 3VH: una figura acurrucada en el piso, con la cabeza hundida en el brazo apoyado sobre un sillón; a su lado, en el suelo, un objeto pequeño." loading="lazy"><figcaption><b>Lámina 3VH</b>Casi rechazo</figcaption></figure>
+   <div class="relato"><div class="rh"><b>Lámina 3VH</b><span>TR 50″</span><span>TT 45″</span><span>silencio largo</span></div>
+    <p>…No se me ocurre nada. <span class="int">(E: Puede comenzar diciendo qué está pasando.)</span> Está cansado. Se quedó dormido ahí. <span class="int">(E: ¿Y qué pasó antes?)</span> No sé. Estaba cansado.</p></div>
+  </div>
+  <div class="c4-lam">
+   <figure><img src="img/tat/lam-7VH.jpg" alt="Lámina 7VH: un hombre mayor y uno joven aparecen muy cerca uno del otro." loading="lazy"><figcaption><b>Lámina 7VH</b>Clisé literal</figcaption></figure>
+   <div class="relato"><div class="rh"><b>Lámina 7VH</b><span>TR 15″</span><span>TT 30″</span></div>
+    <p>Un padre que le da un consejo al hijo. El hijo le hace caso y le va bien.</p></div>
+  </div>
+  <div class="c4-lam">
+   <figure><img src="img/tat/lam-8VH.jpg" alt="Lámina 8VH: un adolescente en primer plano, con un rifle a un lado y una intervención quirúrgica al fondo." loading="lazy"><figcaption><b>Lámina 8VH</b>Omisión del objeto</figcaption></figure>
+   <div class="relato"><div class="rh"><b>Lámina 8VH</b><span>TR 20″</span><span>TT 1′10″</span></div>
+    <p>Un chico parado, y atrás están operando a alguien… Es un sueño que tiene. Sueña que operan al padre. Después se despierta y está todo bien.</p></div>
+  </div>
+
+  <div class="tablewrap"><table class="tb">
+    <caption>Análisis formal, lámina por lámina</caption>
+    <thead><tr><th>Lámina</th><th>Problema formal</th><th>Intervención (Murray)</th><th>Lectura</th></tr></thead>
+    <tbody>
+      <tr><td class="k">1</td><td>Mera descripción; omite pasado y presente. TR largo.</td><td>«Describió, ahora quiero que invente una historia…»</td><td>Tras la intervención agrega lo mínimo: una obligación («lo tiene que tocar») y una resolución sin afecto. El clisé temático aparece, pero empobrecido.</td></tr>
+      <tr class="hi"><td class="k">3VH</td><td>Dificultad de ideación, casi rechazo. El TR más largo. Omite el objeto del piso.</td><td>«Puede comenzar diciendo qué está pasando.»</td><td>El bloqueo es en sí un dato, como el shock del Rorschach, y ocurre en la lámina de la culpa y la tristeza. Lo único que dice es «cansado», un afecto de tono depresivo.</td></tr>
+      <tr><td class="k">7VH</td><td>Relato que repite el clisé al pie de la letra, breve y sin conflicto.</td><td>Ninguna: tiene las tres fases.</td><td>Es una historia «determinada por la lámina», de las que Murray recomienda no leer como proyección. Dice poco del sujeto, salvo que puede cumplir la consigna cuando el estímulo es claro.</td></tr>
+      <tr class="hi"><td class="k">8VH</td><td>Omite el rifle. Convierte la escena en un sueño.</td><td>Ninguna.</td><td>Es el relato más rico y el más significativo: introduce al padre operado, el hecho real reciente, y lo pone a distancia como sueño, con un final que lo anula («está todo bien»). La omisión del rifle es la omisión típica de la lámina; aquí podría ligarse a evitar lo agresivo o lo mortífero.</td></tr>
+    </tbody></table></div>
+
+  <div class="cols2">
+   <div class="panel"><h4>¿Por qué un protocolo así?</h4><p class="small">El TAT solo no alcanza para decidirlo. Murray señala que las dificultades de ideación pueden venir de la inhibición, de la depresión o del capital lingüístico disponible. En un adolescente hay que sumar la desconfianza frente a la situación de prueba. Cada alternativa se contrasta con otra fuente:</p><ul class="small"><li><b>Capital lingüístico o nivel intelectual:</b> índice de comprensión verbal del WISC, rendimiento previo.</li><li><b>Estado de ánimo:</b> entrevista, técnicas gráficas (requieren menos palabras), cambios desde la cirugía del padre.</li><li><b>Resistencia o desconfianza:</b> cómo cambia la actitud en una segunda sesión, con más encuadre y vínculo.</li></ul></div>
+   <div class="panel"><h4>Lo que sí se puede decir</h4><p class="small">Un protocolo pobre no es un protocolo vacío. Se puede describir la <b>forma</b> (relatos breves, TR largos, necesidad de intervenciones, un casi rechazo), señalar <b>dónde</b> se produce el mayor bloqueo (3VH) y <b>dónde</b> aparece el material más significativo (8VH), y conectar ambos con la entrevista. Lo que no se puede es interpretar contenidos que no están, ni tratar la 7VH como si dijera algo de la relación con su padre.</p></div>
+  </div>
+
+  <blockquote class="model"><p>Matías, de 15 años, derivado por el liceo por aislamiento, silencio en clase y falta de entrega de trabajos, presenta en el TAT un protocolo de <b>escasa productividad</b>: relatos breves, tiempos de reacción prolongados y necesidad de intervenciones del examinador para completar las historias. El mayor bloqueo se produce en la lámina 3VH, que indaga tristeza y culpa, donde casi rechaza la tarea y solo puede nombrar «cansancio». El material más significativo aparece en la 8VH: introduce a un padre que es operado, lo que remite a la cirugía cardíaca reciente de su padre, y lo aleja como un sueño con un final que anula la preocupación. Estos datos permitirían plantear, a modo de hipótesis, una <b>inhibición en la expresión de los afectos</b>, posiblemente vinculada a una vivencia de angustia por la salud del padre que no ha podido ser elaborada, con <b>indicadores de un posible ánimo depresivo</b> que coinciden temporalmente con el motivo de consulta. No es posible, con este protocolo, descartar que influyan el capital lingüístico o la desconfianza frente a la situación de evaluación. Se sugiere completar con entrevistas individuales, técnicas gráficas como la PBLL, el índice de comprensión verbal del WISC y una exploración específica del estado de ánimo, y coordinar con el liceo.</p></blockquote>
   <h3>TAT y Rorschach: estructura frente a contenido</h3>
   <div class="tablewrap"><table class="tb">
     <thead><tr><th></th><th>TAT</th><th>Rorschach</th></tr></thead>
@@ -5499,7 +5761,7 @@ svg [hidden]{display:none}
 
   <h4>Test de la Familia: proceso, verbalización y dibujo</h4>
   <div class="dialogo"><div class="dh">Familia · hoja horizontal · TR 40″ · TT 12′</div>
-    <p class="n">Demora en empezar. Comienza por Emilia, en el centro-izquierda de la hoja, con moño y «el aparatito» (el sensor) en el brazo. Sigue con la madre, a la izquierda, tomándola de la mano, y el padre a la derecha de Emilia, con la mano en su hombro. Hace una pausa larga. Se dibuja último en el extremo derecho, borra dos veces su propia figura («me salió muy grande») y la termina más chica. No le dibuja manos.</p>
+    <p class="n">Demora en empezar. Comienza por Emilia, en el centro-izquierda de la hoja, con moño y «el aparatito» (el sensor) en el brazo. Sigue con la madre, a la izquierda, tomándola de la mano, y el padre a la derecha de Emilia, con la mano en su hombro. Hace una pausa larga. Se dibuja último en el extremo derecho, borra dos veces su propia figura («me salió muy grande») y la termina más chica. No le dibuja manos. El trazo es firme y parejo en Emilia y en los padres; en su propia figura queda más tenue, con restos de los borrados.</p>
     <p class="t"><b class="w">E</b>(reactivo verbal) «¿Dónde están? ¿Qué están haciendo?»</p>
     <p class="p"><b class="w">I</b>«Están en el patio. Esperando el resultado del control de Emilia.»</p>
     <p class="n">Más bueno: «Emilia, porque se banca todo» · Menos bueno: «yo, porque a veces me enojo» · Más feliz: «mamá y papá, cuando Emilia está bien» · Menos feliz: «Emilia, por los pinchazos… bueno, yo también a veces» · ¿Quién serías vos?: «Yo… aunque a veces quisiera ser Emilia, así me cuidan» · Paseo en auto: «Me quedo yo, total ya soy grande».</p>
@@ -5559,7 +5821,7 @@ svg [hidden]{display:none}
 
   <h4>Persona bajo la lluvia: dibujo e historia</h4>
   <div class="dialogo"><div class="dh">PBLL · hoja vertical · TR 15″ · TT 9′</div>
-    <p class="n">Dibuja primero a un varón y después, sin que se le pida, agrega una nena a su lado. Hace el paraguas sobre la nena y la lluvia al final, con mucha insistencia sobre la figura del varón. Algunas gotas cerca de la cara tienen forma de lágrima.</p>
+    <p class="n">Dibuja primero a un varón y después, sin que se le pida, agrega una nena a su lado. Hace el paraguas sobre la nena y la lluvia al final, con mucha insistencia sobre la figura del varón. Algunas gotas cerca de la cara tienen forma de lágrima. El trazo de las figuras y del paraguas es firme y de presión normal; las gotas que caen sobre el varón están hechas con más presión que el resto.</p>
     <p class="p"><b class="w">I</b>(historia) «Es un chico que lleva a la hermana a la escuela. Llueve mucho. Le pone el paraguas a ella para que no se moje, porque si se moja se enferma. Él se moja todo, pero no importa. Llegan y la maestra le dice que es un buen hermano.» Título: «El hermano mayor».</p>
     <p class="t"><b class="w">E</b>«¿Y qué siente el chico?»</p>
     <p class="p"><b class="w">I</b>«Frío. Pero está bien.»</p>
@@ -5712,6 +5974,52 @@ svg [hidden]{display:none}
     <p class="small">Es importante cuestionar los propios resultados: se trata de una sola toma, con cuatro láminas del TAT, y la hipótesis psicosomática requiere que la pediatra siga descartando causas orgánicas.</p>
   </div></details>
 
+  <h3>El caso clínico armado</h3>
+  <p class="prose">Las respuestas de arriba siguen el orden de las consignas. Acá se arma el <b>caso clínico completo</b>: primero los cuatro niveles de Caride en cada técnica gráfica, y después una integración de todo el material, con el formato de una formulación de caso.</p>
+
+  <div class="ccl"><span class="lab">Test de la Familia</span><h4>Los cuatro niveles</h4>
+   <div class="ccl-g">
+    <div><h5>Gestáltico</h5><p>Familia humana, completa y ajustada a la realidad. La impresión global es la de un grupo de tres (los padres y Emilia), unido por el contacto físico, y un cuarto personaje aislado en el extremo de la hoja. La escena («esperando el resultado del control») muestra una familia organizada alrededor de la enfermedad.</p></div>
+    <div><h5>Gráfico</h5><p>Trazo firme y parejo en Emilia y en los padres. En la propia figura, el trazo es más tenue, con restos de dos borrados, y el TR es largo (40″). La diferencia de investidura gráfica entre él y el resto, y los borrados de su figura, sugieren inhibición y ansiedad ligadas a la autorrepresentación.</p></div>
+    <div><h5>Estructuras formales</h5><p>Secuencia: Emilia, madre, padre y, tras una pausa, él. Emplazamiento: Emilia en el centro-izquierda; Ignacio en el extremo derecho, separado por un vacío. Tamaños, con el padre como referencia: madre 95 %, Emilia 83 %, Ignacio 62 %. Se dibuja más chico que su hermana de 7 años y reduce su figura porque «le salió muy grande».</p></div>
+    <div><h5>Contenido</h5><p>Valorización de Emilia (primera, central, con más detalles, sostenida por los padres). Autodesvalorización (último, al margen, más pequeño, sin manos). Se elige como «el menos bueno, porque a veces me enojo»: agresividad reconocida y vuelta contra sí. Identificación de deseo con la hermana («así me cuidan») y renuncia pseudomadura («me quedo yo, total ya soy grande»).</p></div>
+   </div>
+  </div>
+
+  <div class="ccl"><span class="lab">Persona bajo la lluvia</span><h4>Los cuatro niveles</h4>
+   <div class="ccl-g">
+    <div><h5>Gestáltico</h5><p>Escena coherente, pero con una alteración de la consigna: se pide una persona y dibuja dos. La impresión global es la de alguien que cuida a otro bajo una lluvia intensa y queda desprotegido. La escena tiene sentido y se entiende sin explicación.</p></div>
+    <div><h5>Gráfico</h5><p>Trazo firme y de presión normal en las figuras y en el paraguas. La lluvia está hecha con más presión sobre la figura del varón que en el resto de la hoja, y algunas gotas cercanas a su cara tienen forma de lágrima. La presión se concentra donde está él.</p></div>
+    <div><h5>Estructuras formales</h5><p>Varón de frente, de tamaño mediano-pequeño (≈ 44 % de la hoja), algo desplazado a la izquierda. La nena, a su derecha, más pequeña y bajo el paraguas. Línea de suelo presente. Proporción presión-defensa: lluvia intensa y una sola nube grande; paraguas adecuado en tamaño, pero ubicado sobre otra figura.</p></div>
+    <div><h5>Contenido</h5><p>El paraguas protege a la hermana «porque si se moja se enferma». Él «se moja todo, pero no importa». El reconocimiento llega desde afuera («es un buen hermano»). El afecto aparece y se minimiza («frío, pero está bien»). Título: «El hermano mayor».</p></div>
+   </div>
+  </div>
+
+  <div class="ccl"><span class="lab">Caso clínico armado</span><h4>Ignacio: integración de entrevista, Familia, PBLL y TAT</h4>
+   <div class="ccl-int">
+    <h5>Identificación y motivo de consulta</h5>
+    <p>Ignacio tiene 11 años y 4 meses y cursa 6.º año escolar. Vive con sus padres, Verónica (40) y Andrés (43), y con su hermana Emilia (7). Consultan los padres derivados por la pediatra por dolores abdominales y cefaleas matinales, de alrededor de un año de evolución y sin causa orgánica, a los que se agrega un descenso del rendimiento escolar en un niño que antes tenía muy buen desempeño.</p>
+    <h5>Antecedentes relevantes</h5>
+    <p>Hace dieciocho meses, a Emilia se le diagnosticó una diabetes tipo 1 que debutó con una internación en CTI; después tuvo otra internación. Durante la primera, Ignacio pasó un mes con la abuela materna. Desde entonces la vida familiar se organiza alrededor de los controles de Emilia, también de noche. Los padres describen a Ignacio como un «hombrecito» que ayuda con los cuidados y «no se queja». Hace unos meses tuvo un episodio de enojo con la hermana («ojalá te mueras») seguido de llanto y pedidos de perdón. Este año dejó la guitarra. Duerme mal. Conserva vínculos con amigos.</p>
+    <h5>Técnicas administradas</h5>
+    <p>Entrevista con los padres, entrevista con Ignacio, Test de la Familia, Persona bajo la lluvia y TAT (láminas 1, 2, 3VH y 6VH).</p>
+    <h5>Síntesis de resultados</h5>
+    <p>En las técnicas gráficas, Ignacio produce dibujos coherentes, ajustados a la consigna y a la realidad, con trazo firme y línea de suelo, lo que habla de un buen contacto con la realidad y de recursos yoicos conservados. Sobre esa base, ambas técnicas coinciden en <b>el lugar que se asigna</b>. En la Familia, la gestalt muestra un grupo unido alrededor de Emilia del que él queda afuera; en lo gráfico, su figura es la menos investida y la única borrada; en lo formal, es el último, el más alejado y más pequeño que su hermana menor; y en el contenido, se desvaloriza («el menos bueno») y desea ser cuidado como ella. En la PBLL, la gestalt es la de un cuidador desprotegido; en lo gráfico, la presión se concentra en la lluvia que cae sobre él; en lo formal, el paraguas está sobre otra figura; y en el contenido, la historia minimiza el malestar propio. El TAT, desde el contenido, repite el mismo argumento: héroes que no logran ser escuchados por padres ocupados (1 y 6VH), que renuncian a lo propio (1, 2 y 6VH) y que sienten culpa por haber dañado a la hermana, culpa que persiste aun después de repararla (3VH). En lo formal, los relatos son coherentes, pero tres de cuatro necesitan una intervención para llegar al desenlace, y el TR más largo corresponde a la 3VH.</p>
+    <h5>Hipótesis diagnóstica integrada</h5>
+    <p>Se plantea, a modo de hipótesis, que Ignacio atraviesa una situación de <b>sobreadaptación</b> frente a la enfermedad crónica de su hermana: ocupa el lugar del hijo que cuida y no se queja, posición que obtiene reconocimiento en la familia pero que implica postergar sus propias necesidades de cuidado. La <b>rivalidad fraterna</b>, esperable entre hermanos, encuentra aquí un obstáculo particular, porque la hermana está enferma y su vida estuvo en riesgo. Por eso la hostilidad tiene una vía de expresión muy restringida y, cuando aparece, se acompaña de una <b>culpa intensa</b> que hace pensar en un superyó severo. La agresividad tendería a volverse contra sí mismo, como sugieren la autodesvalorización en la Familia, la figura sin manos y la culpa persistente de la 3VH.</p>
+    <p>En este contexto, el malestar que no encuentra palabras ni destinatario podría estar expresándose a través del <b>cuerpo</b>: los dolores matinales que motivan la consulta coinciden con la lámina 6VH, donde el héroe tiene «dolor de panza» y no se lo dice a la madre porque está «preocupada por otra cosa». El descenso del rendimiento, la actitud «ausente» y el abandono de la guitarra podrían leerse en la misma línea, como una retracción del interés y del deseo propio, lo que justifica explorar el estado de ánimo. La discordancia entre lo que dicen los padres («no se queja nunca») y lo que muestran las técnicas, donde la queja aparece por todas partes, indica que el malestar existe pero no se dirige a nadie.</p>
+    <p>Como recursos, Ignacio cuenta con un buen ajuste a la realidad, capacidad de empatía y de cuidado, vínculos con pares, una abuela disponible y unos padres preocupados que consultan. En la entrevista pudo decir, aunque lo corrigió enseguida, que «todo es Emilia».</p>
+    <h5>Recomendaciones</h5>
+    <ul>
+      <li>Espacio psicoterapéutico propio para Ignacio, orientado a habilitar la expresión del malestar y de la ambivalencia hacia la hermana sin culpa excesiva.</li>
+      <li>Entrevistas con los padres, sin culpabilizarlos, para revisar las tareas de cuidado que asume, garantizar momentos exclusivos con él y habilitar que pueda quejarse.</li>
+      <li>Completar con el DFH, para comparar con la PBLL, y con una exploración del estado de ánimo.</li>
+      <li>Coordinar con la escuela por el rendimiento y con la pediatra por la evolución de los síntomas físicos.</li>
+      <li>Articular con el equipo tratante de Emilia y consultar si ofrece espacios para hermanos y familias.</li>
+    </ul>
+    <p class="small">Límites: una sola toma, cuatro láminas del TAT y sin DFH. La hipótesis sobre el cuerpo depende de que la pediatra siga descartando causas orgánicas.</p>
+   </div>
+  </div>
   <h3>Tabla de convergencias</h3>
   <div class="tablewrap"><table class="tb wide">
     <caption>Hipótesis × fuente · Ignacio</caption>
