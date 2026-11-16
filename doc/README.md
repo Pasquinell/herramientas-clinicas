@@ -49,8 +49,8 @@ Each test block has:
 1. A header with number and chips.
 2. Two panels: what it measures, and the clinical question.
 3. Material, consigna and administration.
-4. A step-by-step scoring scrolly.
-5. An interpretation table.
+4. Theory and interpretation tables.
+5. Worked examples («Primer ejemplo…», «Segundo ejemplo…»), always after the tables. In Familia, PBLL and TAT (since 2026-11-16) theory never sits between examples; in TAT, Murray's rules and Bellak's 10 categories come before lámina 1.
 6. Common errors.
 7. Self-assessment.
 8. Sources.
