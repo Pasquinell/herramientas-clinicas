@@ -742,7 +742,7 @@ svg [hidden]{display:none}
 <style>
 #p2-tat .tat-fr img{max-height:30vh;border:1px solid var(--rule);border-radius:6px;margin:0 auto 10px;background:#fff}
 @media (max-width:900px){#p2-tat .tat-fr img{max-height:12vh;margin-bottom:4px}#p2-tat .tat-fr svg{max-height:34vh}}
-#p2-tat .lam .tat-blank{aspect-ratio:4/5;background:#fff;border-bottom:1px solid var(--rule);display:grid;place-items:center;color:#8a9096;font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+#p2-tat .lam .tat-blank,.c4-lam .tat-blank{aspect-ratio:4/5;background:#fff;border-bottom:1px solid var(--rule);display:grid;place-items:center;color:#8a9096;font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase}
 #p2-tat .lam figcaption p{margin:.4em 0 0}
 #p2-tat .lam figcaption .tat-om{display:block;margin-top:.4em;font-size:13px;color:var(--red)}
 #p2-tat .lam figcaption .tat-ser{font-family:var(--f-mono);font-size:11px;color:var(--muted);margin-left:6px}
@@ -765,18 +765,18 @@ svg [hidden]{display:none}
 #p2-informe .inf-art{display:grid;gap:12px;margin:18px 0}
 #p2-informe .informe p{margin:.2em 0 .6em}
 #p2-informe .informe .inf-ej{font-size:14.5px;color:var(--muted);font-style:italic}
-#p2-sergio .ser-head{background:var(--sheet);border:1px solid var(--ink);border-radius:6px;padding:20px 24px;margin:18px 0;box-shadow:var(--shadow);font-family:var(--f-mono);font-size:13.5px;line-height:1.55}
-#p2-sergio .ser-head .ser-inst{font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
-#p2-sergio .ser-head .ser-tit{font-family:var(--f-display);font-weight:800;font-size:22px;margin:6px 0 10px;letter-spacing:-.01em}
-#p2-sergio .ser-head ol{margin:10px 0 0;padding-left:22px;font-family:var(--f-body);font-size:15.5px}
-#p2-sergio .ser-head ol li{margin-bottom:.3em}
-#p2-sergio .ser-head .ser-lib{color:var(--violet)}
-#p2-sergio .ser-figw{background:var(--sheet);border:1px solid var(--rule);border-radius:12px;padding:14px;box-shadow:var(--shadow);margin:18px 0}
-#p2-sergio .ser-figw svg{width:100%;height:auto;display:block;max-width:760px;margin:0 auto}
-#p2-sergio .ser-figw .ser-cap{font-family:var(--f-mono);font-size:11.5px;color:var(--muted);margin:8px 4px 0;line-height:1.4}
-#p2-sergio details.preg .ans h5{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--green);margin:16px 0 4px}
-#p2-sergio details.preg .ans ul{padding-left:1.2em}
-#p2-sergio details.preg .ans li{margin-bottom:.35em}
+#p2-sergio .ser-head,#p2-parcial .ser-head{background:var(--sheet);border:1px solid var(--ink);border-radius:6px;padding:20px 24px;margin:18px 0;box-shadow:var(--shadow);font-family:var(--f-mono);font-size:13.5px;line-height:1.55}
+#p2-sergio .ser-head .ser-inst,#p2-parcial .ser-head .ser-inst{font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+#p2-sergio .ser-head .ser-tit,#p2-parcial .ser-head .ser-tit{font-family:var(--f-display);font-weight:800;font-size:22px;margin:6px 0 10px;letter-spacing:-.01em}
+#p2-sergio .ser-head ol,#p2-parcial .ser-head ol{margin:10px 0 0;padding-left:22px;font-family:var(--f-body);font-size:15.5px}
+#p2-sergio .ser-head ol li,#p2-parcial .ser-head ol li{margin-bottom:.3em}
+#p2-sergio .ser-head .ser-lib,#p2-parcial .ser-head .ser-lib{color:var(--violet)}
+#p2-sergio .ser-figw,#p2-parcial .ser-figw{background:var(--sheet);border:1px solid var(--rule);border-radius:12px;padding:14px;box-shadow:var(--shadow);margin:18px 0}
+#p2-sergio .ser-figw svg,#p2-parcial .ser-figw svg{width:100%;height:auto;display:block;max-width:760px;margin:0 auto}
+#p2-sergio .ser-figw .ser-cap,#p2-parcial .ser-figw .ser-cap{font-family:var(--f-mono);font-size:11.5px;color:var(--muted);margin:8px 4px 0;line-height:1.4}
+#p2-sergio details.preg .ans h5,#p2-parcial details.preg .ans h5{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--green);margin:16px 0 4px}
+#p2-sergio details.preg .ans ul,#p2-parcial details.preg .ans ul{padding-left:1.2em}
+#p2-sergio details.preg .ans li,#p2-parcial details.preg .ans li{margin-bottom:.35em}
 </style>
 
 <!-- ============================================================ -->
@@ -1580,15 +1580,15 @@ svg [hidden]{display:none}
 
   <div class="dsc flip" id="fam-dsc">
    <div class="dsteps">
-    <div class="dstep"><div class="sc"><h5>Paso 0 · Ejemplo ilustrativo</h5><h4>Joaquín, 9 años, dibuja «una familia»</h4><p>En la entrevista con los padres supimos que en la casa viven <b>cinco</b>: mamá, papá, Joaquín, Lucía (6) y Bruno (1 año). Joaquín dibujó <b>cuatro</b> personajes sobre una línea de suelo.</p><p>La primera regla de Corman: comparar siempre con la familia real, en la caja de la derecha.</p></div></div>
-    <div class="dstep"><div class="sc"><h5>Paso 1 · Secuencia</h5><h4>El orden en que aparecen</h4><p>Lo registraste mientras dibujaba: 1 mamá, 2 Joaquín, 3 papá, 4 Lucía. El personaje dibujado <b>primero</b> es casi siempre el más importante a los ojos del niño (Corman), sea porque lo admira, lo envidia, lo teme o se identifica con él.</p></div></div>
-    <div class="dstep"><div class="sc"><h5>Paso 2 · Valorización</h5><h4>Mamá, la figura destacada</h4><p>La mamá es la primera, la más grande, la más detallada (pelo, collar, cartera) y está a la izquierda. Son varios signos de <b>valorización</b> que coinciden. Joaquín se dibuja a su lado.</p><p class="small">Hipótesis: un vínculo singularmente significativo con la madre. Falta ver qué dice el reactivo verbal.</p></div></div>
-    <div class="dstep"><div class="sc"><h5>Paso 3 · Tamaños relativos</h5><h4>Comparar contra la figura mayor</h4><p>La línea de puntos marca la altura de la mamá. El papá queda apenas por debajo, Joaquín en un 71 % y Lucía por debajo del 40 %. El tamaño se lee <b>guardando las proporciones</b> esperables. Que un niño de 6 sea más chico es esperable, pero que no llegue a la mitad de la figura de su madre, no tanto.</p></div></div>
-    <div class="dstep"><div class="sc"><h5>Paso 4 · Emplazamiento</h5><h4>Lucía, en la orilla</h4><p>Fue dibujada <b>última</b>, en el borde derecho, como si no se le hubiera guardado lugar. Corman lista esto entre los signos de <b>desvalorización</b>: último, en la orilla, lejos o debajo, más chico, con menos detalles y sin nombre si los demás lo tienen.</p></div></div>
-    <div class="dstep"><div class="sc"><h5>Paso 5 · Omisión</h5><h4>¿Y Bruno?</h4><p>El bebé vive en la casa y no está en el dibujo. Primero lo obvio: ¿está ausente en la realidad? No. La <b>omisión de un miembro real</b> es la forma extrema de desvalorización: la <b>negación</b>, la defensa más primitiva. Puede asociarse con un deseo, en lo íntimo, de que no esté. Es una hipótesis a sostener con más datos.</p></div></div>
-    <div class="dstep"><div class="sc"><h5>Paso 6 · Distancia</h5><h4>Relación a distancia</h4><p>Hay un gran hueco entre el papá y Lucía. La dificultad para establecer buenos vínculos con alguien puede expresarse como <b>separación efectiva</b> en la hoja o, más raramente, con un trazo o una barrera que divide.</p></div></div>
-    <div class="dstep"><div class="sc"><h5>Paso 7 · Reactivo verbal</h5><h4>Lo que dice después</h4><p>Las respuestas <b>convergen</b> con lo gráfico. Lucía es «la menos buena» y «la menos feliz», Joaquín se elige a sí mismo (identificación de realidad) y Bruno aparece recién cuando se le pregunta, con una racionalización («está durmiendo»).</p></div></div>
-    <div class="dstep"><div class="sc"><h5>Paso 8 · Hipótesis</h5><h4>Escribirlo como en el parcial</h4><p>«Me interesaría indagar una posible <b>conflictiva de rivalidad fraterna</b>. Lo sugieren la omisión del hermano menor, la desvalorización de Lucía en el tamaño, la ubicación y el orden, y las respuestas del reactivo verbal. También se observa un vínculo privilegiado con la figura materna. Sería pertinente contrastarlo con la entrevista: ¿el motivo de consulta empezó después del nacimiento de Bruno? También con otras técnicas, como el CAT y el DFH.»</p></div></div>
+    <div class="dstep"><div class="sc"><h5>Paso 0 · Ejemplo ilustrativo</h5><h4>Joaquín, 9 años, dibuja «una familia»</h4><p>Joaquín cursa 4.º año. Lo traen los padres porque «está insoportable con los hermanos» y porque la maestra notó que en los últimos meses rinde menos. En la entrevista con los padres supimos que en la casa viven <b>cinco</b>: mamá, papá, Joaquín, Lucía (6) y Bruno (1 año). Joaquín dibujó <b>cuatro</b> personajes sobre una línea de suelo, en hoja apaisada, en unos ocho minutos y sin borrar.</p><p>Antes de mirar un solo trazo, aplicá la primera regla de Corman: <b>comparar con la familia real</b> (la caja de la derecha). Ya hay un dato que salta a la vista: dibujó una persona menos de las que viven en su casa. Todavía no sabemos quién falta ni qué significa. Por ahora es solo una pregunta.</p></div></div>
+    <div class="dstep"><div class="sc"><h5>Paso 1 · Secuencia</h5><h4>El orden en que aparecen</h4><p>Lo anotaste mientras dibujaba: 1 mamá, 2 Joaquín, 3 papá, 4 Lucía. Empezó por la izquierda y avanzó hacia la derecha, que es la dirección progresiva esperable en un diestro.</p><p>Para Corman, el personaje dibujado <b>primero</b> suele ser el más importante a los ojos del niño: aquel a quien admira, envidia o teme, o con quien se identifica. Que Joaquín se dibuje <b>segundo</b>, pegado a la madre, también dice algo: se ubica cerca de la figura que encabeza la escena.</p><p class="small">Cómo redactarlo: «La secuencia comienza por la figura materna, lo que podría indicar su lugar privilegiado en la vida afectiva del niño, quien se representa inmediatamente después y a su lado».</p></div></div>
+    <div class="dstep"><div class="sc"><h5>Paso 2 · Valorización</h5><h4>Mamá, la figura destacada</h4><p>La mamá reúne <b>varios signos de valorización a la vez</b>: es la primera, la más grande, la más detallada (pelo, collar, cartera) y está a la izquierda, donde el niño empieza. Un solo signo no alcanza para hablar de valorización. Acá coinciden cuatro, y eso es lo que le da peso a la lectura.</p><p>Fijate también en lo que agrega: el collar y la cartera son detalles de adorno que no hacían falta para que «se entienda» que es una mujer. Corman lee esos agregados como cuidado y esmero puestos en un personaje.</p><p class="small">Hipótesis provisoria: un vínculo singularmente significativo con la madre. Antes de escribirla, falta ver si el reactivo verbal la confirma o la contradice.</p></div></div>
+    <div class="dstep"><div class="sc"><h5>Paso 3 · Tamaños relativos</h5><h4>Comparar contra la figura mayor</h4><p>La línea de puntos marca la altura de la mamá, que tomamos como 100 %. El papá llega al 89 %, Joaquín al 71 % y Lucía al 39 %.</p><p>El tamaño se lee <b>guardando las proporciones esperables</b>. Que el papá sea apenas más chico que la mamá no dice mucho, aunque en la realidad suele ser al revés. Que Joaquín, de 9 años, mida algo más de dos tercios de un adulto es razonable. Lo llamativo es Lucía: una niña de 6 años no tendría por qué medir menos de la mitad de su hermano de 9.</p><p class="small">La desproporción es el dato, no el tamaño absoluto. Si todas las figuras fueran chicas, lo leeríamos como inhibición general, no como desvalorización de una.</p></div></div>
+    <div class="dstep"><div class="sc"><h5>Paso 4 · Emplazamiento</h5><h4>Lucía, en la orilla</h4><p>Lucía fue dibujada <b>última</b>, en el borde derecho de la hoja, como si no se le hubiera guardado lugar. Además tiene menos detalles que el resto: no tiene pelo ni cara completa, y el trazo es más débil.</p><p>Corman lista estos rasgos como <b>signos de desvalorización</b>: el último, en la orilla, lejos o debajo, más chico, con menos detalles y sin nombre si los demás lo tienen. Lucía cumple casi todos. Cuando varios signos apuntan al mismo personaje, la lectura gana fuerza.</p><p class="small">En la redacción, nombrá los signos uno por uno. «Lucía está desvalorizada» es una conclusión. «Lucía aparece última, en el margen, con menor tamaño y menos detalles» es un dato que el docente puede verificar.</p></div></div>
+    <div class="dstep"><div class="sc"><h5>Paso 5 · Omisión</h5><h4>¿Y Bruno?</h4><p>Ya sabemos quién falta: Bruno, el bebé, que vive en la casa. Primero lo obvio: ¿está ausente en la realidad? No vive en otro lado ni falleció. Entonces la omisión no se explica por la familia real.</p><p>Para Corman, la <b>omisión de un miembro real</b> es la forma extrema de desvalorización: la <b>negación</b>, la defensa más primitiva y la más usada por el yo infantil. Lo que angustia se suprime de la escena. En el caso de un hermano menor, puede asociarse con un deseo, en lo íntimo, de que no esté, o de que no hubiera llegado.</p><p class="small">Ojo con el salto: la omisión no prueba un «deseo de muerte». Es una hipótesis que necesita apoyarse en el reactivo verbal y en la historia del niño.</p></div></div>
+    <div class="dstep"><div class="sc"><h5>Paso 6 · Distancia</h5><h4>Relación a distancia</h4><p>Entre el papá y Lucía queda un gran hueco: los tres primeros personajes están juntos y Lucía queda separada del grupo. Corman llama a esto <b>relación a distancia</b>. La dificultad para establecer un buen vínculo con alguien puede expresarse como separación efectiva en la hoja o, más raramente, con un trazo o una barrera que divide.</p><p>Hay otra lectura posible del mismo vacío, y conviene tenerla presente: es el lugar que habría ocupado Bruno si lo hubiera dibujado. La hoja «guarda» un espacio que nadie ocupa. Las dos lecturas no se excluyen, y las dos apuntan a los hermanos.</p></div></div>
+    <div class="dstep"><div class="sc"><h5>Paso 7 · Reactivo verbal</h5><h4>Lo que dice después</h4><p>Las respuestas <b>convergen</b> con lo gráfico, y eso es lo que permite sostener la hipótesis:</p><ul><li>La mamá es «la más buena, porque me cuida»: confirma la valorización del paso 2.</li><li>Lucía es «la menos buena» y «la menos feliz»: lo verbal coincide con lo gráfico. La agresividad, además, se dice de modo directo («me rompe las cosas»).</li><li>Joaquín se elige a sí mismo (identificación de realidad) y se declara «el más feliz». Esto habla de cierta capacidad de sostener su lugar.</li><li>Bruno aparece recién cuando se le pregunta, con una racionalización: «está durmiendo, no entraba».</li></ul><p class="small">Corman observa que la agresividad fraterna aparece más en lo que el niño dice que en lo que dibuja. Por eso nunca se omite la entrevista posterior.</p></div></div>
+    <div class="dstep"><div class="sc"><h5>Paso 8 · Hipótesis</h5><h4>Escribirlo como en el parcial</h4><p>La redacción ordena primero los datos, después la hipótesis y al final cómo contrastarla:</p><p>«En el dibujo de la familia, Joaquín omite al hermano menor, que convive con él, y lo incluye recién al ser interrogado, con una racionalización. Lucía aparece última, en el margen derecho, con menor tamaño y menos detalles, y es señalada en la entrevista como la menos buena y la menos feliz. La figura materna, en cambio, reúne varios signos de valorización. Estos datos permitirían plantear, a modo de hipótesis, una posible <b>conflictiva de rivalidad fraterna</b>, resuelta por negación frente al menor y por desvalorización frente a Lucía, junto con un vínculo privilegiado con la madre.</p><p>Sería pertinente contrastarlo con la entrevista (¿el motivo de consulta empezó después del nacimiento de Bruno? ¿cómo se reorganizó el cuidado materno?) y con otras técnicas, como el CAT o el DFH, buscando indicios convergentes.»</p></div></div>
    </div>
    <div class="dfig"><div class="frame">
     <svg viewBox="0 0 600 466" role="img" aria-label="Dibujo a lápiz de una familia sobre una hoja apaisada: madre grande a la izquierda, el niño, el padre y una hermana pequeña en el borde derecho; se anotan orden, tamaños, omisión del bebé, distancia y respuestas de la entrevista">
@@ -1748,6 +1748,123 @@ svg [hidden]{display:none}
   </div>
   <div class="call clave"><span class="lab">Regla de Corman</span><p>El test proyectivo rara vez da un criterio para distinguir normalidad de anormalidad: las mismas tendencias y conflictos aparecen en niños bien adaptados. Ofrece <b>probabilidades</b>, que se contrastan con otros tests (indicios convergentes) y con los hechos clínicos. El dibujo también puede mostrar las <b>censuras de los padres</b>, lo que a veces orienta el trabajo con ellos.</p></div>
 
+  <h3>Segundo ejemplo: Renata, 6 años</h3>
+  <div class="prose"><p>El ejemplo de Joaquín mostró la rivalidad fraterna. Este muestra el otro gran foco de Corman, el <b>conflicto edípico</b>, y un problema que aparece mucho en los parciales: cómo escribir una hipótesis sin patologizar algo que puede ser esperable para la edad. También es un caso inventado.</p></div>
+  <div class="call caso ficticio"><span class="lab">Datos del caso</span><p><b>Renata</b> tiene 6 años y cursa 1.er año. Vive con su papá (36), su mamá (34) y un gato. Es hija única. Consultan los padres porque desde hace unos meses Renata se pasa todas las noches a la cama de ellos y tiene berrinches intensos cuando la mamá le pone un límite. La mamá dice: «Con el padre es un angelito; conmigo, una fiera». No hay cambios recientes en la familia ni dificultades escolares.</p></div>
+
+  <div class="dsc" id="fam2-dsc">
+   <div class="dsteps">
+    <div class="dstep"><div class="sc"><h5>Paso 0 · Familia real</h5><h4>Todos están, y aparece un árbol</h4><p>Renata dibuja en hoja apaisada, durante unos diez minutos y con mucho entusiasmo al principio. Compará primero con la familia real: están el papá, la mamá, ella y el gato. <b>No falta nadie y no sobra nadie</b>. Además dibuja un árbol que no es un personaje.</p><p>Que estén todos no quiere decir que no haya nada para leer. Cuando la familia está completa, lo interpretable pasa a ser <b>cómo</b> están: el orden, el tamaño, la ubicación, los detalles y lo que los separa.</p></div></div>
+    <div class="dstep"><div class="sc"><h5>Paso 1 · Secuencia</h5><h4>Primero el papá, al final la mamá</h4><p>El orden fue: 1 papá, 2 Renata, 3 el árbol, 4 mamá y 5 el gato. La mamá aparece <b>después de un elemento que no es una persona</b>, y solo la sigue el animal.</p><p>Para Corman, el primero suele ser el personaje más importante para el niño. Que la figura del mismo sexo de la niña llegue última, después de un árbol, es el primer dato que hace pensar en el registro edípico. Todavía es un solo signo.</p></div></div>
+    <div class="dstep"><div class="sc"><h5>Paso 2 · Valorización</h5><h4>El papá, grande y con sombrero</h4><p>El papá reúne los signos de valorización: es el primero, el más grande, está a la izquierda y tiene más detalles que nadie (sombrero, botones, cara completa). Y hay un dato de relación: <b>él y Renata están tomados de la mano</b>. Es el único contacto entre personajes de todo el dibujo.</p><p class="small">Corman pide mirar al lado de quién se dibuja el niño. Renata se ubica pegada al padre y se une a él con un trazo. El acercamiento al progenitor del otro sexo es uno de los indicadores edípicos que lista el curso.</p></div></div>
+    <div class="dstep"><div class="sc"><h5>Paso 3 · Autorrepresentación</h5><h4>Una corona y el vestido de mamá</h4><p>Renata se dibuja con <b>corona</b>, pelo largo y un vestido de forma igual al de la madre. Mide alrededor del 65 % de la figura paterna: más de lo que le corresponde por edad al lado de un adulto.</p><p>Acá conviven dos movimientos. La corona la pone en un lugar privilegiado: es una princesa al lado del rey. El vestido igual al de la mamá le da atributos de la madre. Corman describe la <b>identificación con el progenitor del mismo sexo</b> cuando el niño le da a un personaje atributos muy similares a los suyos. Renata se parece a la mamá y, al mismo tiempo, ocupa su lugar junto al papá.</p></div></div>
+    <div class="dstep"><div class="sc"><h5>Paso 4 · Desvalorización</h5><h4>La mamá, chica y en la orilla</h4><p>La mamá es la figura adulta más chica (alrededor del 57 % del papá) y es <b>más chica que Renata</b>. Está en el sector derecho, tiene menos detalles (sin pelo, sin boca) y un trazo más débil que el de las otras figuras.</p><p>Cuando la figura del mismo sexo aparece última, más pequeña, en la orilla y con menos detalles, Corman habla de <b>desvalorización del rival edípico</b>. Pero fijate en la medida: no la elimina. La mamá está, y eso es importante para la hipótesis.</p></div></div>
+    <div class="dstep"><div class="sc"><h5>Paso 5 · Barrera</h5><h4>Un árbol en el medio</h4><p>Entre la pareja papá-Renata y la mamá hay un árbol grande, dibujado justo antes que la mamá. Un elemento que divide a los personajes se lee como <b>relación a distancia</b>: es la forma «más rara» que menciona Corman, con una barrera en lugar de un simple espacio vacío.</p><p>El árbol no fue pedido por la consigna y separa exactamente a los dos personajes que compiten en la hipótesis edípica. Es un dato fuerte porque coincide con los anteriores, no porque los árboles signifiquen algo por sí mismos.</p></div></div>
+    <div class="dstep"><div class="sc"><h5>Paso 6 · El animal</h5><h4>El gato, junto a la mamá</h4><p>El gato es real: vive en la casa. Igual vale la pena mirarlo. Es un <b>animal doméstico</b> y queda del lado de la mamá, como su única compañía. Corman relaciona los animales domésticos con tendencias pasivas, y recuerda que un animal puede «ser» el propio sujeto o alguien a quien no se pone en pie de igualdad con las personas.</p><p class="small">Con un animal real no hay que forzar la lectura simbólica. Alcanza con registrar dónde quedó y esperar qué dice Renata de él en la entrevista. Va a ser importante en el paso siguiente.</p></div></div>
+    <div class="dstep"><div class="sc"><h5>Paso 7 · Reactivo verbal</h5><h4>Una corrección reveladora</h4><p>Las respuestas acompañan lo gráfico. El papá es «el más bueno, porque juega conmigo» y la mamá «la menos buena, porque me reta». Ella es la más feliz «porque está con papá», y la mamá, la menos feliz, «porque está sola».</p><p>Hay dos respuestas que agregan matices. A «¿quién serías vos?» contesta «yo… o la mamá, cuando sea grande»: el deseo de ocupar el lugar de la madre aparece casi explícito, como <b>identificación de deseo</b>. Y en la pregunta del auto dice: «Se queda la mamá… no, ¡el gato!». La agresividad hacia la rival se expresa y enseguida se corrige y se <b>desplaza</b> al animal, lo que sugiere que esa hostilidad le genera culpa.</p></div></div>
+    <div class="dstep"><div class="sc"><h5>Paso 8 · Hipótesis</h5><h4>Escribirla sin patologizar</h4><p>«En el dibujo de la familia, Renata valoriza la figura paterna (primera, de mayor tamaño y detalle) y se representa junto a él, tomados de la mano, con atributos semejantes a los de la madre. La figura materna aparece última, de menor tamaño que la propia niña, en el margen y separada por un árbol. En el reactivo verbal se identifica con la madre adulta y expresa, para corregirla luego, una exclusión de la madre que desplaza al gato. Estos datos permitirían plantear, a modo de hipótesis, una <b>conflictiva edípica positiva</b> en curso, con rivalidad hacia la madre y sentimientos de culpa asociados.</p><p>Es importante señalar que esta conflictiva puede ser <b>esperable para la edad</b>. Lo que habría que evaluar es si su intensidad se relaciona con el motivo de consulta (dificultad para separarse de noche de la pareja parental, oposición a los límites maternos) y cómo responden los padres. Se sugiere contrastarlo con el CAT y con una hora de juego.»</p></div></div>
+   </div>
+   <div class="dfig"><div class="frame">
+    <svg viewBox="0 0 600 466" role="img" aria-label="Dibujo a lápiz de una familia sobre hoja apaisada: un padre grande con sombrero a la izquierda tomado de la mano de una niña con corona, un árbol en el medio, y a la derecha una madre pequeña y un gato; se anotan orden, tamaños, barrera y respuestas de la entrevista">
+     <defs><marker id="fam2-ar" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8z" class="fv"/></marker></defs>
+     <g data-s="0">
+      <rect x="16" y="16" width="404" height="286" rx="2" class="boxs"/>
+      <text x="24" y="296" class="xs">ejemplo ilustrativo · caso ficticio</text>
+      <path class="pen" d="M30,262 q60,-3 120,1 t120,-1 t140,2"/>
+      <!-- Papá -->
+      <path class="pen" d="M90,80 l40,0 M97,80 l2,-16 l22,0 l2,16"/>
+      <path class="pen" d="M110,76 c9,0 16,7 16,16 c0,9 -7,16 -16,16 c-9,0 -16,-7 -16,-16 c0,-9 7,-16 16,-16z"/>
+      <circle cx="104" cy="91" r="1.6" class="penf"/><circle cx="116" cy="91" r="1.6" class="penf"/>
+      <path class="pen" d="M104,99 q6,5 12,0 M106,108 l0,6 M114,108 l0,6"/>
+      <path class="pen" d="M94,114 q16,-4 32,0 l3,78 q-19,4 -38,0z"/>
+      <circle cx="110" cy="130" r="1.5" class="penf"/><circle cx="110" cy="146" r="1.5" class="penf"/><circle cx="110" cy="162" r="1.5" class="penf"/>
+      <path class="pen" d="M96,120 q-12,22 -16,46 M124,120 q12,24 23,52"/>
+      <path class="pen" d="M103,192 l-2,66 M117,192 l2,66 M101,258 q-8,1 -12,-1 M119,258 q8,1 12,-1"/>
+      <!-- Renata -->
+      <path class="pen" d="M162,142 l2,-12 l4,7 l4,-9 l4,9 l4,-7 l2,12"/>
+      <path class="pen" d="M172,140 c7,0 12,5 12,12 c0,7 -5,12 -12,12 c-7,0 -12,-5 -12,-12 c0,-7 5,-12 12,-12z"/>
+      <path class="pen" d="M161,148 q-5,14 -3,28 M183,148 q5,14 3,28"/>
+      <circle cx="168" cy="151" r="1.3" class="penf"/><circle cx="176" cy="151" r="1.3" class="penf"/>
+      <path class="pen" d="M168,157 q4,3 8,0 M172,164 l0,3"/>
+      <path class="pen" d="M166,167 l12,0 l12,46 q-18,4 -36,0z"/>
+      <path class="pen" d="M165,173 q-8,4 -18,0 M180,173 q10,12 12,24"/>
+      <path class="pen" d="M167,213 l-1,45 M177,213 l1,45 M166,258 q-5,1 -8,-1 M178,258 q5,1 8,-1"/>
+      <!-- Árbol -->
+      <path class="pen" d="M254,262 l2,-78 M272,262 l-2,-78"/>
+      <path class="pen" d="M238,188 c-20,-4 -18,-32 2,-32 c-2,-20 26,-26 32,-10 c12,-14 36,-4 30,14 c16,6 10,30 -8,30 c-6,10 -40,10 -56,-2z"/>
+      <!-- Mamá -->
+      <path class="pen" d="M350,155 c6,0 10,4 10,10 c0,6 -4,10 -10,10 c-6,0 -10,-4 -10,-10 c0,-6 4,-10 10,-10z" style="stroke-width:1.1"/>
+      <circle cx="347" cy="164" r="1.1" class="penf"/><circle cx="353" cy="164" r="1.1" class="penf"/>
+      <path class="pen" d="M345,176 l10,0 l9,38 q-14,3 -28,0z M346,182 l-8,18 M354,182 l8,18 M346,215 l-1,43 M354,215 l1,43" style="stroke-width:1.1"/>
+      <!-- Gato -->
+      <ellipse cx="394" cy="251" rx="12" ry="6" class="pen"/>
+      <circle cx="408" cy="244" r="5" class="pen"/>
+      <path class="pen" d="M405,240 l1,-5 l3,4 M409,239 l2,-5 l2,5 M382,250 q-8,-4 -6,-14 M388,256 l0,5 M400,256 l0,5"/>
+      <!-- familia real -->
+      <rect x="432" y="16" width="160" height="102" rx="8" class="bs"/>
+      <text x="442" y="36" class="tS" font-weight="700">Familia real</text>
+      <text x="442" y="56" class="sm">Papá, 36</text><text x="442" y="72" class="sm">Mamá, 34</text>
+      <text x="442" y="88" class="sm">Renata, 6 (autora)</text><text x="442" y="104" class="sm">Un gato</text>
+     </g>
+     <!-- 1 orden -->
+     <g data-s="1">
+      <circle cx="110" cy="48" r="10" class="bk"/><text x="110" y="52" text-anchor="middle" class="xs tK" font-weight="700">1</text>
+      <circle cx="172" cy="114" r="10" class="bk"/><text x="172" y="118" text-anchor="middle" class="xs tK" font-weight="700">2</text>
+      <circle cx="262" cy="116" r="10" class="bl"/><text x="262" y="120" text-anchor="middle" class="xs" font-weight="700">3</text>
+      <circle cx="350" cy="139" r="10" class="bv"/><text x="350" y="143" text-anchor="middle" class="xs tV" font-weight="700">4</text>
+      <circle cx="400" cy="224" r="10" class="bl"/><text x="400" y="228" text-anchor="middle" class="xs" font-weight="700">5</text>
+     </g>
+     <!-- 2 papá valorizado y mano -->
+     <g data-s="2">
+      <ellipse cx="112" cy="160" rx="42" ry="104" class="lk" stroke-dasharray="5 4"/>
+      <circle cx="148" cy="173" r="7" class="lk"/>
+     </g>
+     <!-- 3 autorrepresentación -->
+     <g data-s="3">
+      <ellipse cx="174" cy="186" rx="26" ry="66" class="li" stroke-dasharray="5 4"/>
+     </g>
+     <!-- 4 tamaños y mamá -->
+     <g data-s="4">
+      <rect x="328" y="18" width="44" height="282" class="bv" opacity=".3"/>
+      <text x="110" y="284" text-anchor="middle" class="sm tA">100 %</text>
+      <text x="174" y="284" text-anchor="middle" class="sm tA">≈ 65 %</text>
+      <text x="350" y="284" text-anchor="middle" class="sm tA">≈ 57 %</text>
+     </g>
+     <!-- 5 barrera -->
+     <g data-s="5">
+      <ellipse cx="262" cy="200" rx="52" ry="70" class="lv" stroke-dasharray="4 4"/>
+      <path class="lv" d="M200,238 L218,238" marker-end="url(#fam2-ar)"/>
+      <path class="lv" d="M326,238 L308,238" marker-end="url(#fam2-ar)"/>
+     </g>
+     <!-- 6 gato -->
+     <g data-s="6"><circle cx="396" cy="248" r="20" class="lv" stroke-dasharray="3 3"/></g>
+     <!-- 7 entrevista -->
+     <g data-s="7" class="up">
+      <rect x="16" y="314" width="576" height="146" rx="8" class="box"/>
+      <text x="30" y="334" class="ti">Entrevista posterior</text>
+      <text x="30" y="356">¿El más bueno? <tspan class="tK">«Papá, porque juega conmigo.»</tspan> · ¿El menos? <tspan class="tV">«Mamá, me reta.»</tspan></text>
+      <text x="30" y="376">¿El más feliz? <tspan class="tK">«Yo, porque estoy con papá.»</tspan></text>
+      <text x="30" y="396">¿El menos feliz? <tspan class="tV">«Mamá, porque está sola.»</tspan></text>
+      <text x="30" y="416">¿Quién serías vos? <tspan class="tK">«Yo… o la mamá, cuando sea grande.»</tspan></text>
+      <text x="30" y="436">Paseo en auto, ¿quién se queda? <tspan class="tV">«Se queda la mamá… no, ¡el gato!»</tspan></text>
+      <text x="30" y="453" class="xs">a cada respuesta se agrega «¿por qué?»</text>
+     </g>
+     <!-- textos de columna por paso -->
+     <g data-show="0"><text x="432" y="146" class="hw tS">Antes de interpretar:</text><text x="432" y="166" class="sm">están todos los miembros</text><text x="432" y="181" class="sm">reales; se agrega un árbol.</text><text x="432" y="196" class="sm">Lo que se lee es cómo están.</text></g>
+     <g data-show="1"><text x="432" y="146" class="hw tK">Orden de dibujo</text><text x="432" y="166" class="sm">1 Papá · 2 Renata · 3 árbol</text><text x="432" y="181" class="sm">4 Mamá · 5 gato</text><text x="432" y="196" class="sm">La mamá llega después</text><text x="432" y="211" class="sm">de un elemento no humano.</text></g>
+     <g data-show="2"><text x="432" y="146" class="hw tK">Papá: valorizado</text><text x="432" y="166" class="sm">1.º, el más grande, sombrero,</text><text x="432" y="181" class="sm">botones, cara completa.</text><text x="432" y="196" class="sm">Único contacto del dibujo:</text><text x="432" y="211" class="sm">la mano con Renata.</text></g>
+     <g data-show="3"><text x="432" y="146" class="hw tI">Renata</text><text x="432" y="166" class="sm">corona: lugar privilegiado.</text><text x="432" y="181" class="sm">vestido como el de mamá:</text><text x="432" y="196" class="sm">atributos de la madre.</text><text x="432" y="211" class="sm">≈ 65 % del papá.</text></g>
+     <g data-show="4"><text x="432" y="146" class="hw tV">Mamá</text><text x="432" y="166" class="sm">última de las personas, más</text><text x="432" y="181" class="sm">chica que Renata, sin pelo</text><text x="432" y="196" class="sm">ni boca, trazo más débil.</text><text x="432" y="211" class="sm">Desvalorizada, no omitida.</text></g>
+     <g data-show="5"><text x="432" y="146" class="hw tV">Barrera</text><text x="432" y="166" class="sm">el árbol separa a la pareja</text><text x="432" y="181" class="sm">papá-Renata de la mamá:</text><text x="432" y="196" class="sm">relación a distancia.</text></g>
+     <g data-show="6"><text x="432" y="146" class="hw tV">El gato</text><text x="432" y="166" class="sm">real, doméstico, del lado</text><text x="432" y="181" class="sm">de la mamá. No forzar la</text><text x="432" y="196" class="sm">lectura simbólica: esperar</text><text x="432" y="211" class="sm">la entrevista.</text></g>
+     <g data-show="7"><text x="432" y="146" class="hw tK">Converge</text><text x="432" y="166" class="sm">lo verbal repite lo gráfico.</text><text x="432" y="181" class="sm">«la mamá… no, el gato»:</text><text x="432" y="196" class="sm">hostilidad, corrección y</text><text x="432" y="211" class="sm">desplazamiento (¿culpa?).</text></g>
+     <g data-show="8"><text x="432" y="146" class="hw tS">Hipótesis</text><text x="432" y="166" class="sm">Conflictiva edípica positiva,</text><text x="432" y="181" class="sm">con rivalidad y culpa.</text><text x="432" y="196" class="sm">Puede ser esperable a los 6:</text><text x="432" y="211" class="sm tS">¿qué intensidad tiene y cómo</text><text x="432" y="226" class="sm tS">se liga al motivo de consulta?</text></g>
+    </svg>
+    <div class="cap">Ejemplo ilustrativo (caso ficticio). Azul: valorización. Violeta: autorrepresentación. Rojo: desvalorización, barrera y desplazamiento.</div>
+   </div></div>
+  </div>
+
+  <div class="call clave"><span class="lab">Joaquín y Renata, comparados</span><p>Los dos dibujos se leen con las mismas herramientas (orden, tamaño, emplazamiento, detalles, distancia y reactivo verbal), pero los signos caen sobre personajes distintos. En Joaquín, lo desvalorizado y lo omitido son <b>los hermanos</b>, y el eje es la rivalidad fraterna. En Renata, la desvalorizada es <b>la figura del mismo sexo</b>, el valorizado es la del otro sexo y hay una barrera entre ellas, y el eje es edípico. En los dos casos la hipótesis se sostiene porque varios signos coinciden y porque el reactivo verbal los confirma.</p></div>
   <div class="errores"><h4>Errores frecuentes</h4><ul>
    <li>Interpretar sin conocer la familia real, por ejemplo leer como «negación» la falta de un abuelo que murió o de un padre que no convive.</li>
    <li>Leer un solo signo como valorización («es el más grande, entonces lo admira») sin buscar los otros signos que coincidan ni lo que dice la entrevista.</li>
@@ -1810,13 +1927,13 @@ svg [hidden]{display:none}
 
   <div class="dsc" id="pb-dsc">
    <div class="dsteps">
-    <div class="dstep"><div class="sc"><h5>Paso 0 · La persona</h5><h4>Primero, la figura humana</h4><p>Aparece una persona de tamaño mediano, algo más del 40 % de la hoja, bien centrada, de perfil y mirando a la derecha. Se lee como en el DFH (apariencia, edad y sexo asignados, actitud, postura, vestimenta), y además importa su <b>orientación</b>.</p><p class="small">La orientación hacia la derecha se ha relacionado con avance hacia el futuro. De perfil, con evasión o búsqueda de refugio. Vale la pena mirar hacia dónde van la cabeza, el cuerpo y las piernas.</p></div></div>
-    <div class="dstep"><div class="sc"><h5>Paso 1 · El paraguas</h5><h4>El recurso defensivo</h4><p>El paraguas cubre la cabeza, pero es algo chico para el cuerpo y está inclinado hacia la izquierda.</p><ul><li>Que cubra adecuadamente se asocia con defensas sanas.</li><li>Si es chico respecto de la persona: defensas lábiles, queda expuesta.</li><li>Hacia la izquierda: se ha relacionado con defenderse de la figura materna, del pasado o de pulsiones infantiles.</li></ul></div></div>
-    <div class="dstep"><div class="sc"><h5>Paso 2 · La lluvia</h5><h4>La presión del medio</h4><p>Hay una lluvia <b>moderada</b>, repartida, sin gotas con forma de lágrima. Una lluvia torrencial se lee como mucha presión, «como que no hay defensa que alcance». Una escasa, como posibilidad de defenderse. Si no hay lluvia, puede indicar negación de las presiones u oposicionismo.</p><p class="small">Recordá a Sívori: preguntá en la historia qué es la lluvia para esta persona.</p></div></div>
-    <div class="dstep"><div class="sc"><h5>Paso 3 · Las nubes</h5><h4>Contarlas</h4><p>Las nubes se asocian con presión y amenaza. Hay que tener en cuenta <b>cuántas</b> son, porque a veces representan figuras parentales. Las nubes muy infladas se han relacionado con tendencias autoagresivas o dolencias psicosomáticas. Acá hay dos.</p></div></div>
-    <div class="dstep"><div class="sc"><h5>Paso 4 · El charco</h5><h4>La lectura más inferencial</h4><p>Hay un charco a la izquierda, junto a los pies. Querol y Chávez lo relacionan con sufrimiento fetal, acontecimientos traumáticos durante el embarazo o los primeros años, o con obstáculos antes o después del nacimiento. Es una lectura muy especulativa: <b>solo vale si la historia vital la sostiene</b>, por ejemplo con un parto difícil o una internación neonatal relatados en la entrevista.</p></div></div>
-    <div class="dstep"><div class="sc"><h5>Paso 5 · La línea de suelo</h5><h4>Dónde se apoya</h4><p>El suelo se toma como <b>criterio de realidad</b> y sostén. Si es débil, puede indicar una realidad que angustia. Si está muy presionado, una realidad tensa. En el estudio de Colombo y colaboradores, la <b>ausencia de línea base</b> fue el indicador más frecuente en niños maltratados, leído como falta de sostén en el vínculo con los padres.</p></div></div>
-    <div class="dstep"><div class="sc"><h5>Paso 6 · Síntesis</h5><h4>Emplazamiento, tamaño y convergencias</h4><p>El dibujo está centrado, sin apoyarse en los márgenes, y es de tamaño mediano. Se ha relacionado con un criterio ajustado a la realidad y con equilibrio entre introversión y extraversión. Junto con la línea de suelo firme y la orientación a la derecha, suma recursos. El paraguas chico e inclinado y las dos nubes abren preguntas.</p><p>La hipótesis se escribe así: «Si bien se observan recursos defensivos, podrían ser <b>lábiles</b> frente a la presión. Sería pertinente indagar en la historia qué representa la lluvia y cotejarlo con el DFH».</p></div></div>
+    <div class="dstep"><div class="sc"><h5>Paso 0 · La persona</h5><h4>Primero, la figura humana</h4><p>El dibujo es de <b>Paula, 15 años</b> (caso ficticio), que consulta por ansiedad ante los escritos del liceo. Antes de la PBLL hizo un DFH: una figura de frente, mediana y bien plantada.</p><p>En la PBLL aparece una persona de tamaño mediano, algo más del 40 % de la hoja, bien centrada, <b>de perfil</b> y mirando a la derecha. Se lee como en el DFH (apariencia, edad y sexo asignados, actitud, postura, vestimenta), pero además importa la <b>orientación</b>, porque esta figura está en movimiento: va hacia algún lado.</p><p class="small">La orientación hacia la derecha se ha relacionado con avance hacia el futuro. El perfil, con evasión o búsqueda de refugio. Ya hay un primer contraste con el DFH: la figura que estaba de frente, sin lluvia, ahora se pone de costado. Anotalo, sin interpretarlo todavía.</p></div></div>
+    <div class="dstep"><div class="sc"><h5>Paso 1 · El paraguas</h5><h4>El recurso defensivo</h4><p>El paraguas es el símbolo principal de las defensas, así que se describe con precisión: <b>cubre la cabeza, pero es algo chico para el cuerpo</b>, y está inclinado hacia la izquierda. Los hombros y la espalda quedan fuera de su protección.</p><ul><li>Un paraguas que cubre adecuadamente se asocia con defensas sanas.</li><li>Chico respecto de la persona: defensas lábiles. El sujeto se defiende, pero queda en parte expuesto.</li><li>Inclinado a la izquierda: se ha relacionado con defenderse de la figura materna, del pasado o de pulsiones infantiles.</li></ul><p class="small">Fijate que hay paraguas. No es un sujeto sin recursos: la pregunta es si alcanzan. Y la inclinación a la izquierda queda abierta hasta escuchar la historia.</p></div></div>
+    <div class="dstep"><div class="sc"><h5>Paso 2 · La lluvia</h5><h4>La presión del medio</h4><p>La lluvia es <b>moderada</b> y está repartida por toda la hoja. Las gotas son líneas, no lágrimas, y no cae solo en un lugar.</p><p>Para ubicarla, pensá en la escala: una lluvia torrencial se lee como mucha presión, «como que no hay defensa que alcance»; una escasa, como posibilidad de defenderse; la ausencia de lluvia, como posible negación de las presiones u oposicionismo. Acá estamos en el medio: hay presión, y la sujeto la registra, pero no aparece como desbordante.</p><p class="small">Recordá a Sívori: la lluvia no es hostil a priori. Qué representa para Paula se averigua en la historia, no en la tabla.</p></div></div>
+    <div class="dstep"><div class="sc"><h5>Paso 3 · Las nubes</h5><h4>Contarlas</h4><p>Las nubes se asocian con presión y amenaza, porque son la fuente de la lluvia. Hay que contar <b>cuántas</b> son, porque a veces representan figuras parentales. Acá hay <b>dos</b>, de tamaño parecido, sin rayos y sin estar infladas.</p><p>Dos nubes podrían remitir a dos figuras de las que «llueve» la exigencia. Es una lectura que solo se sostiene si la entrevista muestra a dos adultos que presionan, y que conviene redactar con mucha cautela. Las nubes muy infladas, que acá no aparecen, se han relacionado con tendencias autoagresivas o dolencias psicosomáticas.</p></div></div>
+    <div class="dstep"><div class="sc"><h5>Paso 4 · El charco</h5><h4>La lectura más inferencial</h4><p>Hay un charco a la izquierda, junto a los pies. Querol y Chávez lo relacionan con sufrimiento fetal, acontecimientos traumáticos durante el embarazo o los primeros años, o con obstáculos antes o después del nacimiento.</p><p>Es la lectura más especulativa de toda la técnica: <b>solo vale si la historia vital la sostiene</b>, por ejemplo con un parto difícil o una internación neonatal relatados en la entrevista. En el caso de Paula la anamnesis no registra nada de eso, así que el charco se describe y no se interpreta.</p><p class="small">Saber no interpretar un elemento también se evalúa. «No se cuenta con datos de la historia vital que permitan interpretar el charco» es una frase correcta en un parcial.</p></div></div>
+    <div class="dstep"><div class="sc"><h5>Paso 5 · La línea de suelo</h5><h4>Dónde se apoya</h4><p>El suelo se toma como <b>criterio de realidad</b> y como sostén. En este dibujo la línea es firme, continua y con presión normal: la figura está apoyada.</p><p>Si fuera débil o entrecortada, podría indicar una realidad que angustia. Si estuviera muy presionada, una realidad tensa o agresiva. En el estudio de Colombo y colaboradores, la <b>ausencia de línea base</b> fue el indicador más frecuente en niños maltratados, leído como falta de sostén en el vínculo con los padres. Acá no falta: es uno de los recursos del dibujo.</p></div></div>
+    <div class="dstep"><div class="sc"><h5>Paso 6 · Síntesis</h5><h4>Historia, emplazamiento y convergencias</h4><p>Paula cuenta: «Es una chica que sale del liceo y se larga a llover. El paraguas es de la madre, se lo prestó a la mañana, y le queda chico. Se moja un poco pero va rápido a la casa. Llega empapada y se ríe». Título: «La que se olvidó el suyo».</p><p>La historia ordena el dibujo. La lluvia aparece como un imprevisto manejable, no como amenaza. El paraguas chico es <b>prestado por la madre</b>: el recurso no es propio, y eso le da un sentido a la inclinación hacia la izquierda. El final es activo y con humor. El emplazamiento centrado, el tamaño mediano y la línea de suelo firme se relacionan con un criterio ajustado a la realidad.</p><p>«Si bien se observan recursos (figura centrada y apoyada, desenlace activo), frente a la presión estos podrían ser <b>lábiles o todavía prestados</b> por las figuras de cuidado. Sería pertinente cotejarlo con el DFH, donde la figura se sostiene de frente, y con lo que Paula cuente de sus escritos».</p></div></div>
    </div>
    <div class="dfig"><div class="frame">
     <svg viewBox="0 0 600 456" role="img" aria-label="Dibujo a lápiz de una persona de perfil bajo la lluvia con un paraguas pequeño inclinado a la izquierda, dos nubes, lluvia moderada, un charco a la izquierda y línea de suelo; a la derecha, una leyenda de lecturas que se completa paso a paso">
@@ -2004,6 +2121,71 @@ svg [hidden]{display:none}
   <p class="prose small">También aparecen la ausencia de manos y de pies, leída como incapacidad para accionar en el mundo, avanzar o crecer.</p>
   <div class="call etica"><span class="lab">Ética · leer con cuidado</span><p>Estos indicadores fueron <b>frecuentes</b> en un grupo de niños maltratados, pero <b>no son específicos</b>. La ausencia de línea base, un tamaño pequeño o un trazo entrecortado aparecen también por inmadurez, ansiedad, inhibición o simplemente por la edad. <b>Ningún dibujo prueba un abuso</b> ni puede usarse para afirmarlo en un informe. Si la convergencia entre dibujo, relato, conducta y entrevista despierta sospecha, corresponde consultarlo con supervisión y activar los protocolos institucionales de protección vigentes. Tampoco se interroga al niño de modo sugestivo.</p></div>
 
+  <h3>Segundo ejemplo: Gonzalo, 34 años</h3>
+  <div class="prose"><p>En el ejemplo de Paula el problema eran defensas que podían quedarse cortas. Este ejemplo muestra el problema opuesto, que en los parciales se ve menos y se interpreta peor: un sujeto que se defiende <b>de más</b>. También muestra por qué la PBLL se lee siempre junto al DFH y a la entrevista. Es un caso inventado.</p></div>
+  <div class="call caso ficticio"><span class="lab">Datos del caso</span><p><b>Gonzalo</b> tiene 34 años y es gerente de una sucursal bancaria. Lo deriva su médico clínico: hace ocho meses que duerme mal, tiene cefaleas y contracturas cervicales, y los estudios no muestran causa orgánica. En la entrevista dice que «está todo bien», que el trabajo «es exigente pero me gusta» y que viene «porque el médico insistió». Hace un año lo ascendieron y desde entonces trabaja once horas por día. Su padre murió de un infarto a los 52 años.</p><p class="small">En el DFH, hecho antes, dibujó un hombre de tamaño mediano, de frente, con trazo más liviano y los brazos pegados al cuerpo.</p></div>
+
+  <div class="dsc" id="pb2-dsc">
+   <div class="dsteps">
+    <div class="dstep"><div class="sc"><h5>Paso 0 · La persona</h5><h4>Grande, de frente y con trazo fuerte</h4><p>La figura es <b>grande</b>: el cuerpo ocupa más de la mitad de la altura de la hoja y, con el paraguas, cerca de tres cuartos. Está de frente, centrada y con un trazo fuerte y continuo, sin borrados. Lleva traje y corbata, y la boca es una línea recta.</p><p>El tamaño grande se ha relacionado con necesidad de mostrarse y ser reconocido, y el muy grande, con una grandiosidad que encubre inadecuación o compensa inseguridad. La postura de frente, con disposición a enfrentar el mundo.</p><p class="small">La clave está en la comparación con el DFH: en situación neutra la figura era mediana y de trazo liviano. <b>Bajo la lluvia, crece</b>. Frente a la presión, la imagen de sí se agranda en lugar de achicarse.</p></div></div>
+    <div class="dstep"><div class="sc"><h5>Paso 1 · El paraguas</h5><h4>Demasiado paraguas</h4><p>El paraguas es <b>muy grande</b>: su copa es bastante más ancha que la figura y cubre mucho más que el cuerpo. El mango está <b>remarcado</b>, repasado varias veces, y la mano lo aferra.</p><ul><li>Muy grande: excesiva protección y defensa, aunque esté bien ubicado; distancia con el entorno.</li><li>Mango remarcado: falta de plasticidad, necesidad de aferrarse a algo aunque no sepa si le sirve como defensa.</li></ul><p class="small">Un paraguas grande no es «buenas defensas, pero más». Una defensa desproporcionada al estímulo también es un dato: habla de cuánto amenaza lo que está afuera, o de cuánto le cuesta al sujeto registrarlo.</p></div></div>
+    <div class="dstep"><div class="sc"><h5>Paso 2 · La lluvia</h5><h4>Escasa, y lejos</h4><p>La lluvia es <b>escasa</b> y cae solo en los bordes de la hoja. Ninguna gota toca el paraguas ni la persona: alrededor de la figura queda una zona seca.</p><p>Leída aislada, la lluvia escasa se asocia con sentirse con posibilidades de defenderse. Pero acá la lluvia escasa convive con un paraguas enorme: la defensa es máxima frente a una presión que se representa mínima. Esa <b>desproporción</b> es lo interpretable. Puede pensarse en una presión que se registra, pero se mantiene a distancia, cerca de la tendencia a negar las presiones del medio que la tabla asocia con la ausencia de lluvia.</p></div></div>
+    <div class="dstep"><div class="sc"><h5>Paso 3 · La nube</h5><h4>Una sola, inflada</h4><p>Hay <b>una sola nube</b>, grande, en el ángulo superior derecho, con contornos muy redondeados y repasados: es una nube <b>inflada</b>.</p><p>Las nubes se asocian con presión y amenaza, y las nubes infladas se han relacionado con <b>tendencias autoagresivas o dolencias psicosomáticas</b>. Acá esa lectura de manual encuentra apoyo en la entrevista: el motivo de consulta son cefaleas, contracturas e insomnio sin causa orgánica.</p><p class="small">Fijate en la lógica: no es la nube la que «diagnostica» lo psicosomático. Es la entrevista la que le da peso a una lectura que, sola, sería muy inferencial.</p></div></div>
+    <div class="dstep"><div class="sc"><h5>Paso 4 · La línea de suelo</h5><h4>Apoyo muy presionado</h4><p>La línea de suelo está, es continua y está trazada con <b>mucha presión</b>: es la línea más oscura del dibujo y casi marca el reverso de la hoja.</p><p>El suelo se lee como criterio de realidad. Su presencia es un recurso: Gonzalo está apoyado en la realidad. La presión excesiva se ha relacionado con una realidad vivida como tensa o agresiva. El mismo trazo fuerte que se ve en la figura se concentra en el apoyo.</p></div></div>
+    <div class="dstep"><div class="sc"><h5>Paso 5 · La historia</h5><h4>«Impermeable»</h4><p>Gonzalo cuenta: «Es un hombre que va a una reunión importante. Llueve, pero no pasa nada: tiene el paraguas grande, el de golf. Llega seco, cierra el negocio y vuelve a la oficina». Al preguntarle qué siente el hombre, responde: «Nada en especial. Está concentrado». Título: «Impermeable».</p><p>Siguiendo a Sívori, la historia muestra con qué inviste el sujeto la lluvia: <b>«no pasa nada»</b>. El relato no tiene conflicto, el personaje no registra afectos y el desenlace repite la escena (vuelve a la oficina). El título condensa la hipótesis: nada de afuera lo moja.</p></div></div>
+    <div class="dstep"><div class="sc"><h5>Paso 6 · Síntesis</h5><h4>Una defensa que cuesta</h4><p>Los datos que se sostienen juntos son: una figura que crece frente a la presión, un paraguas excesivo con mango remarcado, una lluvia mantenida lejos, una nube inflada, un suelo muy presionado y una historia sin afectos.</p><p>«En la PBLL, Gonzalo despliega recursos defensivos <b>intensos y poco flexibles</b> frente a una presión que representa como mínima y alejada. En comparación con el DFH, la figura se agranda bajo el estresor, lo que podría indicar una respuesta compensatoria. La historia niega el impacto de la lluvia y no registra afectos. Estos datos permitirían plantear, a modo de hipótesis, un <b>estilo defensivo de sobrecontrol y negación de la vulnerabilidad</b>, cuyo costo podría estar expresándose en el cuerpo (cefaleas, contracturas, insomnio). Sería pertinente explorar en la entrevista el ascenso, el lugar del trabajo en su vida y la muerte del padre a una edad no tan lejana.»</p></div></div>
+   </div>
+   <div class="dfig"><div class="frame">
+    <svg viewBox="0 0 600 456" role="img" aria-label="Dibujo a lápiz de un hombre grande de frente, de traje, bajo un paraguas muy grande con el mango remarcado; una sola nube inflada, poca lluvia en los bordes y una línea de suelo muy marcada; a la derecha, una leyenda que se completa paso a paso">
+     <g data-s="0">
+      <rect x="20" y="16" width="300" height="424" rx="2" class="boxs"/>
+      <text x="26" y="452" class="xs">ejemplo ilustrativo · hoja A4 vertical</text>
+      <path class="pen" style="stroke-width:2.2" d="M170,152 c11,0 20,9 20,20 c0,11 -9,20 -20,20 c-11,0 -20,-9 -20,-20 c0,-11 9,-20 20,-20z"/>
+      <circle cx="163" cy="170" r="1.8" class="penf"/><circle cx="177" cy="170" r="1.8" class="penf"/>
+      <path class="pen" style="stroke-width:2.2" d="M163,182 l14,0 M165,192 l0,8 M175,192 l0,8"/>
+      <path class="pen" style="stroke-width:2.2" d="M146,200 q24,-6 48,0 l6,104 q-30,5 -60,0z"/>
+      <path class="pen" style="stroke-width:2.2" d="M170,202 l-4,10 l4,30 l4,-30z"/>
+      <path class="pen" style="stroke-width:2.2" d="M147,206 q-16,40 -14,86 M193,206 q12,18 -14,44"/>
+      <circle cx="133" cy="296" r="5" class="pen"/>
+      <path class="pen" style="stroke-width:2.2" d="M156,304 l-2,86 M184,304 l2,86 M154,390 q-10,2 -16,0 M186,390 q10,2 16,0"/>
+     </g>
+     <g data-s="1">
+      <path class="pen" style="stroke-width:2.2" d="M50,150 Q80,74 170,80 Q260,74 290,150 q-15,-8 -30,0 q-15,-8 -30,0 q-15,-8 -30,0 q-15,-8 -30,0 q-15,-8 -30,0 q-15,-8 -30,0 q-15,-8 -30,0 q-15,-8 -30,0z"/>
+      <path class="pen" d="M170,80 L110,146 M170,80 L170,148 M170,80 L230,146 M170,80 l0,-8"/>
+      <path class="pen" style="stroke-width:3.4" d="M170,82 L172,252 q2,10 -7,10"/>
+      <circle cx="176" cy="250" r="5" class="pen"/>
+      <ellipse cx="170" cy="118" rx="134" ry="50" class="lk" stroke-dasharray="5 4"/>
+     </g>
+     <g data-s="2">
+      <path class="pen" stroke-width="1.2" d="M32,70 l-2.5,10 M44,110 l-2.5,11 M30,180 l-2.5,10 M38,240 l-2.5,11 M28,300 l-2.5,10 M42,352 l-2.5,11 M306,120 l-2.5,10 M298,190 l-2.5,11 M310,250 l-2.5,10 M300,316 l-2.5,11 M312,360 l-2.5,10 M120,30 l-2.5,10 M80,40 l-2.5,9"/>
+      <text x="60" y="338" class="hw tK">zona seca</text>
+     </g>
+     <g data-s="3">
+      <path class="pen" style="stroke-width:2.2" d="M214,58 c-14,0 -18,-20 -2,-24 c0,-16 20,-22 30,-10 c8,-14 34,-12 36,4 c18,-2 24,22 6,28 c2,10 -14,14 -22,8 c-10,8 -38,8 -48,-6z"/>
+      <ellipse cx="250" cy="42" rx="58" ry="30" class="lv" stroke-dasharray="4 4"/>
+     </g>
+     <g data-s="4">
+      <path class="pen" style="stroke-width:3.4" d="M30,394 q50,-3 100,1 t100,-1 t84,2"/>
+      <path class="lv" d="M30,414 q50,-3 100,1 t100,-1 t84,2" stroke-dasharray="6 4"/>
+     </g>
+     <g data-s="6">
+      <path class="ls" d="M306,152 L306,392 M300,152 L312,152 M300,392 L312,392"/>
+      <text x="302" y="434" text-anchor="end" class="hw tS">≈ 57 % (con paraguas ≈ 75 %)</text>
+     </g>
+     <!-- leyenda acumulativa -->
+     <g data-s="0"><text x="336" y="34" class="hw tK">Persona</text><text x="336" y="51" class="sm">grande, de frente, trazo fuerte.</text><text x="336" y="65" class="sm">En el DFH era mediana y liviana.</text></g>
+     <g data-s="1"><text x="336" y="94" class="hw tK">Paraguas</text><text x="336" y="111" class="sm">muy grande, mango remarcado:</text><text x="336" y="125" class="sm">¿defensa excesiva y poco flexible?</text></g>
+     <g data-s="2"><text x="336" y="154" class="hw tV">Lluvia</text><text x="336" y="171" class="sm">escasa, solo en los bordes; no toca</text><text x="336" y="185" class="sm">a la persona: ¿presión mantenida lejos?</text></g>
+     <g data-s="3"><text x="336" y="214" class="hw tV">Nube (1)</text><text x="336" y="231" class="sm">única e inflada: se ha relacionado</text><text x="336" y="245" class="sm">con dolencias psicosomáticas</text></g>
+     <g data-s="4"><text x="336" y="274" class="hw tV">Línea de suelo</text><text x="336" y="291" class="sm">presente pero muy presionada:</text><text x="336" y="305" class="sm">¿realidad vivida como tensa?</text></g>
+     <g data-s="5"><text x="336" y="334" class="hw tK">Historia</text><text x="336" y="351" class="sm">«no pasa nada», sin afectos.</text><text x="336" y="365" class="sm">Título: «Impermeable».</text></g>
+     <g data-s="6"><text x="336" y="394" class="hw tS">Síntesis</text><text x="336" y="411" class="sm">sobrecontrol y negación de la</text><text x="336" y="425" class="sm">vulnerabilidad, ¿con costo corporal?</text></g>
+    </svg>
+    <div class="cap">Ejemplo ilustrativo (caso ficticio). Rojo: elementos de presión. Azul: recursos y defensas. Verde: medidas.</div>
+   </div></div>
+  </div>
+
+  <div class="call clave"><span class="lab">Paula y Gonzalo, comparados</span><p>En los dos dibujos hay paraguas, lluvia, nubes y suelo. Lo que cambia es la <b>proporción</b> entre la presión y la defensa. En Paula, el paraguas queda chico para una lluvia moderada: los recursos existen pero podrían no alcanzar. En Gonzalo, el paraguas es enorme para una lluvia casi ausente: el recurso sobra, y lo que se pregunta es qué le cuesta sostenerlo. En los dos casos la comparación con el DFH y la historia deciden la lectura.</p></div>
   <div class="errores"><h4>Errores frecuentes</h4><ul>
    <li>Asumir que la lluvia es hostil y leer todo como «presión», sin preguntar en la historia qué significa para el sujeto (Sívori).</li>
    <li>Leer «sin paraguas = sin defensas» sin mirar si la figura se defiende con el cuerpo (hombros anchos) o con un reemplazo (alero, capa, árbol).</li>
@@ -2343,19 +2525,19 @@ svg [hidden]{display:none}
     <div class="dstep"><div class="sc"><h5>Paso 1 · El relato</h5><h4>Leé primero, sin interpretar</h4>
       <div class="relato"><div class="rh"><b>Lámina 1</b><span>niño</span><span>TR y TT no consignados</span></div>
         <p>«Un niño que nunca pudo tocar el violín, que nunca le salió, que él mismo trata. Para mí que antes ese niño ni sabía que existía, que alguien se lo mostró y trató de tocarlo pero no pudo... yo creo que en el futuro si se esfuerza puede llegar a tocarlo.»<span class="mk lit">⚑</span></p></div>
-      <p>Antes de interpretar, recordá qué indaga la lámina 1: <b>metas</b>, es decir, aspiraciones, rendimiento y relación con las exigencias. Contra eso vas a comparar el relato.</p></div></div>
+      <p>Antes de interpretar, recordá qué indaga la lámina 1: <b>metas</b>, es decir, aspiraciones, rendimiento y relación con las exigencias. Contra eso vas a comparar el relato.</p><p class="small">Hacé una primera lectura «ingenua», como si fuera un cuento cualquiera, y marcá las frases que se repiten o que suenan raras. Acá ya se nota una: la idea de no poder aparece tres veces («nunca pudo», «nunca le salió», «no pudo») en un relato de cuatro renglones. Esa insistencia es un dato formal antes de ser un dato de contenido.</p></div></div>
     <div class="dstep"><div class="sc"><h5>Paso 2 · Héroe</h5><h4>¿Con quién se identifica?</h4>
-      <p>El héroe es el niño de la lámina, el único personaje que aparece y el que tiene el mismo sexo y la misma edad que el narrador. Es la identificación esperable. Fijate que el relato empieza por lo que el héroe <i>no pudo</i> hacer.</p></div></div>
+      <p>El héroe es el niño de la lámina: el único personaje visible y el que tiene el mismo sexo y la misma edad que el narrador. Es la <b>identificación esperable</b>, y que sea esperable también es un dato: el relato no rehúye la escena.</p><p>Mirá cómo lo presenta. La primera frase no dice quién es ni qué hace, sino lo que <i>no pudo</i>: «un niño que nunca pudo tocar el violín». El héroe se define por una falta. Para Bellak, la pregunta siguiente es si es un <b>héroe adecuado</b>, capaz de enfrentar la situación. Acá la respuesta está abierta: intenta, pero hasta ahora fracasó.</p></div></div>
     <div class="dstep"><div class="sc"><h5>Paso 3 · Necesidad</h5><h4>¿Qué quiere el héroe?</h4>
-      <p>Quiere lograr tocar el violín: es una necesidad de <b>logro</b>. Además, la iniciativa es suya: «él mismo trata». El héroe intenta, no es pasivo.</p></div></div>
+      <p>Quiere lograr tocar el violín: es una necesidad de <b>logro</b>, en el vocabulario de Murray. Lo importante es de dónde sale: «él mismo trata». La iniciativa es del héroe. No se queda contemplando el violín: lo intenta.</p><p>Esa iniciativa es un recurso. Un héroe que quiere algo y lo intenta, aunque fracase, habla de un deseo que todavía está vivo. Es distinto de un héroe que «tiene que» tocar y no quiere, o que abandona antes de empezar.</p></div></div>
     <div class="dstep"><div class="sc"><h5>Paso 4 · Presión</h5><h4>¿Qué se le opone?</h4>
-      <p>No hay un personaje hostil. El obstáculo es el propio fracaso: «nunca le salió», «no pudo». La exigencia viene de afuera: el violín le llega a través de otro.</p></div></div>
+      <p>No hay un personaje hostil: nadie lo obliga, lo reta ni lo castiga. El obstáculo es <b>el propio fracaso</b>: «nunca le salió», «no pudo». La presión, entonces, no viene del ambiente sino de adentro, de la distancia entre lo que el héroe quiere y lo que logra.</p><p>Hay un matiz más. El violín no es algo que el niño buscó: «ni sabía que existía» hasta que alguien se lo mostró. La meta le llega <b>desde afuera</b>, y la frustración queda de su lado. Es una presión indirecta: no hay exigencia explícita, pero la meta es de otro.</p></div></div>
     <div class="dstep"><div class="sc"><h5>Paso 5 · Distorsión y agregados</h5><h4>¿Respeta la lámina?</h4>
-      <p>El niño percibe bien el violín y no lo omite, así que no hay distorsión de los elementos de la lámina. Pero introduce a «alguien» que le mostró el violín, un personaje que <b>no está en la lámina</b>. Ese agregado es motivo de indagación: ¿quién pone las metas en la vida de este niño?</p><p>Contra el clisé: respeta el <b>clisé perceptivo</b> (niño y violín) y se mantiene cerca del <b>clisé temático</b> (aspiración y dificultad), pero lo desplaza. No cuenta el deber de practicar frente a las ganas de hacer otra cosa, sino la incapacidad («nunca le salió») y una meta que viene de otro.</p></div></div>
+      <p>El niño percibe bien el violín y no lo omite, así que no hay distorsión de los elementos de la lámina. Pero introduce a «alguien» que le mostró el violín, un personaje que <b>no está en la lámina</b>. Ese agregado es motivo de indagación: ¿quién pone las metas en la vida de este niño?</p><p>Contra el clisé: respeta el <b>clisé perceptivo</b> (niño y violín) y se mantiene cerca del <b>clisé temático</b> (aspiración y dificultad), pero lo desplaza. No cuenta el deber de practicar frente a las ganas de hacer otra cosa, sino la incapacidad («nunca le salió») y una meta que viene de otro.</p><p class="small">El personaje introducido no tiene sexo, edad ni nombre: es «alguien». Esa vaguedad también se registra. En la entrevista se puede explorar quién le muestra al niño lo que «tiene que» poder hacer.</p></div></div>
     <div class="dstep"><div class="sc"><h5>Paso 6 · Desenlace</h5><h4>¿Cómo termina?</h4>
-      <p>Termina con un final condicional y abierto: «si se esfuerza puede llegar a tocarlo». Es un pronóstico favorable que depende del esfuerzo del héroe. El relato tiene pasado, presente y futuro, así que cumple la consigna.</p></div></div>
+      <p>Termina con un final <b>condicional y abierto</b>: «si se esfuerza puede llegar a tocarlo». No es un final feliz consumado ni un fracaso definitivo. Es un pronóstico favorable que depende del esfuerzo del héroe.</p><p>Fijate en la voz del narrador: «yo creo que». El niño sale del cuento para opinar. Puede leerse como una forma de tomar distancia de la escena, o como una apuesta personal por el héroe. En cualquier caso, el relato tiene <b>pasado</b> («antes ni sabía que existía»), <b>presente</b> («él mismo trata») y <b>futuro</b>, así que cumple la consigna sin que el examinador tenga que intervenir.</p></div></div>
     <div class="dstep"><div class="sc"><h5>Paso 7 · Tono y pregunta de examen</h5><h4>¿Responde a lo que indaga la lámina?</h4>
-      <p>El tono pasa de la frustración y la sensación de incapacidad a la esperanza. El relato sí responde a lo que la lámina indaga: rendimiento, dificultades, esperanza y metas.</p>
+      <p>El tono pasa de la frustración y la sensación de incapacidad a la esperanza. El relato sí responde a lo que la lámina indaga: rendimiento, dificultades, esperanza y metas. Si tuvieras que resumirlo en una secuencia de Murray, sería: <b>meta ajena → intento propio → fracaso → esperanza condicionada al esfuerzo</b>.</p><p class="small">Una sola lámina no alcanza para concluir nada. Lo que sí podés hacer es dejar marcadas las preguntas que vas a llevar a otras láminas (por ejemplo, ¿aparecen otros héroes que fracasan pero insisten?, ¿quién pone las metas?) y a la entrevista.</p>
       <blockquote class="model"><p>«El sentimiento del héroe podría ser de frustración, en tanto que trató de tocar el violín pero "nunca le salió" […] No obstante, también da cuenta de un posible desenlace en donde hay un buen pronóstico si sigue intentando, lo cual refleja lo que la lámina examina […] quizás el hecho de que haya aparecido un personaje secundario que no está presente en la lámina puede ser motivo de indagación.»<span class="mk lit">⚑</span></p></blockquote></div></div>
    </div>
    <div class="dfig"><div class="frame tat-fr">
@@ -2413,24 +2595,96 @@ svg [hidden]{display:none}
   <div class="call caso ficticio"><span class="lab">Caso ilustrativo</span><p>Varón de 9 años, consultante ficticio. Escribimos este relato solo para practicar las diez categorías. No sale de ningún protocolo real.</p></div>
   <div class="relato"><div class="rh"><b>Lámina 13V</b><span>TR 12″</span><span>TT 1′50″</span></div>
     <p>Este nene está sentado en la puerta de su casa esperando a la mamá, que se fue a trabajar al pueblo y le dijo que volvía a la tardecita. Ya es de noche y no vuelve. Está triste y un poco asustado porque está solo. <span class="int">(E: ¿Y qué piensa?)</span> Piensa que a lo mejor la mamá se olvidó de él porque a la mañana se portó mal. Al final viene el vecino y le dice que la mamá avisó que perdió el ómnibus, y él se va a dormir a lo del vecino. Pero igual está triste.</p></div>
+  <div class="cols2">
+    <div class="panel"><h4>Primero, el análisis formal</h4><p class="small">El TR de 12″ es breve: la lámina no lo bloquea. El relato es coherente, con lenguaje acorde a la edad y sin distorsiones perceptivas: ve un niño, una casa y la noche que sugiere la lámina. Le falta, en la primera versión, lo que piensa el héroe, y el examinador tiene que intervenir («¿Y qué piensa?»). Es una intervención aclaratoria, no un incumplimiento grave. Lo que se dice <i>después</i> de la intervención («se portó mal») es justamente lo más significativo del relato.</p></div>
+    <div class="panel"><h4>Después, el contenido</h4><p class="small">El argumento es realista: no hay magia ni catástrofes, la madre «perdió el ómnibus». El tono dominante es la tristeza, con un componente de miedo. Hay dos personajes introducidos (la madre ausente y el vecino) y ninguno omitido. La secuencia de Murray sería: <b>separación → espera → culpa → rescate por un sustituto → tristeza que persiste</b>.</p></div>
+  </div>
   <div class="tablewrap"><table class="tb">
     <caption>Lectura con las 10 categorías de Bellak</caption>
     <thead><tr><th>Categoría</th><th>En este relato</th></tr></thead>
     <tbody>
-      <tr><td class="k">1 · Tema</td><td>La espera de la madre y el temor a ser abandonado, vividos con culpa.</td></tr>
-      <tr><td class="k">2 · Héroe</td><td>El nene, del mismo sexo y edad que el consultante. Es un héroe pasivo: espera y no actúa.</td></tr>
-      <tr><td class="k">3 · Necesidades</td><td>Ser cuidado (<i>succorance</i>) y afiliación. Introduce figuras que no están en la lámina: la madre ausente y el vecino.</td></tr>
-      <tr><td class="k">4 · Ambiente</td><td>Impredecible: el adulto no cumple lo que promete. Aun así, el ambiente ofrece un sustituto.</td></tr>
-      <tr><td class="k">5 · Figuras vitales</td><td>La madre es querida pero falla. El vecino es una figura protectora sustituta. La relación es de dependencia.</td></tr>
-      <tr><td class="k">6 · Conflicto</td><td>El deseo de ser cuidado choca con la idea de que portarse mal hace que lo dejen.</td></tr>
-      <tr><td class="k">7 · Ansiedades</td><td>Abandono y pérdida del amor por desaprobación.</td></tr>
-      <tr><td class="k">8 · Defensas</td><td>Se culpa a sí mismo (vuelve la agresión contra sí), espera pasivamente y da una explicación externa tranquilizadora («perdió el ómnibus»). La defensa funciona solo en parte: «igual está triste».</td></tr>
-      <tr class="hi"><td class="k">9 · Superyó</td><td>El «castigo» (que lo abandonen) es desproporcionado para una falta menor. Es una hipótesis de superyó severo.</td></tr>
-      <tr><td class="k">10 · Integración del yo</td><td>El relato es coherente y tiene las tres fases, aunque el futuro apareció recién después de la intervención del examinador. El desenlace es favorable en lo concreto, pero el tono sigue siendo depresivo.</td></tr>
+      <tr><td class="k">1 · Tema</td><td>En lo descriptivo: un niño espera a su madre, que no vuelve a la hora prometida. En lo interpretativo: el temor a ser abandonado, vivido como consecuencia de una falta propia. Un tema secundario es la posibilidad de ser cuidado por otro.</td></tr>
+      <tr><td class="k">2 · Héroe</td><td>El nene, del mismo sexo y edad que el consultante. Es un héroe <b>pasivo</b>: espera, piensa y se entristece, pero no hace nada para buscar a la madre ni para pedir ayuda. La resolución llega desde afuera.</td></tr>
+      <tr><td class="k">3 · Necesidades</td><td>Ser cuidado (<i>succorance</i>) y afiliación. Introduce figuras que no están en la lámina: la madre ausente y el vecino. Las dos figuras introducidas son figuras de cuidado: lo que el relato agrega es justamente lo que el héroe necesita.</td></tr>
+      <tr><td class="k">4 · Ambiente</td><td>Impredecible: el adulto no cumple lo que promete («volvía a la tardecita») y la noche se vuelve amenazante. Aun así, no es un mundo hostil: cuando la figura principal falla, el ambiente ofrece un sustituto que protege.</td></tr>
+      <tr><td class="k">5 · Figuras vitales</td><td>La madre es querida pero falla, y el niño no se enoja con ella: la exculpa. El vecino es una figura protectora sustituta. La relación con los adultos es de <b>dependencia</b>: el bienestar del héroe depende de que alguien venga.</td></tr>
+      <tr><td class="k">6 · Conflicto</td><td>El deseo de ser cuidado choca con la idea de que portarse mal hace que lo dejen. Es un conflicto entre la necesidad de la madre y la agresividad propia, que el héroe imagina con poder de alejarla.</td></tr>
+      <tr><td class="k">7 · Ansiedades</td><td>Abandono y pérdida del amor por desaprobación. Las dos aparecen ligadas: no lo dejan por azar, sino porque «se portó mal».</td></tr>
+      <tr><td class="k">8 · Defensas</td><td>Vuelve la agresión contra sí mismo (se culpa en lugar de enojarse con la madre que no llega), espera pasivamente y acepta una explicación externa tranquilizadora («perdió el ómnibus»). La defensa funciona solo en parte: «igual está triste».</td></tr>
+      <tr class="hi"><td class="k">9 · Superyó</td><td>El «castigo» (que lo abandonen) es desproporcionado para una falta menor y no especificada («se portó mal»). Es una hipótesis de <b>superyó severo</b>, que conviene buscar en otras láminas donde aparezcan faltas y castigos.</td></tr>
+      <tr><td class="k">10 · Integración del yo</td><td>El relato es coherente y tiene las tres fases, aunque el contenido mental del héroe apareció recién después de la intervención del examinador. El desenlace es favorable en lo concreto (alguien lo cuida), pero el tono sigue siendo depresivo. El yo resuelve con ayuda, no solo.</td></tr>
     </tbody></table></div>
-  <p class="prose"><b>Contra el clisé.</b> El relato respeta el clisé perceptivo (un niño solo en el umbral de una casa) y sigue el clisé temático esperable para la 13V (soledad y espera). Lo propio del consultante está en lo que agrega: la culpa como explicación de la ausencia («se portó mal»), que no viene de la lámina.</p>
-  <blockquote class="model"><p>Me interesaría averiguar cómo vive este niño las separaciones de sus figuras de cuidado. En la lámina 13V construye un héroe que espera pasivamente y que explica la ausencia de la madre por su propia falta, lo que permite pensar en <b>ansiedades de abandono</b> y en un <b>superyó posiblemente severo</b>. El relato es coherente y aparece una figura sustituta que protege, lo que habla de recursos. De todas maneras, sería prudente buscar recurrencias en otras láminas, por ejemplo en la 6VH, la 10 y la 20, y contrastarlas con la entrevista y la historia familiar antes de sostener la hipótesis.</p></blockquote>
+  <p class="prose"><b>Contra el clisé.</b> El relato respeta el clisé perceptivo (un niño solo en el umbral de una casa) y sigue el clisé temático esperable para la 13V (soledad y espera). Lo propio del consultante está en lo que agrega: la culpa como explicación de la ausencia («se portó mal»), que no viene de la lámina, y un final que resuelve la situación pero no el afecto.</p>
+  <blockquote class="model"><p>Me interesaría averiguar cómo vive este niño las separaciones de sus figuras de cuidado. En la lámina 13V construye un héroe que espera pasivamente y que explica la ausencia de la madre por su propia falta, lo que permite pensar en <b>ansiedades de abandono</b> y en un <b>superyó posiblemente severo</b>, que vuelve la agresión hacia sí mismo en lugar de dirigirla a la figura que falla. El relato es coherente, realista y aparece una figura sustituta que protege, lo que habla de recursos y de una representación del ambiente que, aunque falla, no es hostil. De todas maneras, se trata de un único relato: sería prudente buscar recurrencias en otras láminas, por ejemplo en la 6VH, la 10 y la 20, y contrastarlas con la entrevista (separaciones recientes, horarios de trabajo de la madre, cómo se lo reta en casa) antes de sostener la hipótesis.</p></blockquote>
 
+
+  <h3>Tercer ejemplo: un protocolo de cinco láminas</h3>
+  <div class="prose"><p>Los dos ejemplos anteriores trabajan una sola lámina. Pero Murray insiste en que el significado de un dato solo se establece en relación con <b>la totalidad de las historias</b>. Este ejemplo muestra ese paso: cinco relatos de una misma consultante, cada uno leído por separado y después cruzados para buscar <b>recurrencias</b>. Las láminas se eligieron según el motivo de consulta, como se hace en la clínica.</p></div>
+  <div class="call caso ficticio"><span class="lab">Datos del caso</span><p><b>Florencia</b> tiene 21 años. Es de un pueblo del interior, donde su familia tiene un tambo, y hace dos años vive en Montevideo para estudiar en la Universidad. Consulta en una policlínica universitaria porque «se bloquea» en los exámenes: estudia, sabe, y en el momento de la prueba «se le borra todo». Perdió tres exámenes este año. Vuelve a su casa todos los fines de semana «para ayudar». Vive con sus padres y un hermano de 15 años cuando está en el pueblo.</p><p class="small">Láminas elegidas: 1 (metas y exigencia), 2 (familia, autonomía, campo y ciudad), 5 (imagen materna), 6NM (vínculo con una figura masculina mayor) y 16 (proyección libre). Los relatos son inventados para practicar.</p></div>
+
+  <div class="c4-lam">
+   <figure><img src="img/tat/lam-1.jpg" alt="Lámina 1: un niño mira un violín apoyado sobre una mesa." loading="lazy"><figcaption><b>Lámina 1</b>Metas · exigencia</figcaption></figure>
+   <div>
+    <div class="relato"><div class="rh"><b>Lámina 1</b><span>TR 8″</span><span>TT 1′30″</span></div>
+     <p>Es un chico que tiene que estudiar violín porque los padres le pagaron las clases. Él quería jugar al fútbol, pero no quiere decepcionarlos. Está pensando cómo decirles que no le gusta. <span class="int">(E: ¿Y cómo termina?)</span> Sigue estudiando. Va a ser un buen violinista, pero no va a ser feliz del todo.</p></div>
+    <p class="small"><b>Lectura.</b> Respeta el clisé perceptivo y el temático: el deber frente al deseo. Lo propio está en los matices. La meta es de los padres y además está <b>pagada</b>: hay una deuda. La necesidad del héroe (autonomía, jugar) choca con la necesidad de no decepcionar. El desenlace llega después de una intervención y es de <b>sometimiento con costo</b>: logra el rendimiento, pierde la felicidad. El héroe no le dice nada a los padres.</p>
+   </div>
+  </div>
+
+  <div class="c4-lam">
+   <figure><img src="img/tat/lam-2.jpg" alt="Lámina 2: escena de campo; una joven con libros en primer plano, un hombre trabaja la tierra y una mujer mayor observa." loading="lazy"><figcaption><b>Lámina 2</b>Familia · autonomía</figcaption></figure>
+   <div>
+    <div class="relato"><div class="rh"><b>Lámina 2</b><span>TR 15″</span><span>TT 2′10″</span></div>
+     <p>Esta chica es la hija de los que trabajan el campo. Se va a ir a estudiar a la ciudad, por eso tiene los libros. La madre la mira desde el árbol: no quiere que se vaya. El padre sigue trabajando como si nada. Ella se siente culpable porque los deja con todo el trabajo. Al final se va, pero vuelve todos los fines de semana a ayudar.</p></div>
+    <p class="small"><b>Lectura.</b> La heroína es la joven de los libros, con la misma edad y el mismo sexo que la consultante, y el relato es casi <b>autobiográfico</b>: tiene poca distancia con su propia historia. La necesidad es de autonomía y logro. Las presiones vienen de las dos figuras parentales, de modo distinto: la madre <b>retiene con la mirada</b> y el padre está ausente en lo afectivo («como si nada»). El conflicto es separación frente a culpa. El desenlace es una <b>solución de compromiso</b>: se va, pero no del todo.</p>
+   </div>
+  </div>
+
+  <div class="c4-lam">
+   <figure><img src="img/tat/lam-5.jpg" alt="Lámina 5: una mujer de mediana edad asoma por una puerta entreabierta y mira hacia el interior de una habitación." loading="lazy"><figcaption><b>Lámina 5</b>Imagen materna</figcaption></figure>
+   <div>
+    <div class="relato"><div class="rh"><b>Lámina 5</b><span>TR 20″</span><span>TT 1′45″</span></div>
+     <p>Una señora que abre la puerta para ver si la hija está estudiando. Siempre la controla. La hija no está, se fue sin avisar. La señora se queda preocupada, piensa que le pasó algo. <span class="int">(E: ¿Qué pasa después?)</span> La hija vuelve y la madre la reta. Pero después se abrazan.</p></div>
+    <p class="small"><b>Lectura.</b> La lámina indaga la imagen de la madre, y la respuesta es una madre <b>vigilante</b>, que controla y se angustia. Lo interesante es que la heroína visible es la madre, pero la acción importante la hace la hija ausente, que se va «sin avisar»: el relato escenifica la separación como una falta. Hay castigo (la reta) y reparación (se abrazan). El desenlace es favorable, pero apareció recién con la intervención del examinador.</p>
+   </div>
+  </div>
+
+  <div class="c4-lam">
+   <figure><img src="img/tat/lam-6NM.jpg" alt="Lámina 6NM: una mujer sentada, sorprendida, gira hacia un hombre mayor que le habla por detrás." loading="lazy"><figcaption><b>Lámina 6NM</b>Figura masculina mayor</figcaption></figure>
+   <div>
+    <div class="relato"><div class="rh"><b>Lámina 6NM</b><span>TR 25″</span><span>TT 1′20″</span><span>pausa larga al inicio</span></div>
+     <p>Mmm… Es un hombre mayor, el profesor, que le habla a una alumna. Le dice que si no se esfuerza más va a perder el año. Ella se da vuelta sorprendida, no esperaba eso. Se pone nerviosa y se le olvida todo lo que sabía. Termina… no sé. Supongo que recupera en diciembre.</p></div>
+    <p class="small"><b>Lectura.</b> Es el TR más largo hasta acá, con una pausa: algo en la lámina la detiene. La lámina suele evocar la relación entre un hombre y una mujer, con expectativas, sospecha o seducción. Florencia <b>se aparta del clisé temático</b>: transforma la escena en una <b>situación de evaluación</b> con una autoridad que amenaza. La heroína reacciona con exactamente el síntoma del motivo de consulta («se le olvida todo»). El final es vago y poco comprometido («no sé, supongo»).</p>
+   </div>
+  </div>
+
+  <div class="c4-lam">
+   <figure><div class="tat-blank">lámina en blanco</div><figcaption><b>Lámina 16</b>Proyección libre</figcaption></figure>
+   <div>
+    <div class="relato"><div class="rh"><b>Lámina 16</b><span>TR 30″</span><span>TT 2′</span></div>
+     <p>Me imagino… una chica en una pieza chica, con una ventana. Afuera está la ciudad, hay mucho ruido. Está sola y extraña su casa. Pero también le gusta tener su lugar. Está aprendiendo a cocinar. Va a ir haciendo amigos de a poco.</p></div>
+    <p class="small"><b>Lectura.</b> Sin estímulo que oriente, Florencia construye una escena muy cercana a su presente. Pero el tono cambia respecto de las otras láminas: aparecen la ambivalencia nombrada («extraña» y «le gusta»), una actividad que la hace más autónoma (cocinar) y un final <b>progresivo y esperanzado</b>, sin intervención del examinador. Es el relato donde la heroína tiene un lugar propio. Por eso se lee como un <b>recurso</b> y como expresión del ideal del yo.</p>
+   </div>
+  </div>
+
+  <div class="tablewrap"><table class="tb">
+    <caption>Recurrencias en los cinco relatos</caption>
+    <thead><tr><th>Lo que se repite</th><th>Dónde aparece</th><th>Lectura posible</th></tr></thead>
+    <tbody>
+      <tr class="hi"><td class="k">Separarse es una falta</td><td>2 (culpable por irse) · 5 (se va sin avisar y la retan) · 16 (extraña su casa)</td><td>Conflicto entre autonomía y dependencia; la separación de la familia se vive con culpa.</td></tr>
+      <tr class="hi"><td class="k">La meta es de otro</td><td>1 (clases pagadas por los padres) · 6NM (el profesor exige)</td><td>Exigencia vivida como externa; temor a decepcionar a figuras de autoridad.</td></tr>
+      <tr><td class="k">Figura materna que mira y retiene</td><td>2 (la madre mira desde el árbol) · 5 (abre la puerta para controlar)</td><td>Imagen materna vigilante y angustiada, querida pero difícil de dejar.</td></tr>
+      <tr><td class="k">Figura masculina distante o exigente</td><td>2 (el padre «como si nada») · 6NM (el profesor que amenaza)</td><td>Autoridad masculina vivida como poco disponible o evaluadora.</td></tr>
+      <tr><td class="k">El bloqueo</td><td>6NM (se le olvida todo)</td><td>Aparece una sola vez, pero coincide con el motivo de consulta y con el TR más largo.</td></tr>
+      <tr><td class="k">Desenlaces</td><td>1 sometimiento con costo · 2 compromiso · 5 castigo y reparación · 6NM vago · 16 progresivo</td><td>Los finales mejoran cuando no hay figuras parentales ni de autoridad en escena.</td></tr>
+    </tbody></table></div>
+
+  <div class="cols2">
+    <div class="panel"><h4>Análisis formal del protocolo</h4><p class="small">Comprende la consigna y coopera. No hay distorsiones perceptivas ni omisiones de elementos. Los relatos son coherentes, realistas y de extensión media. En dos láminas (1 y 5) el futuro aparece solo después de una intervención. El TR aumenta de forma progresiva y es máximo en la 16, donde no hay estímulo. La 6NM tiene una pausa inicial y un final vago.</p></div>
+    <div class="panel"><h4>Lo que no hay que hacer</h4><p class="small">Leer la 6NM sola y concluir «conflicto con lo masculino» o «evita la sexualidad». El apartamiento del clisé es un dato, pero tiene una sola aparición. Lo que la vuelve significativa es que se conecta con la recurrencia de la exigencia (1 y 6NM) y con el motivo de consulta. La regla de Murray es buscar <b>recurrencias y concurrencias</b> antes de interpretar.</p></div>
+  </div>
+
+  <blockquote class="model"><p>En el TAT, Florencia construye relatos coherentes y realistas, con buen ajuste perceptivo. A lo largo del protocolo se repiten dos temas. Por un lado, la <b>separación de la familia vivida como una falta</b>, que genera culpa y se resuelve con soluciones de compromiso (se va, pero vuelve a ayudar). Por otro, <b>metas que vienen de otros</b> (padres, profesor) frente a las cuales la heroína teme decepcionar. La figura materna aparece vigilante y retentiva, y las figuras masculinas, distantes o evaluadoras. Estos datos permitirían plantear, a modo de hipótesis, un <b>conflicto entre autonomía y dependencia</b> con un superyó exigente, que podría relacionarse con el bloqueo ante los exámenes que motiva la consulta. En la lámina 6NM, la situación de evaluación se acompaña del mismo bloqueo que la consultante describe. Como recurso, en la lámina 16 aparece una heroína capaz de nombrar su ambivalencia y proyectar un futuro propio. Sería pertinente contrastarlo con la entrevista (cómo se tomó la decisión de estudiar en Montevideo, qué espera la familia, qué pasa cuando no vuelve un fin de semana) y con técnicas gráficas como la PBLL.</p></blockquote>
   <h3>TAT y Rorschach: estructura frente a contenido</h3>
   <div class="tablewrap"><table class="tb">
     <thead><tr><th></th><th>TAT</th><th>Rorschach</th></tr></thead>
@@ -3358,7 +3612,7 @@ svg [hidden]{display:none}
     <li><div><b>Tabla de convergencias.</b> Área por área (cognitiva, emocional, vincular, defensas), qué dice cada fuente.</div></li>
     <li><div><b>Hipótesis integradora e informe.</b> Lenguaje probabilístico, articulación con el motivo de consulta y recomendaciones o derivaciones.</div></li>
   </ol>
-  <div class="call nota"><span class="lab">Sobre los casos</span><p>Tomás, Camila y Martín son <b>casos ilustrativos (ficticios)</b>, armados para practicar con los criterios de las fuentes del curso. El caso de Sergio es el material real del examen de diciembre de 2019; las respuestas son modelos propios, no la corrección oficial.</p></div>
+  <div class="call nota"><span class="lab">Sobre los casos</span><p>Tomás, Camila y Martín son <b>casos ilustrativos (ficticios)</b>, armados para practicar con los criterios de las fuentes del curso. El caso de Sergio es el material real del examen de diciembre de 2019; las respuestas son modelos propios, no la corrección oficial. Al final hay un <a href="#p2-parcial">parcial modelo</a> (Ignacio, ficticio) con entrevista, Test de la Familia, Persona bajo la lluvia y TAT, para resolver antes de mirar las respuestas.</p></div>
  </div>
 </section>
 
@@ -3994,14 +4248,14 @@ svg [hidden]{display:none}
 </section>
 
 <style>
-#p2-caso4 .c4-lam{display:grid;grid-template-columns:150px minmax(0,1fr);gap:20px;align-items:start;margin:26px 0 8px}
-#p2-caso4 .c4-lam figure{margin:0;background:var(--sheet);border:1px solid var(--rule);border-radius:10px;overflow:hidden}
-#p2-caso4 .c4-lam img{width:100%;aspect-ratio:4/5;object-fit:contain;background:#fff;display:block;border-bottom:1px solid var(--rule)}
-#p2-caso4 .c4-lam figcaption{padding:8px 10px;font-size:13px;line-height:1.35}
-#p2-caso4 .c4-lam figcaption b{display:block}
-#p2-caso4 .c4-lam .relato{margin-top:0}
-#p2-caso4 .c4-lam + .tablewrap{margin-top:6px}
-@media (max-width:640px){#p2-caso4 .c4-lam{grid-template-columns:92px minmax(0,1fr);gap:12px}#p2-caso4 .c4-lam figcaption{font-size:11.5px;padding:6px}}
+#p2-caso4 .c4-lam,#p2-tat .c4-lam,#p2-parcial .c4-lam{display:grid;grid-template-columns:150px minmax(0,1fr);gap:20px;align-items:start;margin:26px 0 8px}
+#p2-caso4 .c4-lam figure,#p2-tat .c4-lam figure,#p2-parcial .c4-lam figure{margin:0;background:var(--sheet);border:1px solid var(--rule);border-radius:10px;overflow:hidden}
+#p2-caso4 .c4-lam img,#p2-tat .c4-lam img,#p2-parcial .c4-lam img{width:100%;aspect-ratio:4/5;object-fit:contain;background:#fff;display:block;border-bottom:1px solid var(--rule)}
+#p2-caso4 .c4-lam figcaption,#p2-tat .c4-lam figcaption,#p2-parcial .c4-lam figcaption{padding:8px 10px;font-size:13px;line-height:1.35}
+#p2-caso4 .c4-lam figcaption b,#p2-tat .c4-lam figcaption b,#p2-parcial .c4-lam figcaption b{display:block}
+#p2-caso4 .c4-lam .relato,#p2-tat .c4-lam .relato,#p2-parcial .c4-lam .relato{margin-top:0}
+#p2-caso4 .c4-lam + .tablewrap,#p2-tat .c4-lam + .tablewrap,#p2-parcial .c4-lam + .tablewrap{margin-top:6px}
+@media (max-width:640px){#p2-caso4 .c4-lam,#p2-tat .c4-lam,#p2-parcial .c4-lam{grid-template-columns:92px minmax(0,1fr);gap:12px}#p2-caso4 .c4-lam figcaption,#p2-tat .c4-lam figcaption,#p2-parcial .c4-lam figcaption{font-size:11.5px;padding:6px}}
 #p2-caso4 .c4-weak .pen{stroke-width:1.05;stroke-opacity:.82}
 #p2-caso4 svg .pen.c4-ghost{stroke-opacity:.28;stroke-dasharray:2 2}
 #p2-caso4 svg .c4-halo{paint-order:stroke;stroke:var(--soft);stroke-width:4px;stroke-linejoin:round}
@@ -5181,6 +5435,317 @@ svg [hidden]{display:none}
     <li>Koppitz, E. M. <i>El dibujo de la figura humana en los niños</i> y <i>El Test Guestáltico Visomotor para niños</i>.</li>
     <li>Corman, L. <i>El test del dibujo de la familia</i>; Caride, M. (niveles de análisis).</li>
     <li>Rorschach, H. (1921). <i>Psychodiagnostik</i>. Bern: Bircher.</li>
+  </ol></details>
+ </div>
+</section>
+
+<section class="bloque" id="p2-parcial" data-parcial="2" data-tema="Casos integrados" data-toc="Parcial modelo · Ignacio (Familia + PBLL + TAT)" data-title="Parcial modelo · Ignacio">
+ <div class="wrap">
+  <div class="bhead"><div class="bnum">P</div>
+    <div class="chips"><span class="chip topic">Parcial modelo</span><span class="chip amber">Ficticio</span><span class="chip">11;4 · varón · 6.º año</span><span class="chip">Entrevista · Familia · PBLL · TAT (4 láminas)</span><span class="chip violet">Para practicar</span></div>
+    <h2>Parcial modelo · Ignacio</h2></div>
+
+  <div class="call caso ficticio"><span class="lab">Cómo usar este parcial</span>
+    <p>Este parcial está <b>armado para practicar</b> con las tres técnicas del segundo parcial: Test de la Familia, Persona bajo la lluvia y TAT. Ignacio y su familia no existen. El formato imita el del <a href="#p2-sergio">examen de diciembre de 2019</a>, pero las consignas no son de la cátedra.</p>
+    <p>Leé el material completo, escribí tus respuestas (una carilla por pregunta) y recién después abrí las respuestas modelo. Las respuestas <b>no son oficiales</b>: muestran un modo de razonar y de redactar, no la única respuesta posible.</p>
+  </div>
+
+  <div class="ser-head" role="group" aria-label="Encabezado del parcial modelo">
+    <div class="ser-inst">Parcial modelo · material ficticio para practicar</div>
+    <div class="ser-tit">Herramientas de la Psicología Clínica · Segundo parcial</div>
+    <div>Material: entrevista con los padres y con el niño · Test de la Familia · Persona bajo la lluvia · TAT (láminas 1, 2, 3VH y 6VH)</div>
+    <div>Extensión: <b>máximo 1 carilla por pregunta</b></div>
+    <ol>
+      <li>Desarrolle los aspectos más significativos de la entrevista en relación con el motivo de consulta.</li>
+      <li>Analice el Test de la Familia en al menos dos de los niveles de Caride, integrando el reactivo verbal.</li>
+      <li>Analice la Persona bajo la lluvia: ¿qué recursos defensivos despliega Ignacio frente a la presión? Articule con su historia.</li>
+      <li>Analice los relatos del TAT (héroe, necesidades, presiones, desenlace) y señale las recurrencias.</li>
+      <li>Integre los resultados en hipótesis articuladas con el motivo de consulta y proponga recomendaciones.</li>
+    </ol>
+  </div>
+
+  <h3>El material del caso</h3>
+  <div class="results">
+    <div class="tile"><div class="k">Edad</div><div class="v">11;4</div><div class="s">11 años 4 meses · 6.º año</div></div>
+    <div class="tile"><div class="k">Deriva</div><div class="v" style="font-size:22px">Pediatra</div><div class="s">dolores sin causa orgánica</div></div>
+    <div class="tile red"><div class="k">Hermana</div><div class="v">7</div><div class="s">diabetes tipo 1 desde hace 18 meses</div></div>
+    <div class="tile blue"><div class="k">Técnicas</div><div class="v">3</div><div class="s">Familia · PBLL · TAT</div></div>
+  </div>
+
+  <h4>Primera entrevista con los padres</h4>
+  <p class="prose small">Consultan Verónica (40, maestra) y Andrés (43, tiene una ferretería). Viven con sus dos hijos, Ignacio (11;4) y Emilia (7). La abuela materna vive cerca y ayuda con Emilia.</p>
+  <div class="dialogo"><div class="dh">Entrevista · madre (M) y padre (P)</div>
+    <p class="n">Motivo y derivación</p>
+    <p class="p"><b class="w">M</b>«Nos mandó la pediatra. Hace como un año que Ignacio tiene dolores de panza y de cabeza casi todas las mañanas, antes de ir a la escuela. Le hicieron de todo y no tiene nada.»</p>
+    <p class="p"><b class="w">P</b>«Y bajó mucho en la escuela. Siempre fue de los mejores. Este año la maestra nos dijo que está como ausente, que no termina las cosas.»</p>
+    <p class="n">La enfermedad de Emilia</p>
+    <p class="p"><b class="w">M</b>«A Emilia le diagnosticaron diabetes hace un año y medio. Debutó con una cetoacidosis y estuvo internada en CTI. Fue horrible. Después tuvo otra internación por una hipoglucemia. Ahora tiene un sensor en el brazo y hay que controlarla todo el tiempo, de noche también.»</p>
+    <p class="p"><b class="w">P</b>«La casa gira en torno a Emilia, para qué te voy a mentir.»</p>
+    <p class="n">Cómo describen a Ignacio</p>
+    <p class="p"><b class="w">M</b>«Ignacio es nuestro hombrecito. Nos ayuda muchísimo: sabe leer el sensor, sabe qué hacer si le baja el azúcar. Cuando estuvo internada se quedó con mi madre un mes y no se quejó nunca.»</p>
+    <p class="p"><b class="w">P</b>«Es como yo, no se queja. Se guarda las cosas.»</p>
+    <p class="p"><b class="w">M</b>«Lo único es que a veces explota con la hermana. Hace unos meses le gritó "ojalá te mueras". Después lloró toda la noche y le pidió perdón mil veces. Nos asustamos más por cómo quedó él.»</p>
+    <p class="n">Otros datos. Dejó la guitarra este año («dice que no tiene tiempo»). Duerme mal: se despierta cuando suena la alarma del sensor de Emilia. Embarazo y parto sin complicaciones; desarrollo sin particularidades. Buena relación con dos amigos del barrio, con los que juega al fútbol.</p>
+  </div>
+
+  <h4>Entrevista con Ignacio (fragmento)</h4>
+  <div class="dialogo"><div class="dh">Entrevista · Ignacio (I)</div>
+    <p class="t"><b class="w">E</b>«¿Sabés por qué viniste?»</p>
+    <p class="p"><b class="w">I</b>«Por la panza. Me duele a la mañana. Después en el recreo se me pasa.»</p>
+    <p class="t"><b class="w">E</b>«¿Cómo están las cosas en tu casa?»</p>
+    <p class="p"><b class="w">I</b>«Bien. Bueno, todo es Emilia, Emilia, Emilia… Pero no es culpa de ella, eh. Ella no eligió tener diabetes.»</p>
+    <p class="n">Habla con tono adulto y cuidado. Se muestra colaborador y algo serio. Cuando habla de la internación de la hermana mira el piso y cambia de tema.</p>
+  </div>
+
+  <h4>Test de la Familia: proceso, verbalización y dibujo</h4>
+  <div class="dialogo"><div class="dh">Familia · hoja horizontal · TR 40″ · TT 12′</div>
+    <p class="n">Demora en empezar. Comienza por Emilia, en el centro-izquierda de la hoja, con moño y «el aparatito» (el sensor) en el brazo. Sigue con la madre, a la izquierda, tomándola de la mano, y el padre a la derecha de Emilia, con la mano en su hombro. Hace una pausa larga. Se dibuja último en el extremo derecho, borra dos veces su propia figura («me salió muy grande») y la termina más chica. No le dibuja manos.</p>
+    <p class="t"><b class="w">E</b>(reactivo verbal) «¿Dónde están? ¿Qué están haciendo?»</p>
+    <p class="p"><b class="w">I</b>«Están en el patio. Esperando el resultado del control de Emilia.»</p>
+    <p class="n">Más bueno: «Emilia, porque se banca todo» · Menos bueno: «yo, porque a veces me enojo» · Más feliz: «mamá y papá, cuando Emilia está bien» · Menos feliz: «Emilia, por los pinchazos… bueno, yo también a veces» · ¿Quién serías vos?: «Yo… aunque a veces quisiera ser Emilia, así me cuidan» · Paseo en auto: «Me quedo yo, total ya soy grande».</p>
+  </div>
+  <div class="ser-figw">
+    <svg viewBox="0 0 600 340" role="img" aria-label="Esquema del dibujo de la familia de Ignacio en hoja horizontal: la madre a la izquierda toma de la mano a Emilia, en el centro, con moño y sensor; el padre apoya la mano en su hombro; Ignacio, último, pequeño y sin manos, en el extremo derecho, con marcas de borrado">
+     <defs><marker id="pm-ar" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8z" class="fv"/></marker></defs>
+     <rect x="20" y="20" width="400" height="296" class="boxs"/>
+     <path class="pen" d="M40,270 q60,-3 120,1 t120,-1 t120,2"/>
+     <!-- Mamá -->
+     <path class="pen" d="M95,90 c8,0 14,6 14,14 c0,8 -6,14 -14,14 c-8,0 -14,-6 -14,-14 c0,-8 6,-14 14,-14z M81,100 q-4,16 0,26 M109,100 q4,16 0,26"/>
+     <circle cx="90" cy="103" r="1.4" class="penf"/><circle cx="100" cy="103" r="1.4" class="penf"/>
+     <path class="pen" d="M90,111 q5,4 10,0 M93,118 l0,5 M97,118 l0,5 M85,123 l20,0 l14,72 q-24,4 -48,0z M86,130 q-12,22 -14,44 M104,130 q14,10 28,27 M88,196 l-1,74 M102,196 l1,74 M87,270 q-6,1 -9,-1 M103,270 q6,1 9,-1"/>
+     <!-- Emilia -->
+     <path class="pen" d="M150,119 l-10,-6 l0,12z M150,119 l10,-6 l0,12z"/>
+     <path class="pen" d="M150,121 c7,0 13,6 13,13 c0,7 -6,13 -13,13 c-7,0 -13,-6 -13,-13 c0,-7 6,-13 13,-13z"/>
+     <circle cx="145" cy="133" r="1.4" class="penf"/><circle cx="155" cy="133" r="1.4" class="penf"/>
+     <path class="pen" d="M145,140 q5,4 10,0 M148,147 l0,4 M152,147 l0,4 M141,151 l18,0 l12,58 q-21,4 -42,0z M142,157 q-5,2 -10,0 M158,157 q8,12 10,24 M144,210 l-1,60 M156,210 l1,60 M143,270 q-5,1 -8,-1 M157,270 q5,1 8,-1"/>
+     <circle cx="165" cy="170" r="3" class="pen"/>
+     <!-- Papá -->
+     <path class="pen" d="M215,81 c8,0 15,7 15,15 c0,8 -7,15 -15,15 c-8,0 -15,-7 -15,-15 c0,-8 7,-15 15,-15z M202,90 q13,-12 26,0"/>
+     <circle cx="210" cy="95" r="1.4" class="penf"/><circle cx="220" cy="95" r="1.4" class="penf"/>
+     <path class="pen" d="M210,104 q5,3 10,0 M212,111 l0,6 M218,111 l0,6 M200,117 q15,-4 30,0 l3,80 q-18,4 -36,0z M201,123 q-20,10 -38,26 M229,123 q10,24 12,48 M207,198 l-2,72 M223,198 l2,72 M205,270 q-7,1 -10,-1 M225,270 q7,1 10,-1"/>
+     <!-- Ignacio: huellas de borrado -->
+     <path class="pen" style="stroke-opacity:.28;stroke-dasharray:2 3" d="M362,121 c8,0 14,6 14,14 c0,8 -6,14 -14,14 c-8,0 -14,-6 -14,-14 c0,-8 6,-14 14,-14z M348,152 q14,-3 28,0 l3,64 M366,140 c6,0 11,5 11,11"/>
+     <!-- Ignacio -->
+     <path class="pen" d="M362,152 c6,0 10,4 10,10 c0,6 -4,10 -10,10 c-6,0 -10,-4 -10,-10 c0,-6 4,-10 10,-10z"/>
+     <circle cx="358" cy="161" r="1.2" class="penf"/><circle cx="366" cy="161" r="1.2" class="penf"/>
+     <path class="pen" d="M358,167 l8,0 M360,172 l0,4 M364,172 l0,4 M352,176 q10,-3 20,0 l2,46 q-12,3 -24,0z M353,181 q-8,12 -9,24 M371,181 q8,12 9,24 M357,222 l-1,48 M367,222 l1,48 M356,270 q-5,1 -8,-1 M368,270 q5,1 8,-1"/>
+     <!-- orden -->
+     <circle cx="150" cy="96" r="10" class="bk"/><text x="150" y="100" text-anchor="middle" class="xs tK" font-weight="700">1</text>
+     <circle cx="95" cy="72" r="10" class="bk"/><text x="95" y="76" text-anchor="middle" class="xs tK" font-weight="700">2</text>
+     <circle cx="215" cy="62" r="10" class="bk"/><text x="215" y="66" text-anchor="middle" class="xs tK" font-weight="700">3</text>
+     <circle cx="362" cy="102" r="10" class="bv"/><text x="362" y="106" text-anchor="middle" class="xs tV" font-weight="700">4</text>
+     <!-- marcas -->
+     <ellipse cx="152" cy="190" rx="32" ry="86" class="lk" stroke-dasharray="5 4"/>
+     <ellipse cx="362" cy="196" rx="30" ry="84" class="lv" stroke-dasharray="4 4"/>
+     <path class="lv" d="M252,240 L334,240" marker-start="url(#pm-ar)" marker-end="url(#pm-ar)"/>
+     <text x="293" y="232" text-anchor="middle" class="hw tV">distancia</text>
+     <text x="95" y="296" text-anchor="middle" class="sm tA">95 %</text><text x="152" y="296" text-anchor="middle" class="sm tA">83 %</text>
+     <text x="215" y="296" text-anchor="middle" class="sm tA">100 %</text><text x="362" y="296" text-anchor="middle" class="sm tA">62 %</text>
+     <!-- columna -->
+     <rect x="436" y="20" width="156" height="98" rx="8" class="bs"/>
+     <text x="446" y="40" class="tS" font-weight="700">Familia real</text>
+     <text x="446" y="60" class="sm">Andrés, 43</text><text x="446" y="76" class="sm">Verónica, 40</text>
+     <text x="446" y="92" class="sm">Ignacio, 11 (autor)</text><text x="446" y="108" class="sm">Emilia, 7</text>
+     <text x="436" y="148" class="hw tK">Emilia, en el centro</text>
+     <text x="436" y="166" class="sm">1.ª, moño y sensor; los dos</text>
+     <text x="436" y="180" class="sm">padres la tocan.</text>
+     <text x="436" y="212" class="hw tV">Ignacio, al margen</text>
+     <text x="436" y="230" class="sm">último, más chico que Emilia,</text>
+     <text x="436" y="244" class="sm">sin manos, borrado 2 veces</text>
+     <text x="436" y="258" class="sm">(«me salió muy grande»).</text>
+    </svg>
+    <div class="ser-cap">Esquema del dibujo (caso ficticio). Los porcentajes comparan cada altura con la del padre. Las líneas punteadas grises a la derecha marcan las huellas de la figura que Ignacio borró.</div>
+  </div>
+
+  <h4>Persona bajo la lluvia: dibujo e historia</h4>
+  <div class="dialogo"><div class="dh">PBLL · hoja vertical · TR 15″ · TT 9′</div>
+    <p class="n">Dibuja primero a un varón y después, sin que se le pida, agrega una nena a su lado. Hace el paraguas sobre la nena y la lluvia al final, con mucha insistencia sobre la figura del varón. Algunas gotas cerca de la cara tienen forma de lágrima.</p>
+    <p class="p"><b class="w">I</b>(historia) «Es un chico que lleva a la hermana a la escuela. Llueve mucho. Le pone el paraguas a ella para que no se moje, porque si se moja se enferma. Él se moja todo, pero no importa. Llegan y la maestra le dice que es un buen hermano.» Título: «El hermano mayor».</p>
+    <p class="t"><b class="w">E</b>«¿Y qué siente el chico?»</p>
+    <p class="p"><b class="w">I</b>«Frío. Pero está bien.»</p>
+  </div>
+  <div class="ser-figw">
+    <svg viewBox="0 0 600 410" role="img" aria-label="Esquema de la Persona bajo la lluvia de Ignacio: un varón de frente, a la izquierda, sostiene un paraguas sobre una nena pequeña que está a su derecha; él queda bajo la lluvia, con gotas en forma de lágrima cerca de la cara; una nube grande arriba y línea de suelo">
+     <rect x="20" y="20" width="260" height="370" class="boxs"/>
+     <path class="pen" d="M70,82 c-16,0 -18,-22 0,-24 c0,-18 26,-22 34,-8 c10,-16 40,-14 42,4 c10,-12 40,-8 38,12 c18,2 18,24 0,26 c-10,10 -100,10 -114,-10z"/>
+     <path class="pen" style="stroke-width:1.1" d="M66,191 l-3,12 M194,102 l-3,12 M46,300 l-3,12 M165,114 l-3,11 M42,322 l-3,14 M157,144 l-3,15 M37,112 l-3,12 M45,151 l-3,13 M51,231 l-3,13 M136,105 l-3,11 M59,332 l-3,12 M85,251 l-3,14 M270,105 l-3,15 M129,102 l-3,13 M84,101 l-3,15 M62,164 l-3,15 M135,126 l-3,13 M166,120 l-3,12 M202,136 l-3,15 M54,238 l-3,15 M76,185 l-3,11 M52,230 l-3,14 M210,106 l-3,15 M172,105 l-3,14 M186,142 l-3,14 M264,206 l-3,14 M120,166 l-3,14 M74,268 l-3,11 M227,152 l-3,14 M48,237 l-3,14 M142,163 l-3,11 M46,120 l-3,12 M70,283 l-3,11 M115,128 l-3,12 M266,215 l-3,14 M135,100 l-3,12 M199,109 l-3,11 M252,299 l-3,13 M108,177 l-3,15 M144,107 l-3,11 M243,113 l-3,11 M269,159 l-3,11 M198,106 l-3,15 M43,277 l-3,12 M255,261 l-3,11 M116,95 l-3,13 M268,208 l-3,15 M118,133 l-3,11 M184,119 l-3,11 M154,105 l-3,12 M83,286 l-3,15 M101,123 l-3,14 M217,153 l-3,12 M262,313 l-3,13 M155,110 l-3,13 M70,204 l-3,15 M63,299 l-3,13 M168,161 l-3,14 M254,187 l-3,11 M87,128 l-3,11 M49,135 l-3,14"/>
+     <!-- lágrimas sobre el varón -->
+     <path class="pen" d="M84,178 q-3,6 0,8 q3,-2 0,-8z M126,186 q-3,6 0,8 q3,-2 0,-8z M80,214 q-3,6 0,8 q3,-2 0,-8z M128,222 q-3,6 0,8 q3,-2 0,-8z M98,170 q-3,6 0,8 q3,-2 0,-8z"/>
+     <!-- paraguas sobre la nena -->
+     <path class="pen" d="M135,205 Q145,170 185,172 Q225,170 235,205 q-12,-6 -25,0 q-12,-6 -25,0 q-12,-6 -25,0 q-12,-6 -25,0z M185,172 L160,203 M185,172 L210,203 M185,172 l0,-7"/>
+     <path class="pen" d="M185,174 L162,250"/>
+     <!-- varón -->
+     <path class="pen" d="M105,187 c7,0 13,6 13,13 c0,7 -6,13 -13,13 c-7,0 -13,-6 -13,-13 c0,-7 6,-13 13,-13z"/>
+     <circle cx="100" cy="198" r="1.4" class="penf"/><circle cx="110" cy="198" r="1.4" class="penf"/>
+     <path class="pen" d="M100,207 q5,-3 10,0 M103,213 l0,4 M107,213 l0,4 M93,217 q12,-3 24,0 l3,62 q-15,3 -30,0z M94,222 q-8,22 -8,44 M116,222 q22,14 44,30 M99,280 l-1,70 M111,280 l1,70 M98,350 q-7,1 -11,-1 M112,350 q7,1 11,-1"/>
+     <circle cx="162" cy="252" r="4" class="pen"/>
+     <!-- nena -->
+     <path class="pen" d="M190,218 l-6,-4 l0,8z M190,218 l6,-4 l0,8z M190,219 c5,0 9,4 9,9 c0,5 -4,9 -9,9 c-5,0 -9,-4 -9,-9 c0,-5 4,-9 9,-9z"/>
+     <circle cx="187" cy="227" r="1.1" class="penf"/><circle cx="193" cy="227" r="1.1" class="penf"/>
+     <path class="pen" d="M187,232 q3,2 6,0 M184,240 l12,0 l9,40 q-15,3 -30,0z M185,246 l-6,14 M195,246 l6,14 M186,281 l-1,69 M194,281 l1,69"/>
+     <!-- suelo -->
+     <path class="pen" d="M30,352 q50,-3 100,1 t100,-1 t40,1"/>
+     <!-- marcas -->
+     <ellipse cx="185" cy="190" rx="58" ry="26" class="lk" stroke-dasharray="5 4"/>
+     <ellipse cx="105" cy="200" rx="34" ry="40" class="lv" stroke-dasharray="4 4"/>
+     <ellipse cx="128" cy="62" rx="82" ry="30" class="lv" stroke-dasharray="4 4"/>
+     <!-- columna -->
+     <text x="300" y="56" class="hw tV">Una nube, grande</text>
+     <text x="300" y="74" class="sm">sobre toda la escena; lluvia intensa.</text>
+     <text x="300" y="148" class="hw tK">Paraguas sobre la hermana</text>
+     <text x="300" y="166" class="sm">abierto, adecuado para ella; Ignacio</text>
+     <text x="300" y="180" class="sm">lo sostiene, pero no lo cubre a él.</text>
+     <text x="300" y="232" class="hw tV">El varón, expuesto</text>
+     <text x="300" y="250" class="sm">de frente, mediano-pequeño (≈ 44 %),</text>
+     <text x="300" y="264" class="sm">algo a la izquierda; gotas como</text>
+     <text x="300" y="278" class="sm">lágrimas cerca de la cara.</text>
+     <text x="300" y="330" class="hw tS">Agrega una figura</text>
+     <text x="300" y="348" class="sm">que la consigna no pide: la nena.</text>
+     <text x="300" y="362" class="sm">Línea de suelo presente.</text>
+    </svg>
+    <div class="ser-cap">Esquema del dibujo (caso ficticio). Azul: recursos. Rojo: presión y exposición. Verde: alteración de la consigna.</div>
+  </div>
+
+  <h4>TAT: cuatro relatos</h4>
+  <p class="prose small">Se eligieron cuatro láminas pertinentes para el motivo de consulta: la 1 (metas y rendimiento), la 2 (vínculos familiares), la 3VH (culpa y tristeza) y la 6VH (vínculo con la figura materna). El registro es literal, con las intervenciones del examinador.</p>
+
+  <div class="c4-lam">
+   <figure><img src="img/tat/lam-1.jpg" alt="Lámina 1: un niño mira un violín apoyado sobre una mesa." loading="lazy"><figcaption><b>Lámina 1</b>Metas</figcaption></figure>
+   <div class="relato"><div class="rh"><b>Lámina 1</b><span>TR 10″</span><span>TT 1′05″</span></div>
+    <p>Es un chico que antes tocaba el violín, pero ya no tiene ganas. Lo mira y se acuerda de cuando tocaba. Los padres están ocupados y no lo escuchan practicar. <span class="int">(E: ¿Y cómo termina?)</span> No sé… Lo guarda en el ropero.</p></div>
+  </div>
+  <div class="c4-lam">
+   <figure><img src="img/tat/lam-2.jpg" alt="Lámina 2: escena de campo; una joven con libros en primer plano, un hombre trabaja la tierra y una mujer mayor observa." loading="lazy"><figcaption><b>Lámina 2</b>Familia</figcaption></figure>
+   <div class="relato"><div class="rh"><b>Lámina 2</b><span>TR 18″</span><span>TT 1′40″</span></div>
+    <p>Es una familia del campo. El padre trabaja con el caballo y la madre está apoyada en el árbol porque está embarazada, está cansada. La chica de los libros es la hermana mayor, que se va a ir a estudiar… No, mejor que se queda. Se queda a ayudar con el bebé que va a nacer. Y está bien así.</p></div>
+  </div>
+  <div class="c4-lam">
+   <figure><img src="img/tat/lam-3VH.jpg" alt="Lámina 3VH: una figura acurrucada en el piso, con la cabeza hundida en el brazo apoyado sobre un sillón; a su lado, en el suelo, un objeto pequeño." loading="lazy"><figcaption><b>Lámina 3VH</b>Culpa</figcaption></figure>
+   <div class="relato"><div class="rh"><b>Lámina 3VH</b><span>TR 25″</span><span>TT 1′50″</span></div>
+    <p>Es un chico que está llorando porque le dijo algo feo a la hermana, y después ella se puso mal y la llevaron al hospital. Piensa que fue culpa suya. <span class="int">(E: ¿Qué es eso del piso?)</span> Un… celular. Lo tiró. <span class="int">(E: ¿Cómo termina?)</span> La hermana se cura y él le pide perdón. Pero él sigue pensando que fue su culpa.</p></div>
+  </div>
+  <div class="c4-lam">
+   <figure><img src="img/tat/lam-6VH.jpg" alt="Lámina 6VH: una mujer mayor de espaldas a un hombre joven que mira hacia abajo con expresión perpleja." loading="lazy"><figcaption><b>Lámina 6VH</b>Vínculo materno</figcaption></figure>
+   <div class="relato"><div class="rh"><b>Lámina 6VH</b><span>TR 12″</span><span>TT 1′10″</span></div>
+    <p>Es un hijo que le quiere contar algo a la madre, que le duele la panza todos los días. Pero la madre está mirando por la ventana, preocupada por otra cosa. Entonces no le dice nada y se va a su cuarto. <span class="int">(E: ¿Y después?)</span> Después se le pasa.</p></div>
+  </div>
+
+  <h3>Las cinco preguntas, respondidas</h3>
+
+  <details class="preg exam"><summary>1 · Desarrolle los aspectos más significativos de la entrevista en relación con el motivo de consulta.</summary><div class="ans">
+    <p>Ignacio tiene 11 años y 4 meses, cursa 6.º año y llega derivado por la pediatra por <b>dolores abdominales y cefaleas matinales</b> de alrededor de un año de evolución, sin causa orgánica que los explique. A este motivo explícito los padres agregan un descenso del rendimiento escolar en un niño que «siempre fue de los mejores», con una actitud que la maestra describe como «ausente».</p>
+    <h5>Ejes significativos</h5>
+    <ul>
+      <li><b>Temporalidad.</b> Los síntomas comienzan unos seis meses después del diagnóstico de diabetes de la hermana, que debutó con una internación en CTI. Me interesaría indagar si esta coincidencia es significativa: el motivo de consulta podría estar ligado a la reorganización familiar alrededor de la enfermedad.</li>
+      <li><b>El lugar de Ignacio en la familia.</b> Los padres lo describen como «hombrecito», alguien que ayuda, sabe leer el sensor y «no se queja nunca». La familia reconoce que «la casa gira en torno a Emilia». Este lugar de cuidador podría hacer pensar en una <b>sobreadaptación</b> o en una asunción de funciones que exceden lo esperable para su edad, a indagar con cuidado y sin juzgar a los padres, que atraviesan una situación difícil.</li>
+      <li><b>La expresión del malestar.</b> Ignacio no se queja con palabras; se queja el cuerpo, y en momentos puntuales «explota». El padre lo identifica consigo mismo («es como yo, se guarda las cosas»). El episodio del «ojalá te mueras», seguido de llanto y pedidos de perdón, permite plantear la presencia de una <b>agresividad hacia la hermana</b> que, cuando se expresa, genera una culpa intensa, más si se tiene en cuenta que la enfermedad de Emilia es real y puso su vida en riesgo.</li>
+      <li><b>Pérdidas.</b> La separación durante la internación (un mes con la abuela), el abandono de la guitarra y la pérdida de la posición escolar pueden pensarse como pérdidas que no fueron puestas en palabras.</li>
+      <li><b>Recursos.</b> Buen desarrollo previo, vínculos con pares (amigos, fútbol), una abuela disponible, padres preocupados que consultan y un niño que puede verbalizar en la entrevista algo de lo que siente («todo es Emilia»), aunque enseguida lo corrige («no es culpa de ella»).</li>
+    </ul>
+    <p>En síntesis, el motivo de consulta explícito (dolores sin causa orgánica) podría estar expresando un malestar emocional que no encuentra otra vía de expresión, en un contexto familiar organizado alrededor de la enfermedad de la hermana. Es una hipótesis que habrá que contrastar con las técnicas.</p>
+  </div></details>
+
+  <details class="preg exam"><summary>2 · Analice el Test de la Familia en al menos dos de los niveles de Caride, integrando el reactivo verbal.</summary><div class="ans">
+    <p>Caride propone analizar las técnicas gráficas en cuatro niveles: gestáltico, gráfico, estructuras formales y contenido. Antes de interpretar, siguiendo a Corman, comparo con la familia real: Ignacio dibuja a los cuatro miembros que conviven. <b>No hay omisiones ni agregados</b>, por lo que lo interpretable está en cómo los representa.</p>
+    <h5>Estructuras formales</h5>
+    <ul>
+      <li><b>Secuencia.</b> Comienza por Emilia y se dibuja a sí mismo último, después de una pausa larga. El primer personaje suele ser el más importante a los ojos del niño. Que Emilia, y no un progenitor, encabece la secuencia es llamativo y coincide con lo que la familia dice de su lugar («la casa gira en torno a Emilia»).</li>
+      <li><b>Emplazamiento y distancia.</b> Emilia está en el centro-izquierda, rodeada por los padres. Ignacio se ubica en el extremo derecho, con un espacio vacío importante entre él y el padre. Esta separación podría leerse como una <b>relación a distancia</b> con el grupo familiar.</li>
+      <li><b>Tamaño.</b> Con el padre como referencia, Emilia alcanza el 83 % e Ignacio el 62 %. Ignacio, de 11 años, se dibuja <b>más chico que su hermana de 7</b>, cuando las proporciones esperables indicarían lo contrario. Además, borra dos veces su figura porque «le salió muy grande» y la achica.</li>
+    </ul>
+    <h5>Contenido</h5>
+    <ul>
+      <li><b>Valorización de Emilia.</b> Es la primera, está en el centro, tiene más detalles (moño, sensor) y es la única tocada por otros personajes: los dos padres la sostienen. Coinciden varios signos de valorización.</li>
+      <li><b>Autodesvalorización.</b> Ignacio reúne los signos de desvalorización de Corman en su propia figura: último, en la orilla, más pequeño de lo esperable y con menos detalles. La <b>ausencia de manos</b> no es un signo de Corman, pero en el plano del contenido podría asociarse con una dificultad para actuar, o con culpa por la agresión, lo que convendría buscar en otras técnicas.</li>
+      <li><b>Reactivo verbal.</b> Converge con lo gráfico. Se elige como «el menos bueno, porque a veces me enojo»: la agresividad aparece reconocida y vuelta contra sí. Desea ser Emilia «así me cuidan», lo que se puede leer como una <b>identificación de deseo</b> con la hermana enferma, con un componente regresivo. Y se excluye del paseo «total ya soy grande», lo que muestra la otra cara: una pseudomadurez que le permite renunciar sin quejarse. La escena elegida («esperando el resultado del control») sitúa a la familia entera en la espera ansiosa en torno a la enfermedad.</li>
+    </ul>
+    <p><b>Nivel gestáltico.</b> Es una familia humana, ajustada a la realidad y con interrelación entre los personajes: los padres y Emilia forman un grupo unido por contacto físico. Ignacio queda fuera de ese grupo, aislado. Esto permite plantear que <b>prevalece el principio de realidad</b>, con alteraciones reveladoras en el lugar que el niño se asigna. En el nivel gráfico, los datos disponibles (borrado y achicamiento de la propia figura) podrían indicar inhibición y ansiedad ligadas a la autorrepresentación.</p>
+  </div></details>
+
+  <details class="preg exam"><summary>3 · Analice la Persona bajo la lluvia: ¿qué recursos defensivos despliega Ignacio frente a la presión? Articule con su historia.</summary><div class="ans">
+    <p>La PBLL indaga la imagen corporal frente a una situación de presión ambiental y, en particular, la modalidad defensiva. Lo primero que se observa es una <b>alteración de la consigna</b>: se pide «una persona» e Ignacio dibuja dos. La figura agregada es una nena a la que identifica en la historia como la hermana.</p>
+    <h5>Los elementos</h5>
+    <ul>
+      <li><b>Lluvia y nube.</b> La lluvia es intensa y está repartida por toda la hoja, con insistencia sobre el varón. Algunas gotas tienen forma de lágrima, lo que se ha asociado con angustia. Una sola nube grande cubre la escena. La presión del medio se representa como fuerte.</li>
+      <li><b>El paraguas.</b> Hay un recurso defensivo y es adecuado en tamaño, pero <b>protege a otra persona</b>. Ignacio lo sostiene y queda expuesto. Las tablas de Querol y Chávez no contemplan esta variante, por lo que no hay una lectura de manual: su sentido surge de la historia, como recomienda Sívori.</li>
+      <li><b>La figura.</b> El varón está de frente, lo que se ha relacionado con disposición a enfrentar; es de tamaño mediano-pequeño y está algo desplazado a la izquierda. La línea de suelo está presente: hay un criterio de realidad y un apoyo.</li>
+    </ul>
+    <h5>La historia</h5>
+    <p>La historia confirma la escena: el chico protege a la hermana «porque si se moja se enferma», se moja él «pero no importa», y el reconocimiento llega desde afuera («es un buen hermano»). Al preguntarle qué siente, responde «frío… pero está bien». El afecto aparece y se minimiza enseguida.</p>
+    <p>Estos datos permitirían plantear que Ignacio dispone de recursos defensivos, pero que los pone <b>al servicio del cuidado de la hermana</b> y no del propio. Frente a una presión que vive como intensa, su modalidad sería la de renunciar a la propia protección, minimizar el malestar y obtener reconocimiento a través del cuidado. Esto converge con lo que relatan los padres («nuestro hombrecito», «no se queja nunca») y con la pseudomadurez que aparece en el Test de la Familia. Las gotas como lágrimas sobre la figura expuesta sugieren que este modo de defenderse <b>tiene un costo afectivo</b> que no se expresa con palabras.</p>
+    <p class="small">No se cuenta con el DFH del mismo niño. Sería útil aplicarlo para comparar la imagen de sí sin el estresor.</p>
+  </div></details>
+
+  <details class="preg exam"><summary>4 · Analice los relatos del TAT (héroe, necesidades, presiones, desenlace) y señale las recurrencias.</summary><div class="ans">
+    <p>Desde lo formal, Ignacio comprende la consigna y coopera. Las historias son breves, coherentes y realistas, sin distorsiones perceptivas. En tres de las cuatro láminas el futuro aparece recién después de una intervención del examinador. El TR más largo corresponde a la 3VH.</p>
+    <div class="tablewrap"><table class="tb">
+      <thead><tr><th>Lámina</th><th>Héroe y necesidad</th><th>Presión</th><th>Desenlace</th><th>Contra el clisé</th></tr></thead>
+      <tbody>
+        <tr><td class="k">1</td><td>Un chico que perdió las ganas. Necesidad de ser escuchado.</td><td>Padres «ocupados», no disponibles.</td><td>Renuncia: guarda el violín. Pobre, tras intervención.</td><td>Se aparta: no es el deber frente al deseo, sino un deseo que se apaga. Evoca la guitarra que dejó.</td></tr>
+        <tr><td class="k">2</td><td>La hermana mayor. Necesidad de autonomía, que se corrige en el relato.</td><td>La madre embarazada y cansada; el bebé que va a nacer.</td><td>Se queda a ayudar «y está bien así».</td><td>Introduce un bebé por nacer. La corrección «no, mejor que se queda» muestra el conflicto en el acto de contar.</td></tr>
+        <tr class="hi"><td class="k">3VH</td><td>Un chico que llora. Culpa por haber dañado a la hermana con palabras.</td><td>El propio superyó; la enfermedad de la hermana.</td><td>Reparación (se cura, pide perdón), pero la culpa persiste.</td><td>Transforma el objeto del piso en un «celular» (no lo nombra como arma). La culpa tiene un objeto concreto: la hermana.</td></tr>
+        <tr><td class="k">6VH</td><td>Un hijo con dolor de panza. Necesidad de cuidado.</td><td>Una madre preocupada «por otra cosa».</td><td>No dice nada; «se le pasa».</td><td>Se acerca al clisé (vínculo madre-hijo) y lo llena con su propio síntoma.</td></tr>
+      </tbody></table></div>
+    <h5>Recurrencias</h5>
+    <ul>
+      <li><b>Necesidad de cuidado no satisfecha</b> (1, 6VH): los padres están ocupados o preocupados por otra cosa, y el héroe no logra hacerse escuchar.</li>
+      <li><b>Renuncia a lo propio</b> (1, 2, 6VH): el héroe guarda el violín, se queda a ayudar, no cuenta lo que le pasa. El deseo propio se resigna a favor de las necesidades de otros.</li>
+      <li><b>Agresión y culpa</b> (3VH): aparece una sola vez, pero con el TR más largo, con el objeto de la lámina transformado y con un contenido que coincide con el episodio relatado por los padres. Por eso, aunque es una sola historia, merece consideración (Murray: un motivo único cuenta si hay indicios de que se intentó suprimir).</li>
+      <li><b>Desenlaces</b>: renuncia, aceptación resignada, reparación con culpa que persiste y malestar que «se pasa» sin ser dicho. El héroe resuelve adaptándose, rara vez actuando a su favor.</li>
+    </ul>
+    <p>Siguiendo a Bellak, podría pensarse en un <b>superyó severo</b> (la culpa persiste aun después de la reparación, por un daño que el héroe no causó) y en ansiedades vinculadas a la <b>pérdida del amor</b> y al <b>daño</b> que la propia agresión podría provocar. La defensa predominante sería la renuncia y la vuelta de la agresión contra sí mismo.</p>
+  </div></details>
+
+  <details class="preg exam"><summary>5 · Integre los resultados en hipótesis articuladas con el motivo de consulta y proponga recomendaciones.</summary><div class="ans">
+    <p>Ignacio, de 11;4, consulta derivado por la pediatra por dolores abdominales y cefaleas matinales sin causa orgánica, junto con un descenso del rendimiento escolar. Se administraron entrevistas con los padres y con el niño, el Test de la Familia, la Persona bajo la lluvia y cuatro láminas del TAT. <b>Se plantean, a modo de hipótesis a contrastar, las siguientes líneas.</b></p>
+    <p><b>El lugar en la familia.</b> Las tres técnicas convergen en mostrar a un niño que se ubica en un lugar secundario frente a una hermana que concentra, por razones reales, la atención y el cuidado familiar. En la Familia se representa último, al margen y más pequeño que ella. En la PBLL protege a la hermana y queda expuesto. En el TAT construye héroes que no logran ser escuchados por padres ocupados. Este lugar sería sostenido por una <b>modalidad sobreadaptada</b>, reforzada desde el entorno («hombrecito», «no se queja»), que le permite obtener reconocimiento a través del cuidado.</p>
+    <p><b>La agresividad y la culpa.</b> La rivalidad fraterna, esperable en cualquier vínculo entre hermanos, encontraría en este caso un obstáculo particular: la hermana está enferma y su vida estuvo en riesgo. La hostilidad tendría así una vía de expresión muy restringida. Cuando aparece (el episodio relatado por los padres, la lámina 3VH) se acompaña de una culpa intensa y persistente, que hace pensar en un superyó severo. En la Familia, la agresividad se reconoce y se vuelve contra sí («el menos bueno soy yo»), y la figura sin manos podría expresar esa inhibición de la acción.</p>
+    <p><b>El cuerpo como vía de expresión.</b> El malestar que no se dice con palabras podría estar expresándose en el cuerpo. En la lámina 6VH el héroe tiene «dolor de panza» y no lo cuenta porque la madre está preocupada «por otra cosa». Esto permite articular el motivo de consulta con lo que surge de las técnicas: los dolores podrían ser una forma de pedir un cuidado que no se anima a reclamar de otro modo. El descenso del rendimiento y el abandono de la guitarra podrían leerse en la misma línea, como retracción del interés y del deseo propio, lo que justificaría explorar también el estado de ánimo.</p>
+    <p><b>Recursos.</b> Ignacio tiene buen ajuste a la realidad (familia realista, línea de suelo, relatos coherentes), capacidad de empatía y de cuidado, vínculos con pares y unos padres que consultan. En la entrevista pudo decir algo de su malestar («todo es Emilia»). Estos recursos son centrales para la devolución.</p>
+    <h5>Recomendaciones</h5>
+    <ul>
+      <li>Ofrecer un espacio psicoterapéutico propio para Ignacio, que habilite la expresión del malestar y de la ambivalencia hacia la hermana sin culpa excesiva.</li>
+      <li>Trabajar con los padres, con cuidado y sin culpabilizarlos, su lugar en la dinámica familiar: reconocer la sobrecarga, darle espacios exclusivos y revisar las tareas de cuidado que asume.</li>
+      <li>Completar la evaluación con el DFH (para comparar con la PBLL) y con una exploración del estado de ánimo. Coordinar con la escuela sobre el rendimiento y con la pediatra sobre la evolución de los síntomas.</li>
+      <li>Valorar la articulación con el equipo tratante de Emilia y consultar si ofrece espacios para hermanos y familias.</li>
+    </ul>
+    <p class="small">Es importante cuestionar los propios resultados: se trata de una sola toma, con cuatro láminas del TAT, y la hipótesis psicosomática requiere que la pediatra siga descartando causas orgánicas.</p>
+  </div></details>
+
+  <h3>Tabla de convergencias</h3>
+  <div class="tablewrap"><table class="tb wide">
+    <caption>Hipótesis × fuente · Ignacio</caption>
+    <thead><tr><th>Hipótesis</th><th>Entrevista</th><th>Familia</th><th>PBLL</th><th>TAT</th><th>Fuerza</th></tr></thead>
+    <tbody>
+      <tr class="hi"><td class="k">Lugar secundario / sobreadaptación</td><td>«Hombrecito», «no se queja»; la casa gira en torno a Emilia</td><td>Último, al margen, más chico que Emilia</td><td>Protege a la hermana y queda expuesto</td><td>Renuncia en 1, 2 y 6VH</td><td>Alta</td></tr>
+      <tr class="hi"><td class="k">Agresividad hacia la hermana con culpa intensa</td><td>«Ojalá te mueras», llanto, perdón</td><td>«El menos bueno soy yo»; sin manos</td><td>—</td><td>3VH: culpa que persiste tras la reparación</td><td>Media-alta</td></tr>
+      <tr><td class="k">Malestar expresado en el cuerpo</td><td>Dolores sin causa orgánica</td><td>—</td><td>Gotas como lágrimas; «frío, pero está bien»</td><td>6VH: dolor de panza no dicho</td><td>Media</td></tr>
+      <tr><td class="k">Necesidad de cuidado no satisfecha</td><td>Un mes con la abuela durante la internación</td><td>«Quisiera ser Emilia, así me cuidan»</td><td>Nadie lo protege a él</td><td>1 y 6VH: padres ocupados</td><td>Alta</td></tr>
+      <tr><td class="k">Retracción del interés</td><td>Dejó la guitarra; «ausente» en la escuela</td><td>—</td><td>—</td><td>1: guarda el violín</td><td>Media (explorar ánimo)</td></tr>
+      <tr><td class="k">Recursos</td><td>Amigos, abuela, padres que consultan</td><td>Familia realista</td><td>Paraguas adecuado; línea de suelo</td><td>Relatos coherentes y realistas</td><td>Para la devolución</td></tr>
+    </tbody>
+  </table></div>
+  <div class="call alerta"><span class="lab">El dato discordante</span><p>Los padres dicen que Ignacio «no se queja nunca» y que lo que más los asustó del episodio con la hermana fue «cómo quedó él». En las técnicas, sin embargo, la queja aparece en todas partes: lágrimas en la PBLL, el dolor no dicho en la 6VH, el deseo de ser cuidado en la Familia. La discordancia no invalida ninguna de las dos fuentes. Indica que el malestar <b>existe pero no encuentra un destinatario</b>, y ese es justamente el punto a trabajar en la devolución con los padres.</p></div>
+
+  <h3>Fragmento de informe</h3>
+  <blockquote class="model"><p>Ignacio se mostró colaborador y comprometido con las tareas, con un tono serio y cuidadoso. En las distintas técnicas se observa un niño con buenos recursos para vincularse con la realidad, capaz de empatía y de cuidar a otros. Al mismo tiempo, impresiona que tiende a postergar sus propias necesidades frente a las de su familia, en un momento en que la enfermedad de su hermana ocupa, comprensiblemente, un lugar central. Los enojos que a veces aparecen parecen generarle mucha culpa, y es posible que parte de su malestar se esté expresando a través del cuerpo y del menor interés por actividades que antes disfrutaba. Se sugiere ofrecerle un espacio terapéutico propio y acompañar a la familia en la búsqueda de momentos y lugares donde Ignacio pueda ser cuidado sin tener que pedirlo.</p></blockquote>
+  <p class="prose small">Fijate en la diferencia de registro: en el informe no aparecen «superyó severo», «identificación de deseo» ni los signos de Corman. Las hipótesis se traducen a un lenguaje que la familia y la pediatra puedan usar (ver el <a href="#p2-informe">bloque de informe y devolución</a>).</p>
+
+  <div class="errores"><h4>Errores frecuentes en este parcial</h4><ul>
+    <li>Leer la PBLL con la tabla («hay paraguas adecuado = defensas sanas») sin ver que el paraguas protege a otra persona. La historia es la que da el sentido.</li>
+    <li>Interpretar el tamaño de Ignacio en la Familia sin compararlo con la edad real de los dos hermanos.</li>
+    <li>Afirmar que los dolores «son psicosomáticos». Es una hipótesis que depende de que la pediatra siga descartando causas orgánicas.</li>
+    <li>Leer la 3VH sola como «ideación suicida» por el objeto del piso. El relato la transforma en culpa por la hermana, y eso es lo que hay que leer.</li>
+    <li>Culpabilizar a los padres en el análisis o en el informe. La sobrecarga de cuidado es real y la familia consulta.</li>
+    <li>Olvidar los recursos. Sin ellos no hay devolución posible.</li>
+    <li>No señalar la alteración de la consigna en la PBLL (dibuja dos personas).</li>
+  </ul></div>
+
+  <details class="fuentes"><summary>Fuentes de este bloque</summary><ol>
+    <li>Material del caso inventado para practicar. Formato de consignas adaptado del examen de diciembre de 2019 (Udelar).</li>
+    <li>Corman, L. (1967). <i>El test del dibujo de la familia en la práctica médico-pedagógica</i>. Buenos Aires: Kapelusz. Caride, M. (niveles de análisis de las técnicas gráficas).</li>
+    <li>Querol, S. y Chávez, M. (2005). <i>Test de la Persona Bajo la Lluvia</i>. Buenos Aires: Lugar Editorial. Sívori, M. I. (2005). <i>Persona bajo la lluvia: consideraciones teóricas y criterios de interpretación</i>.</li>
+    <li>Murray, H. A. (1943). <i>Thematic Apperception Test. Manual</i>. Cambridge, MA: Harvard University Press. Bellak, L. (1954). <i>The TAT and CAT in clinical use</i>. Nueva York: Grune &amp; Stratton.</li>
   </ol></details>
  </div>
 </section>

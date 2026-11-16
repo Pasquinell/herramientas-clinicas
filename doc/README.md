@@ -43,6 +43,7 @@ Sections carry `data-parcial`, `data-tema`, `data-toc` and `data-title`. The ind
   12. `p2-caso4` (Camila · PBLL + TAT)
   13. `p2-caso5` (Martín · HTP + Rorschach)
   14. `p2-sergio` (the real December 2019 exam)
+  15. `p2-parcial` (practice exam, fictitious: Ignacio, 11;4 · interview + Familia + PBLL + TAT 1, 2, 3VH, 6VH, with model answers, convergence table and informe fragment)
 
 Each test block has:
 1. A header with number and chips.
@@ -64,7 +65,7 @@ Each integrated case has:
 7. Referrals.
 8. Exam questions with model answers.
 
-Totals: 14 P2 sections, 14 static scrollies, 36 questions with answers (23 exam-style), 60 quotes marked ⚑ and 29 marked ≈.
+Totals: 15 P2 sections, 16 static scrollies, 41 questions with answers (28 exam-style), 60 quotes marked ⚑ and 29 marked ≈.
 
 ## 4. Two scrolly engines (do not mix them)
 
@@ -117,6 +118,11 @@ Totals: 14 P2 sections, 14 static scrollies, 36 questions with answers (23 exam-
   - The exam prints «DFH 5 → 80-110», but in the Koppitz table 80-110 corresponds to 4. A note explains this.
   - The Bender errors are not itemised in the exam, so they are given as «posibles».
 - **Names:** in the Familia block example the children are Joaquín and Bruno, so they do not clash with Tomás (Caso 3) or Mateo (P1).
+- **Worked examples in Familia, PBLL and TAT (2026-11-16, branch `feat/mejoras-parcial-2`):**
+  - Step texts of the existing examples were rewritten in more depth (Joaquín; PBLL now has a subject, Paula 15, with a story and title; TAT lámina 1 steps and the 13V Bellak table). The lámina 1 relato and its model answer stay literal (⚑).
+  - Second examples, all fictitious: Familia `#fam2-dsc` (Renata, 6, oedipal axis, with gato and árbol as barrier); PBLL `#pb2-dsc` (Gonzalo, 34, oversized umbrella, psychosomatic complaints); TAT third example (Florencia, 21, láminas 1, 2, 5, 6NM, 16, with a recurrence table). Each ends with a «comparados» callout against the first example.
+  - The `.c4-lam` and `.ser-*` styles were widened from `#p2-caso4` / `#p2-sergio` to `#p2-tat` and `#p2-parcial`.
+  - Ignacio's PBLL shows him holding the umbrella over his sister: Querol y Chávez have no reading for that variant, and the text says so.
 - **Course country:** P1 mentions Argentine norms and the WISC-IV in Argentina. That was the author's material and was left as is.
 
 ## 6. Design
