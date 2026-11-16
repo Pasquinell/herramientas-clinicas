@@ -65,7 +65,7 @@ Each integrated case has:
 7. Referrals.
 8. Exam questions with model answers.
 
-Totals: 15 P2 sections, 16 static scrollies, 41 questions with answers (28 exam-style), 60 quotes marked ⚑ and 29 marked ≈.
+Totals: 15 P2 sections, 16 static scrollies, 7 `.ccl` clinical-case blocks, 41 questions with answers (28 exam-style), 60 quotes marked ⚑ and 29 marked ≈.
 
 ## 4. Two scrolly engines (do not mix them)
 
@@ -123,6 +123,8 @@ Totals: 15 P2 sections, 16 static scrollies, 41 questions with answers (28 exam-
   - Second examples, all fictitious: Familia `#fam2-dsc` (Renata, 6, oedipal axis, with gato and árbol as barrier); PBLL `#pb2-dsc` (Gonzalo, 34, oversized umbrella, psychosomatic complaints); TAT third example (Florencia, 21, láminas 1, 2, 5, 6NM, 16, with a recurrence table). Each ends with a «comparados» callout against the first example.
   - The `.c4-lam` and `.ser-*` styles were widened from `#p2-caso4` / `#p2-sergio` to `#p2-tat` and `#p2-parcial`.
   - Ignacio's PBLL shows him holding the umbrella over his sister: Querol y Chávez have no reading for that variant, and the text says so.
+  - Third/fourth examples (same date): Familia · Bautista, 8 (separated parents and blended family; panel «¿Contra qué familia se compara?», marked as this guide's practical criterion, not Corman); PBLL · Julieta, 10 (protocol within the expected range, with a «cómo se escribe sin hallazgos» callout); TAT · Matías, 15 (formal problems: description, near-rejection, literal clisé, omitted rifle, with Murray's interventions).
+  - Every Familia and PBLL example (Joaquín, Renata, Bautista, Paula, Gonzalo, Julieta) and the parcial modelo now end with a `.ccl` block: the four Caride levels (gestáltico, gráfico, estructuras formales, contenido) followed by an integrated clinical case (motivo, results, hypothesis, recommendations). In the parcial, «El caso clínico armado» sits before the convergence table. `.ccl` and `.figw` are global P2 classes (not in the P1 forbidden list).
 - **Course country:** P1 mentions Argentine norms and the WISC-IV in Argentina. That was the author's material and was left as is.
 
 ## 6. Design
